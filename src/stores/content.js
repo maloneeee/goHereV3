@@ -37,3 +37,56 @@ export const home = {
         }
     ]
 };
+export const who = {
+    title: 'goHere - Creative Solutions',
+    metaDesc: 'This is the description',
+    h1: 'Trailblazers of Tech',
+    section: [
+        {
+            title: 'Envisioneers.',
+            p:
+                'We combine technology, design, and communication to create engineered outcomes. Join us at the cutting edge.',
+            sub: 'nerd alert',
+            button: "Let's get started",
+            buttonHref: 'get-started'
+        }
+    ]
+};
+export const what = {
+           title: 'goHere - Creative Solutions',
+           metaDesc: 'This is the description',
+           h1: 'Strategic Outcomes',
+           section: [
+               {
+                   title: 'Sharpening The Cutting Edge.',
+                   p:
+                       'Create engaging experiences, designed for connection. Engineer outcomes, designed for growth. Discover solutions, designed for the future.',
+                   sub: 'masterminds',
+                   button: "",
+                   buttonHref: ''
+               }
+           ]
+       };
+export const work = {
+           title: 'goHere - Creative Solutions',
+           metaDesc: 'This is the description',
+           h1: 'Tech Renaissance',
+           section: [
+               {
+                   title: 'Our Amazing Partners.',
+                   p:
+                       'Whether you’re a startup, nonprofit, or a household brand, goHere adds value. We select clients we resonate with, bringing passion and inspiration to any project.',
+                   sub: 'powerful',
+                   button: 'Become a Partner',
+                   buttonHref: 'get-started'
+               }
+           ]
+       };
+
+export const cta = {
+    title: "Let's Create Something Beautiful",
+    p: 'Reach out today and find out what goHere can do for you!',
+    sub: 'be creative',
+    button: "Let's Go!",
+    buttonHref: 'get-started#cta'
+};
