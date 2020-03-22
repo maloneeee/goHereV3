@@ -1,9 +1,18 @@
-
+<script context="module">
+    import employees from './../stores/employees.js';
+    import Section from './../components/Section.svelte'
+    import {who} from './../stores/content.js'
+    import Hero from './../components/Hero.svelte'
+</script>
 
 <svelte:head>
-	<title>About</title>
+	<title>{who.title}</title>
 </svelte:head>
+<Hero heading='{who.h1}' />
 
-<h1>About this site</h1>
-
-<p>This is the 'about' page. There's not much here.!!</p>
+{#each who.section as section}
+<Section {...section}/>
+{/each}
+{#each employees as employee}
+    {employee.name}
+{/each}

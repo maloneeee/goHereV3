@@ -48,6 +48,7 @@
 <style>
 *{
     color:black;
+    text-align:left;
 }
   .wrapper {
     background: white;

@@ -1,7 +1,15 @@
+<script>
+  import Section from './../components/Section.svelte'
+    import {what} from './../stores/content.js'
+import Hero from './../components/Hero.svelte'
+import Services from './../components/Services.svelte'
+</script>
+
 <svelte:head>
-  <title>About</title>
+	<title>{what.title}</title>
 </svelte:head>
-
-<h1>About this site</h1>
-
-<p>This is the 'about' page. There's not much here.</p>
+<Hero heading='{what.h1}' />
+{#each what.section as section}
+<Section {...section}/>
+{/each}
+<Services />

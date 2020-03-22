@@ -1,7 +1,20 @@
+<script>
+      import clients from './../stores/clients.js';
+
+    import Section from './../components/Section.svelte'
+    import {work} from './../stores/content.js'
+import Hero from './../components/Hero.svelte'
+</script>
+
 <svelte:head>
-  <title>About</title>
+	<title>{work.title}</title>
 </svelte:head>
+<Hero heading='{work.h1}' />
 
-<h1>About this site</h1>
+{#each work.section as section}
+<Section {...section}/>
+{/each}
 
-<p>This is the 'about' page. There's not much here.</p>
+{#each clients as client}
+  {client.name}
+{/each}
