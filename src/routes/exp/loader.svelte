@@ -1,7 +1,8 @@
 <script>
   import { onMount } from "svelte";
   import anime from "animejs/lib/anime.es.js";
-  
+  let rows = 20;
+  let items = 16;
 
   onMount(() => {
     let tl = anime.timeline({

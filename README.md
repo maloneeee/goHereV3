@@ -20,6 +20,7 @@
     -   [x] svelte-loader
     -   [x] ghost
     -   [x] anime.js
+    -   [x] Howler
     -   [ ] Appointment SASS
 -   [x] Setup CSS
 -   [ ] Put stores in Firebase or other DB
@@ -27,6 +28,10 @@
 ## Changelog
 
 ```
+v0.4.2
+- Remade hexagon pattern
+- Added Audio - Howler
+    - Play/Pause Button
 v0.4.0
 - Started experiments page
 - Anime.js integration
