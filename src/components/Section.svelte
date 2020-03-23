@@ -4,6 +4,7 @@
   export let p;
   export let button;
   export let buttonHref;
+  export let invert;
 </script>
 
 <style>
@@ -15,12 +16,12 @@
 </style>
 
 <section class="border_color">
-  <div class="section_inner">
+  <div class="section_inner" class:invert>
   <div class="container">
     {#if sub != ''}
       <h5> <span>{sub}</span></h5>
     {/if}
-    <h2>{title}</h2>
+    <h2 class:colorDynamic={invert} data-glow="{title}">{title}</h2>
     <p>
       {@html p}
     </p>

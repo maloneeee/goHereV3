@@ -29,6 +29,8 @@
   }
   i{
      font-size: 4rem;
+     -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
   }
 </style>
 

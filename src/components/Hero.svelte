@@ -22,5 +22,5 @@
 
 
 <div class="hero">
-    <h1 class="color_dynamic" data-glow='{heading}'>{heading}</h1>
+    <h1 class="colorDynamic" data-glow='{heading}'>{heading}</h1>
 </div>

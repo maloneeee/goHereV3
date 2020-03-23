@@ -28,6 +28,9 @@
 ## Changelog
 
 ```
+v0.4.4
+- Tested white section
+- Added outline to audio play button
 v0.4.3
 - Fixed Play/Pause button
 v0.4.2
