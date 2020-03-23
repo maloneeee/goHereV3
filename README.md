@@ -12,13 +12,14 @@
     -   [x] Github
     -   [x] Heroku
     -   [x] Tailwind
-    -   [ ] Fonts
+    -   [x] Fonts
     -   [x] THREE.js
     -   [x] jQuery
     -   [x] Firestore
     -   [x] svelte-scrollto
     -   [x] svelte-loader
     -   [x] ghost
+    -   [x] anime.js
     -   [ ] Appointment SASS
 -   [x] Setup CSS
 -   [ ] Put stores in Firebase or other DB
