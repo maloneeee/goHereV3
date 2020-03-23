@@ -26,7 +26,10 @@
 ## Changelog
 
 ```
-v3.0.0
+v0.4.0
+- Started experiments page
+- Anime.js integration
+v0.3.0
 - Began build
 - Created modules
     - Section
