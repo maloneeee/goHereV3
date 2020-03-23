@@ -28,6 +28,8 @@
 ## Changelog
 
 ```
+v0.4.3
+- Fixed Play/Pause button
 v0.4.2
 - Remade hexagon pattern
 - Added Audio - Howler

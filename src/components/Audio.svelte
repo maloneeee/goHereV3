@@ -33,7 +33,7 @@
 </style>
 
 <div class="pause" on:click="{toggleAudio}">
-    {#if !audio}
+    {#if audio}
         <i class="fas fa-volume-up"></i>
     {:else}
         <i class="fas fa-volume-mute"></i>
