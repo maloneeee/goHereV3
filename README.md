@@ -28,6 +28,9 @@
 ## Changelog
 
 ```
+v0.4.6
+- Attempted to recreate the hex-section with anime.js
+    - Should attempt to recreate png in css
 v0.4.4
 - Tested white section
 - Added outline to audio play button

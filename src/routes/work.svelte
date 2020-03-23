@@ -1,7 +1,7 @@
 <script>
       import clients from './../stores/clients.js';
 
-    import Section from './../components/Section.svelte'
+    import Section2 from './../components/Section2.svelte'
     import {work} from './../stores/content.js'
 import Hero from './../components/Hero.svelte'
 </script>
@@ -12,7 +12,7 @@ import Hero from './../components/Hero.svelte'
 <Hero heading='{work.h1}' />
 
 {#each work.section as section}
-<Section {...section}/>
+<Section2 {...section}/>
 {/each}
 
 {#each clients as client}
