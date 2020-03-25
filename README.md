@@ -6,13 +6,14 @@
 
 -   [ ]  Fix Main form
 -   [ ]  Build Navbar
+-   [ ] Flesh out Hero
 -   [ ]  Adjust Who page
 -   [ ] Build Index
 -   [ ] Integrate SEO meta tags
 -   [ ] Build Out Work section
 -   [ ] Format Insights page
 -   [ ] Change content on Contact page
--   []  Mobile Formating
+-   [ ]  Mobile Formating
 -   [x] Pass variables between levels
 -   [x] Integrate Librarys:
     -   [x] Svelte
@@ -31,7 +32,7 @@
     -   [x] ghost
     -   [x] anime.js
     -   [x] Howler
-    -   [ ] Appointment SASS
+    -   [ ] Appointment SAAS
 -   [x] Setup CSS
 -   [ ] Put stores in Firebase or other DB
 
