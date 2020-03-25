@@ -99,14 +99,16 @@
     font-size: 10em;
     color: rgba(255, 255, 255, 0.05);
     transition: 0.5s;
+    font-weight:800;
   }
   .box:hover h2 {
     top: -90px;
   }
   h3 {
+    font-weight:800;
     margin: 0 0 30px;
     padding: 0;
-    font-size: 24px;
+    font-size: 26px;
     color: #fff;
   }
   h4 {
@@ -121,6 +123,8 @@
     padding: 0;
     color: #fff;
     font-size: 16px;
+    margin-bottom:1.5rem;
+
   }
   a {
     position: relative;
@@ -147,6 +151,9 @@
   li {
     color: white;
     font-size: 18px;
+    list-style-type: circle;
+      list-style-position: inside;
+
   }
 
   @media screen and (max-width: 1100px) {

@@ -3,6 +3,8 @@
     import {what} from './../stores/content.js'
 import Hero from './../components/Hero.svelte'
 import Services from './../components/Services.svelte'
+    import CTA from './../components/CTA.svelte'
+
 </script>
 
 <svelte:head>
@@ -13,3 +15,4 @@ import Services from './../components/Services.svelte'
 <Section {...section}/>
 {/each}
 <Services />
+<CTA/>

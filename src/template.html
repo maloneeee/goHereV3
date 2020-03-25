@@ -8,16 +8,26 @@
 	%sapper.base%
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel|Montserrat+Alternates&display=swap">
 	<script src="https://kit.fontawesome.com/0595454263.js" crossorigin="anonymous"></script>
-
 	<link rel='stylesheet' href='../tailwind.css'>
 	<link rel='stylesheet' href='global.css'>
 	<link rel='manifest' href='manifest.json' crossorigin='use-credentials'>
 	<link rel='icon' type='image/png' href='favicon.png'>
-
-	<!-- Sapper generates a <style> tag containing critical CSS
-	     for the current page. CSS for the rest of the app is
-	     lazily loaded when it precaches secondary pages -->
 	%sapper.styles%
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://www.gohere.tech/js/jScrollability.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135886991-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-135886991-1');
+</script>
+	
 
 	<!-- This contains the contents of the <svelte:head> component, if
 	     the current page has one -->
@@ -34,3 +44,25 @@
 	%sapper.scripts%
 </body>
 </html>
+
+<script>
+	var x = 0;
+	var myVar = setInterval(function () {
+		if (x == 0) {
+			if (jQuery('.avia-form-success').is(":visible")) {
+				//gtag
+				alert('test')
+				gtag('event', 'aaa', {
+					'event_category': 'bbb',
+					'event_label': 'ccc'
+				});
+				ga('send', 'event', 'form', 'submit', 'success');
+				dataLayer.push({
+					'event': 'formSubmitRegister'
+				});
+				clearInterval(myVar);
+				x = 1;
+			}
+		}
+	}, 1000);
+</script>

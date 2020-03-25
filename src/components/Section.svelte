@@ -10,14 +10,15 @@
 <style>
   section {
     min-height: 700px;
+    text-align:center;
   }
 
 
 </style>
 
-<section class="border_color">
+<section class="section border_color">
   <div class="section_inner" class:invert>
-  <div class="container">
+  <div class="container inner">
     {#if sub != ''}
       <h5> <span>{sub}</span></h5>
     {/if}

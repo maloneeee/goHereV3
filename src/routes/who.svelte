@@ -3,6 +3,8 @@
     import Section from './../components/Section.svelte'
     import {who} from './../stores/content.js'
     import Hero from './../components/Hero.svelte'
+    import CTA from './../components/CTA.svelte'
+    import Employee from './../components/Employee.svelte'
 </script>
 
 <svelte:head>
@@ -14,5 +16,6 @@
 <Section {...section}/>
 {/each}
 {#each employees as employee}
-    {employee.name}
+    <Employee {...employee}/>
 {/each}
+<CTA/>

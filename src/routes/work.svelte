@@ -1,9 +1,11 @@
 <script>
       import clients from './../stores/clients.js';
 
-    import Section2 from './../components/Section2.svelte'
+    import Section from './../components/Section.svelte'
     import {work} from './../stores/content.js'
 import Hero from './../components/Hero.svelte'
+    import CTA from './../components/CTA.svelte'
+
 </script>
 
 <svelte:head>
@@ -12,9 +14,11 @@ import Hero from './../components/Hero.svelte'
 <Hero heading='{work.h1}' />
 
 {#each work.section as section}
-<Section2 {...section}/>
+<Section {...section}/>
 {/each}
 
 {#each clients as client}
   {client.name}
 {/each}
+
+<CTA/>

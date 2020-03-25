@@ -1,14 +1,17 @@
 <script>
+  import Hero from './../components/Hero.svelte'
+  import {contact} from './../stores/content.js'
+  import Section from './../components/Section.svelte'
   import Main from './../components/forms/Main.svelte'
-  import PassedDown from './../components/test/PassedDown.svelte'
 </script>
 
 
 <svelte:head>
-  <title>Contact</title>
+	<title>{contact.title}</title>
 </svelte:head>
-
-
-The Form:
+<Hero heading='{contact.h1}' />
+{#each contact.section as section}
+<Section {...section}/>
+{/each}
 <Main/>
-<PassedDown varv={'penis'}/>
+

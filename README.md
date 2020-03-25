@@ -4,8 +4,17 @@
 
 ## TODO
 
+-   [ ]  Fix Main form
+-   [ ]  Build Navbar
+-   [ ]  Adjust Who page
+-   [ ] Build Index
+-   [ ] Integrate SEO meta tags
+-   [ ] Build Out Work section
+-   [ ] Format Insights page
+-   [ ] Change content on Contact page
+-   []  Mobile Formating
 -   [x] Pass variables between levels
--   [x] Integrate:
+-   [x] Integrate Librarys:
     -   [x] Svelte
     -   [x] Sapper
     -   [x] SCSS
@@ -13,6 +22,7 @@
     -   [x] Heroku
     -   [x] Tailwind
     -   [x] Fonts
+    -   [x] Icons
     -   [x] THREE.js
     -   [x] jQuery
     -   [x] Firestore
@@ -28,6 +38,14 @@
 ## Changelog
 
 ```
+v0.6.0
+- Fleshed out pages
+- Rebuilt Who section
+- Created CTA
+- Setup forms
+- Recreated Get Started page
+- Built Contact Page
+- Formated Services
 v0.4.6
 - Attempted to recreate the hex-section with anime.js
     - Should attempt to recreate png in css

@@ -7,6 +7,10 @@
 		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
 		padding: 0 1em;
+		position:relative;
+		z-index:9999999;
+		position:fixed;
+		top:0;
 	}
 
 	ul {

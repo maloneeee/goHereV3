@@ -20,7 +20,7 @@ export const home = {
             sub: '',
             button: '',
             buttonHref: '',
-            invert: false
+            invert: true
         },
         {
             title: 'Be Exceptional.',
@@ -53,7 +53,7 @@ export const who = {
             sub: 'nerd alert',
             button: "Let's get started",
             buttonHref: '/get-started',
-            invert: true
+            invert: false
         }
     ]
 };
@@ -74,6 +74,22 @@ export const what = {
            ]
        };
 export const work = {
+           title: 'goHere - Creative Solutions',
+           metaDesc: 'This is the description',
+           h1: 'Tech Renaissance',
+           section: [
+               {
+                   title: 'Our Amazing Partners.',
+                   p:
+                       'Whether you’re a startup, nonprofit, or a household brand, goHere adds value. We select clients we resonate with, bringing passion and inspiration to any project.',
+                   sub: 'powerful',
+                   button: 'Become a Partner',
+                   buttonHref: '/get-started',
+                   invert: false
+               }
+           ]
+       };
+export const contact = {
            title: 'goHere - Creative Solutions',
            metaDesc: 'This is the description',
            h1: 'Tech Renaissance',
