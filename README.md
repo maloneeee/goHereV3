@@ -39,6 +39,8 @@
 ## Changelog
 
 ```
+v0.7.0
+- Set up white section
 v0.6.0
 - Fleshed out pages
 - Rebuilt Who section

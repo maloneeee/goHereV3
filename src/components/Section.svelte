@@ -16,7 +16,7 @@
 
 </style>
 
-<section class="section border_color">
+<section class="section border_color" class:invert>
   <div class="section_inner" class:invert>
   <div class="container inner">
     {#if sub != ''}

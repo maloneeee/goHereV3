@@ -53,7 +53,7 @@ export const who = {
             sub: 'nerd alert',
             button: "Let's get started",
             buttonHref: '/get-started',
-            invert: false
+            invert: true
         }
     ]
 };
@@ -69,7 +69,7 @@ export const what = {
                    sub: 'masterminds',
                    button: "",
                    buttonHref: '',
-                   invert: false
+                   invert: true
                }
            ]
        };
@@ -85,7 +85,7 @@ export const work = {
                    sub: 'powerful',
                    button: 'Become a Partner',
                    buttonHref: '/get-started',
-                   invert: false
+                   invert: true
                }
            ]
        };
@@ -101,7 +101,7 @@ export const contact = {
                    sub: 'powerful',
                    button: 'Become a Partner',
                    buttonHref: '/get-started',
-                   invert: false
+                   invert: true
                }
            ]
        };
@@ -112,5 +112,5 @@ export const cta = {
     sub: 'be creative',
     button: "Let's Go!",
     buttonHref: '/get-started#cta',
-    invert: false
+    invert: true
 };
