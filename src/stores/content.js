@@ -103,10 +103,27 @@ export const contact = {
                    p:
                        'We tackle projects of all types and work with organizations across all industries. Discover the power of creative tech solutions for any project you might have.',
                    sub: 'lets go!',
-                   button: 'Become a Partner',
-                   buttonHref: '/get-started',
+                   button: '305.999.5595',
+                   buttonHref: 'tel:309.999.5595',
                    invert: false,
-    bottom:false
+                    bottom:false
+               }
+           ]
+       };
+export const insights = {
+           title: 'goHere - Creative Solutions',
+           metaDesc: 'This is the description',
+           h1: 'Incredible Insights',
+           section: [
+               {
+                   title: "The Lastest Tech Updates",
+                   p:
+                       'We tackle projects of all types and work with organizations across all industries. Discover the power of creative tech solutions for any project you might have.',
+                   sub: 'Learn Something',
+                   button: 'What We Do',
+                   buttonHref: '/what',
+                   invert: false,
+                    bottom:false
                }
            ]
        };

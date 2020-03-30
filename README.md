@@ -14,7 +14,7 @@
 -   [ ] Build Index
 -   [ ] Integrate SEO meta tags
 -   [x] Build Out Work section
--   [ ] Format Insights page
+-   [x] Format Insights page
 -   [x] Change content on Contact page
 -   [ ]  Mobile Formating
 -   [x] Pass variables between levels
@@ -42,6 +42,9 @@
 ## Changelog
 
 ```
+v0.8.2
+- Formatted Insights page
+- Adjusted SASS
 v0.8.0
 - Work Page
 - Added Fixed background to section

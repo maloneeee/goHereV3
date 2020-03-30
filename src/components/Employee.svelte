@@ -53,6 +53,7 @@
         background-size:cover;
         width:100%;
         height:100%;
+        opacity:80%;
     }
 
     .col:first-child{

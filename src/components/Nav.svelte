@@ -16,7 +16,7 @@
 		height: 2px;
 		background-color: rgb(255, 255, 255);
 		display: block;
-		bottom: -1px;
+		bottom: 18px;
 	}
 
 </style>

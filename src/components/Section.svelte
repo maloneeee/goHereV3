@@ -33,7 +33,7 @@
       {@html p}
     </p>
     {#if button != ''}
-    <a href={buttonHref}>{button}</a>
+    <a class="button" href={buttonHref}>{button}</a>
     {/if}
   </div>
   </div>
