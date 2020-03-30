@@ -45,6 +45,7 @@
 v0.8.2
 - Formatted Insights page
 - Adjusted SASS
+- Updated Navbar
 v0.8.0
 - Work Page
 - Added Fixed background to section
