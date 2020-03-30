@@ -5,7 +5,11 @@
 	
 
 </script>
-
+<style>
+	main{
+		margin-top:200px;
+	}
+</style>
 <Nav {segment}/>
 <main>
 	<slot></slot>

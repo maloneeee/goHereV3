@@ -5,7 +5,7 @@
 ## TODO
 
 -   [ ]  Fix Main form
--   [ ]  Build Navbar
+-   [x]  Build Navbar
 -   [ ] Flesh out Hero
 -   [ ]  Adjust Who page
 -   [ ] Build Index
@@ -39,6 +39,8 @@
 ## Changelog
 
 ```
+v0.7.5
+- Navbar Implemented
 v0.7.0
 - Set up white section
 v0.6.0
