@@ -5,6 +5,7 @@
   export let button;
   export let buttonHref;
   export let invert;
+  export let bottom;
 </script>
 
 <style>
@@ -12,11 +13,16 @@
     min-height: 700px;
     text-align:center;
   }
-
+  .bottom{
+    margin-bottom:-80px;
+  }
+  .bottom .section_inner{
+    margin-bottom:-20px;
+  }
 
 </style>
 
-<section class="section border_color" class:invert>
+<section class="section border_color" class:invert class:bottom>
   <div class="section_inner" class:invert>
   <div class="container inner">
     {#if sub != ''}

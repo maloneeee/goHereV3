@@ -20,7 +20,8 @@ export const home = {
             sub: '',
             button: '',
             buttonHref: '',
-            invert: true
+            invert: true,
+    bottom:false
         },
         {
             title: 'Be Exceptional.',
@@ -53,7 +54,8 @@ export const who = {
             sub: 'nerd alert',
             button: "Let's get started",
             buttonHref: '/get-started',
-            invert: true
+            invert: true,
+    bottom:false
         }
     ]
 };
@@ -69,7 +71,8 @@ export const what = {
                    sub: 'masterminds',
                    button: "",
                    buttonHref: '',
-                   invert: true
+                   invert:false,
+    bottom:false
                }
            ]
        };
@@ -85,23 +88,25 @@ export const work = {
                    sub: 'powerful',
                    button: 'Become a Partner',
                    buttonHref: '/get-started',
-                   invert: true
+                   invert: true,
+    bottom:false
                }
            ]
        };
 export const contact = {
            title: 'goHere - Creative Solutions',
            metaDesc: 'This is the description',
-           h1: 'Tech Renaissance',
+           h1: 'Call Today',
            section: [
                {
-                   title: 'Our Amazing Partners.',
+                   title: 'We Want To Hear From You!',
                    p:
-                       'Whether you’re a startup, nonprofit, or a household brand, goHere adds value. We select clients we resonate with, bringing passion and inspiration to any project.',
-                   sub: 'powerful',
+                       'We tackle projects of all types and work with organizations across all industries. Discover the power of creative tech solutions for any project you might have.',
+                   sub: 'lets go!',
                    button: 'Become a Partner',
                    buttonHref: '/get-started',
-                   invert: true
+                   invert: false,
+    bottom:false
                }
            ]
        };
@@ -112,5 +117,6 @@ export const cta = {
     sub: 'be creative',
     button: "Let's Go!",
     buttonHref: '/get-started#cta',
-    invert: true
+    invert: false,
+    bottom:true
 };

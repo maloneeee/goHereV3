@@ -4,15 +4,18 @@
 
 ## TODO
 
+-   [ ]  Add phone number to contact page
+-   [ ]  Add load screen
+-   [ ]  Add animation
 -   [ ]  Fix Main form
 -   [x]  Build Navbar
 -   [ ] Flesh out Hero
 -   [ ]  Adjust Who page
 -   [ ] Build Index
 -   [ ] Integrate SEO meta tags
--   [ ] Build Out Work section
+-   [x] Build Out Work section
 -   [ ] Format Insights page
--   [ ] Change content on Contact page
+-   [x] Change content on Contact page
 -   [ ]  Mobile Formating
 -   [x] Pass variables between levels
 -   [x] Integrate Librarys:
@@ -39,6 +42,12 @@
 ## Changelog
 
 ```
+v0.8.0
+- Work Page
+- Added Fixed background to section
+- Fixed CTA margin
+- Insights paragraph adjustment
+- Changed content on contact page
 v0.7.5
 - Navbar Implemented
 v0.7.0
