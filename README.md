@@ -42,6 +42,8 @@
 ## Changelog
 
 ```
+v0.8.6
+- Rebuild
 v0.8.5
 - Build Index page
 v0.8.2
