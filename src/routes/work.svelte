@@ -14,16 +14,8 @@
 </script>
 
 <style>
-  .client_container{
-    display:flex;
-    flex-wrap:wrap;
-    padding: 0px 4rem;
-        justify-content:center;
-  }
-
-  .client{
-    width:50%;
-  }
+ 
+  
 </style>
 
 <svelte:head>
@@ -35,7 +27,7 @@
   <Section {...section} />
 {/each}
 <section class="section">
-  <div class="client_container">
+  <div class="container">
     {#each clients as client, i}
       <div class="client" on:click={clientClicked}>
       <Portfolio {...client} />

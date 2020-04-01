@@ -11,12 +11,15 @@
 </script>
 
 <style>
-    
+   
 </style>
 
+<!-- <div class="client_container">
+<div class="image_holder" style="background: url({img})">
+</div> -->
 <div class="client_holder">
 
-    <h2 class="colorDynamic center" data-glow="{name}">{name}</h2>
+    <h2 class="colorDynamic" data-glow="{name}">{name}</h2>
     <h3>{year}</h3>
     <div class="desc">{@html desc}</div>
     <ul>
@@ -26,3 +29,4 @@
     </ul>
     <a class="button" href="{url}">View Website</a>
 </div>
+<!-- </div> -->

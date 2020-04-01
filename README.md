@@ -11,7 +11,7 @@
 -   [x]  Build Navbar
 -   [ ] Flesh out Hero
 -   [ ]  Adjust Who page
--   [ ] Build Index
+-   [x] Build Index
 -   [ ] Integrate SEO meta tags
 -   [x] Build Out Work section
 -   [x] Format Insights page
@@ -42,6 +42,8 @@
 ## Changelog
 
 ```
+v0.8.5
+- Build Index page
 v0.8.2
 - Formatted Insights page
 - Adjusted SASS
