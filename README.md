@@ -42,8 +42,12 @@
 ## Changelog
 
 ```
+v0.9.0
+- Index completed
+- Edited Formating
 v0.8.6
 - Rebuild
+- Installed polka
 v0.8.5
 - Build Index page
 v0.8.2

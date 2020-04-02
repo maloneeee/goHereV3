@@ -7,7 +7,7 @@
 </script>
 <style>
 	main{
-		margin-top:200px;
+		margin-top:150px;
 	}
 </style>
 <Nav {segment}/>

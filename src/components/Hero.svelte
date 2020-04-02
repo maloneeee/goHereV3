@@ -21,6 +21,6 @@
 </style>
 
 
-<div class="hero">
+<div class="hero" id="sec-1">
     <h1 class="colorDynamic" data-glow='{heading}'>{heading}</h1>
 </div>
