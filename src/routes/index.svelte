@@ -63,7 +63,7 @@ let phase = 0;
   }
 
   .buff_section{
-    height:110vh;
+    height:125vh;
   }
   .fixed_section{
     position:fixed;
