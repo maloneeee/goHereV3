@@ -16,6 +16,19 @@
 		display: block;
 		bottom: 18px;
 	}
+
+	@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+        }
+    100%{
+        transform: rotate(359deg);
+        }
+}
+
+img{
+    animation: rotate 30s infinite 0s linear;
+}
 </style>
 <nav>
 	<a class="logo_link" href="."><div class="logo">go<span>Here</span><img src="logo-192.png" alt="goHere"/></div></a>

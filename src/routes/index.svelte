@@ -111,6 +111,19 @@
     /* height:100vh; */
     width:100vw;
   }
+
+  @keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+        }
+    100%{
+        transform: rotate(359deg);
+        }
+}
+
+.logo img{
+    animation: rotate 30s infinite 0s linear;
+}
 </style>
 
 <svelte:head>
