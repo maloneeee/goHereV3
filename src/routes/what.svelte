@@ -10,7 +10,7 @@ import Services from './../components/Services.svelte'
 <svelte:head>
 	<title>{what.title}</title>
 </svelte:head>
-<Hero heading='{what.h1}' />
+<Hero heading='{what.h1}' headingSub={what.h1Sub} />
 {#each what.section as section}
 <Section {...section}/>
 {/each}

@@ -25,7 +25,7 @@
 <svelte:head>
   <title>{insights.title}</title>
 </svelte:head>
-<Hero heading={insights.h1} />
+<Hero heading={insights.h1} headingSub={insights.h1Sub}/>
 
 {#each insights.section as section}
   <Section {...section} />

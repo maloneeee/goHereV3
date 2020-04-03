@@ -2,7 +2,8 @@ import { writable } from 'svelte/store';
 export const home = {
            title: 'goHere - Creative Solutions',
            metaDesc: 'This is the description',
-           h1: 'Creative Solutions',
+           h1: 'Creative',
+           h1Sub: 'Solutions',
            sections: [
                {
                    title: 'What Are Creative Solutions?',
@@ -41,25 +42,27 @@ export const home = {
            ]
        };
 export const who = {
-    title: 'goHere - Creative Solutions',
-    metaDesc: 'This is the description',
-    h1: 'Trailblazers of Tech',
-    section: [
-        {
-            title: 'Envisioneers.',
-            p:
-                'We combine technology, design, and communication to create engineered outcomes. Join us at the cutting edge.',
-            sub: 'nerd alert',
-            button: "Let's get started",
-            buttonHref: '/get-started',
-            invert: true
-        }
-    ]
-};
+           title: 'goHere - Creative Solutions',
+           metaDesc: 'This is the description',
+           h1: 'Trailblazers',
+           h1Sub: 'of Tech',
+           section: [
+               {
+                   title: 'Envisioneers.',
+                   p:
+                       'We combine technology, design, and communication to create engineered outcomes. Join us at the cutting edge.',
+                   sub: 'nerd alert',
+                   button: "Let's get started",
+                   buttonHref: '/get-started',
+                   invert: true
+               }
+           ]
+       };
 export const what = {
            title: 'goHere - Creative Solutions',
            metaDesc: 'This is the description',
-           h1: 'Strategic Outcomes',
+           h1: 'Strategic',
+           h1Sub: 'Outcomes',
            section: [
                {
                    title: 'Sharpening The<br>Cutting Edge.',
@@ -74,7 +77,8 @@ export const what = {
 export const work = {
            title: 'goHere - Creative Solutions',
            metaDesc: 'This is the description',
-           h1: 'Tech Renaissance',
+           h1: 'Tech',
+           h1Sub: 'Renaissance',
            section: [
                {
                    title: 'Our Amazing Partners.',
@@ -90,7 +94,8 @@ export const work = {
 export const contact = {
            title: 'goHere - Creative Solutions',
            metaDesc: 'This is the description',
-           h1: 'Call Today',
+           h1: 'Call',
+           h1Sub: 'Today',
            section: [
                {
                    title: 'We Want To<br>Hear From You!',
@@ -105,10 +110,11 @@ export const contact = {
 export const insights = {
            title: 'goHere - Creative Solutions',
            metaDesc: 'This is the description',
-           h1: 'Incredible Insights',
+           h1: 'Incredible',
+           h1Sub: 'Insights',
            section: [
                {
-                   title: "The Lastest Tech Updates",
+                   title: 'The Lastest Tech Updates',
                    p:
                        'We tackle projects of all types and work with organizations across all industries. Discover the power of creative tech solutions for any project you might have.',
                    sub: 'Learn Something',

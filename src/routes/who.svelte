@@ -1,21 +1,21 @@
 <script context="module">
-    import employees from './../stores/employees.js';
-    import Section from './../components/Section.svelte'
-    import {who} from './../stores/content.js'
-    import Hero from './../components/Hero.svelte'
-    import CTA from './../components/CTA.svelte'
-    import Employee from './../components/Employee.svelte'
+  import employees from "./../stores/employees.js";
+  import Section from "./../components/Section.svelte";
+  import { who } from "./../stores/content.js";
+  import Hero from "./../components/Hero.svelte";
+  import CTA from "./../components/CTA.svelte";
+  import Employee from "./../components/Employee.svelte";
 </script>
 
 <svelte:head>
-	<title>{who.title}</title>
+  <title>{who.title}</title>
 </svelte:head>
-<Hero heading='{who.h1}' />
+<Hero heading={who.h1} headingSub={who.h1Sub} />
 
 {#each who.section as section}
-<Section {...section}/>
+  <Section {...section} />
 {/each}
 {#each employees as employee}
-    <Employee {...employee}/>
+  <Employee {...employee} />
 {/each}
-<CTA/>
+<CTA />

@@ -42,6 +42,9 @@
 ## Changelog
 
 ```
+v0.9.2
+- New Texture on Planet
+- Bug Fixes
 v0.9.0
 - Index completed
 - Edited Formating

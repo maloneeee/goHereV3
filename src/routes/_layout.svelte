@@ -8,6 +8,7 @@
 <style>
 	main{
 		margin-top:150px;
+		position:relative;
 	}
 </style>
 <Nav {segment}/>

@@ -1,9 +1,7 @@
 <script>
 	export let segment;
 </script>
-
 <style>
-	
 	[aria-current] {
 		position: relative;
 		display: inline-block;
@@ -18,9 +16,7 @@
 		display: block;
 		bottom: 18px;
 	}
-
 </style>
-
 <nav>
 	<a class="logo_link" href="."><div class="logo">go<span>Here</span><img src="logo-192.png" alt="goHere"/></div></a>
 	<ul>
