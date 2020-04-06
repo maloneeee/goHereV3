@@ -49,8 +49,8 @@ export default class Index {
             phase = 0,
             delta;
         let fileArray = [
-            { name: 'earth', url: 'GAS1-ns.png' },
-            { name: 'moon', url: 'GAS2-ns.png' },
+            { name: 'earth', url: 'tex1.jpg' },
+            { name: 'moon', url: 'tex2.jpg' },
             { name: 'planet', url: 'GAS3-ns.png' }
         ];
         let promiseArray = [],

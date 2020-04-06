@@ -7,6 +7,10 @@
   import Index from "./../components/space.js";
   import { onMount, onDestroy } from "svelte";
   export let phase = 0;
+  let displayMenu = false;
+  function toggleMenu() {
+    displayMenu = !displayMenu;
+  }
   let topSec, midSec, bottomSec;
   onMount(() => {
     var createScene = new Promise((resolve, reject) => {
@@ -42,6 +46,7 @@
   }
   function removeEl() {
     phase = 0;
+    displayMenu = !displayMenu;
   }
 </script>
 
@@ -112,6 +117,12 @@
     width:100vw;
   }
 
+  @media (max-width:1068px) {
+            .left{
+              padding-right:10vw;
+            }
+        }
+
   @keyframes rotate{
     0%{
         transform: rotate(0deg);
@@ -131,13 +142,18 @@
 </svelte:head>
 <nav style="position:fixed; top:0;">
 	<a class="logo_link" href="."><div class="logo">go<span>Here</span><img src="logo-192.png" alt="goHere"/></div></a>
-	<ul>
-		<li><a on:click={removeEl} href='who'>who</a></li>
-		<li><a on:click={removeEl} href='what'>what</a></li>
-		<li><a on:click={removeEl} href='work'>work</a></li>
-		<li><a on:click={removeEl} href='contact'>contact</a></li>
-		<li><a rel=prefetch on:click={removeEl} href='insights'>insights</a></li>
+	<ul class:nav-active={displayMenu}>
+		<li class:act={displayMenu}><a on:click={removeEl} href='who'>who</a></li>
+		<li class:act={displayMenu}><a on:click={removeEl} href='what'>what</a></li>
+		<li class:act={displayMenu}><a on:click={removeEl} href='work'>work</a></li>
+		<li class:act={displayMenu}><a on:click={removeEl} href='contact'>contact</a></li>
+		<li class:act={displayMenu}><a rel=prefetch on:click={removeEl} href='insights'>insights</a></li>
 	</ul>
+  <div class="burger" class:toggle={displayMenu} on:click={toggleMenu}>
+      <div class="line1" />
+      <div class="line2" />
+      <div class="line3" />
+    </div>
 </nav>
     <canvas id="canvas" />
 <div class="frame_track">

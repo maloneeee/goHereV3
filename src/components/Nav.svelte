@@ -1,5 +1,10 @@
 <script>
 	export let segment;
+	let displayMenu = false;
+  function toggleMenu() {
+    displayMenu = !displayMenu;
+    console.log(displayMenu);
+  }
 </script>
 <style>
 	[aria-current] {
@@ -32,11 +37,16 @@ img{
 </style>
 <nav>
 	<a class="logo_link" href="."><div class="logo">go<span>Here</span><img src="logo-192.png" alt="goHere"/></div></a>
-	<ul>
-		<li><a aria-current='{segment === "who" ? "page" : undefined}' href='who'>who</a></li>
-		<li><a aria-current='{segment === "what" ? "page" : undefined}' href='what'>what</a></li>
-		<li><a aria-current='{segment === "work" ? "page" : undefined}' href='work'>work</a></li>
-		<li><a aria-current='{segment === "contact" ? "page" : undefined}' href='contact'>contact</a></li>
-		<li><a rel=prefetch aria-current='{segment === "insights" ? "page" : undefined}' href='insights'>insights</a></li>
+	<ul class:nav-active={displayMenu}>
+		<li class:act={displayMenu}><a aria-current='{segment === "who" ? "page" : undefined}' href='who' on:click={toggleMenu}>who</a></li>
+		<li class:act={displayMenu}><a aria-current='{segment === "what" ? "page" : undefined}' href='what' on:click={toggleMenu}>what</a></li>
+		<li class:act={displayMenu}><a aria-current='{segment === "work" ? "page" : undefined}' href='work' on:click={toggleMenu}>work</a></li>
+		<li class:act={displayMenu}><a aria-current='{segment === "contact" ? "page" : undefined}' href='contact' on:click={toggleMenu}>contact</a></li>
+		<li class:act={displayMenu}><a rel=prefetch aria-current='{segment === "insights" ? "page" : undefined}' href='insights' on:click={toggleMenu}>insights</a></li>
 	</ul>
+	<div class="burger" class:toggle={displayMenu} on:click={toggleMenu}>
+      <div class="line1" />
+      <div class="line2" />
+      <div class="line3" />
+    </div>
 </nav>
