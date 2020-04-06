@@ -13,6 +13,7 @@
         display:flex;
         width:100%;
     }
+    
     .col{
         width:50%;
         text-align:left;
@@ -73,7 +74,31 @@
         margin-right:0px;
     }
 
-    
+    @media (max-width: 1068px) {
+            *{
+                text-align:left;
+            }
+        .emp_holder{
+            flex-direction:column;
+        }
+        .col{
+            width:95%;
+        }
+        .col:first-child{
+        margin-right:0;
+        width:95%;
+        padding: 7rem 0;
+        margin-top:0px;
+        padding-top:0px;
+    }
+    .headshot{
+        height:500px;
+    }
+    .backNeb{
+        order:-1;
+        margin-right:0px;
+    }
+    }
 
 </style>
 
