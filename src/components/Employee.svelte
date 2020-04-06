@@ -38,6 +38,7 @@
         font-weight:800;
         font-size:11rem;
         line-height:100%;
+        text-align:left;
     }
 
     h3{
@@ -80,6 +81,11 @@
             }
         .emp_holder{
             flex-direction:column;
+        }
+        h2{
+            font-size:6rem;
+            margin:0;
+            text-align:left;
         }
         .col{
             width:95%;
