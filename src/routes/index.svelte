@@ -8,8 +8,12 @@
   import { onMount, onDestroy } from "svelte";
   export let phase = 0;
   let displayMenu = false;
+  
   function toggleMenu() {
     displayMenu = !displayMenu;
+  }
+  function closeMenu() {
+    displayMenu = false;
   }
   let topSec, midSec, bottomSec;
   onMount(() => {
@@ -46,7 +50,7 @@
   }
   function removeEl() {
     phase = 0;
-    displayMenu = !displayMenu;
+    displayMenu = false;
   }
 </script>
 
@@ -60,12 +64,7 @@
     min-height: 100px;
   }
 
-  section {
-    min-height: 700px;
-    text-align: center;
-    position: relative;
-    z-index: 5;
-  }
+  
 
   .buff_section {
     height: 125vh;
@@ -141,7 +140,7 @@
   <title>{home.title}</title>
 </svelte:head>
 <nav style="position:fixed; top:0;">
-	<a class="logo_link" href="."><div class="logo">go<span>Here</span><img src="logo-192.png" alt="goHere"/></div></a>
+	<a class="logo_link" href="." on:click={closeMenu}><div class="logo">go<span>Here</span><img src="logo-192.png" alt="goHere"/></div></a>
 	<ul class:nav-active={displayMenu}>
 		<li class:act={displayMenu}><a on:click={removeEl} href='who'>who</a></li>
 		<li class:act={displayMenu}><a on:click={removeEl} href='what'>what</a></li>

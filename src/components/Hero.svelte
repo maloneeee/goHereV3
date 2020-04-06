@@ -4,21 +4,7 @@
 </script>
 
 <style>
-    .hero{
-        height:70vh;
-        width:100%;
-        display:flex;
-        justify-content: flex-end;
-        align-items:flex-end;
-        padding-bottom:2rem;
-        padding-right:3rem;
-        flex-direction:column;
-    }
-
-    .hero h1{
-        font-size: 8rem;
-        line-height:100%;
-    }
+    
 
     
 </style>

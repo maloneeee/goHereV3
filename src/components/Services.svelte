@@ -162,6 +162,8 @@
     }
     .box {
       margin-bottom: 60px;
+      grid-column-start: 1; 
+  grid-column-end: 4; 
     }
   }
 

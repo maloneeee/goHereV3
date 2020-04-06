@@ -11,10 +11,7 @@
 </script>
 
 <style>
-  section {
-    min-height: 700px;
-    text-align:center;
-  }
+
   .bottom{
     margin-bottom:-80px;
   }

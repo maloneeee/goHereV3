@@ -3,7 +3,9 @@
 	let displayMenu = false;
   function toggleMenu() {
     displayMenu = !displayMenu;
-    console.log(displayMenu);
+  }
+  function closeMenu() {
+    displayMenu = false;
   }
 </script>
 <style>
@@ -36,13 +38,13 @@ img{
 }
 </style>
 <nav>
-	<a class="logo_link" href="."><div class="logo">go<span>Here</span><img src="logo-192.png" alt="goHere"/></div></a>
+	<a class="logo_link" href="." on:click={closeMenu}><div class="logo">go<span>Here</span><img src="logo-192.png" alt="goHere"/></div></a>
 	<ul class:nav-active={displayMenu}>
-		<li class:act={displayMenu}><a aria-current='{segment === "who" ? "page" : undefined}' href='who' on:click={toggleMenu}>who</a></li>
-		<li class:act={displayMenu}><a aria-current='{segment === "what" ? "page" : undefined}' href='what' on:click={toggleMenu}>what</a></li>
-		<li class:act={displayMenu}><a aria-current='{segment === "work" ? "page" : undefined}' href='work' on:click={toggleMenu}>work</a></li>
-		<li class:act={displayMenu}><a aria-current='{segment === "contact" ? "page" : undefined}' href='contact' on:click={toggleMenu}>contact</a></li>
-		<li class:act={displayMenu}><a rel=prefetch aria-current='{segment === "insights" ? "page" : undefined}' href='insights' on:click={toggleMenu}>insights</a></li>
+		<li class:act={displayMenu}><a aria-current='{segment === "who" ? "page" : undefined}' href='who' on:click={closeMenu}>who</a></li>
+		<li class:act={displayMenu}><a aria-current='{segment === "what" ? "page" : undefined}' href='what' on:click={closeMenu}>what</a></li>
+		<li class:act={displayMenu}><a aria-current='{segment === "work" ? "page" : undefined}' href='work' on:click={closeMenu}>work</a></li>
+		<li class:act={displayMenu}><a aria-current='{segment === "contact" ? "page" : undefined}' href='contact' on:click={closeMenu}>contact</a></li>
+		<li class:act={displayMenu}><a rel=prefetch aria-current='{segment === "insights" ? "page" : undefined}' href='insights' on:click={closeMenu}>insights</a></li>
 	</ul>
 	<div class="burger" class:toggle={displayMenu} on:click={toggleMenu}>
       <div class="line1" />

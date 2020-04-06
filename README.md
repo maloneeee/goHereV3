@@ -42,6 +42,8 @@
 ## Changelog
 
 ```
+v0.9.5
+- Mobile Fixes
 v0.9.4
 - Mobile Formating Test
 v0.9.2
