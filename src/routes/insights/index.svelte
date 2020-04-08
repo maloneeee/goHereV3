@@ -2,6 +2,7 @@
   import { onMount } from "svelte";
   import { insights } from "./../../stores/content.js";
   import Hero from "./../../components/Hero.svelte";
+  import TransitionWrapper from "./../../components/TransitionWrapper.svelte";
   import Section from "./../../components/Section.svelte";
   import Post from "./../../components/Post.svelte";
   import CTA from "./../../components/CTA.svelte";
@@ -25,6 +26,7 @@
 <svelte:head>
   <title>{insights.title}</title>
 </svelte:head>
+<TransitionWrapper>
 <Hero heading={insights.h1} headingSub={insights.h1Sub}/>
 
 {#each insights.section as section}
@@ -38,3 +40,4 @@
 {/each}
     </div>
 <CTA />
+</TransitionWrapper>

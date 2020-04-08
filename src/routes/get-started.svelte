@@ -1,6 +1,7 @@
 <script>
 //   import * as animateScroll from "svelte-scrollto";
   // import { onMount } from "svelte";
+  import TransitionWrapper from '../components/TransitionWrapper.svelte'
   let form = {
     name: "",
     project: "",
@@ -104,7 +105,7 @@
             return $el.offset().top + 100;
           },
           end: function($el) {
-            return $el.offset().top + $el.height() + 500;
+            return $el.offset().top + $el.height() + 200;
           },
           fn: {
             opacity: {
@@ -122,7 +123,7 @@
             return $el.offset().top;
           },
           end: function($el) {
-            return $el.offset().top + $el.height() + 500;
+            return $el.offset().top + $el.height() + 200;
           },
           fn: {
             opacity: {
@@ -140,7 +141,7 @@
             return $el.offset().top + 200;
           },
           end: function($el) {
-            return $el.offset().top + $el.height() + 900;
+            return $el.offset().top + $el.height() + 300;
           },
           fn: {
             opacity: {
@@ -297,6 +298,7 @@
   * {
     margin: 0px;
     padding: 0px;
+    text-align:left;
   }
   section {
     /* background: white; */
@@ -346,6 +348,7 @@
     font-size: 160px;
     line-height: 150px;
     margin-top: 50px;
+    text-align:right;
   }
   .hero_scroll {
     display: flex;
@@ -411,6 +414,7 @@
     outline: none;
     border: none;
     padding: 40px 0px;
+    background:white;
     padding-bottom: 140px;
   }
   .brands .row {
@@ -552,8 +556,43 @@
 
   .whiteBG {
     background: white;
+    background-image: url("/img/tilev1-invert.png");
+    background-position: center;
+    background-attachment:fixed;
+    background-size: 220px;
+    /* animation: breath 5s ease-in-out infinite; */
+    position:relative;
+    /* filter:invert(1); */
   }
  
+
+ .whiteBG::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            background-image: linear-gradient(to right, green, #22d8d8, purple, #d624a6, #f7a140, green);
+            background-size: 600%;
+            animation: color_scroll 20s linear infinite;
+            margin-left:-10vw;
+        }
+
+   .whiteBG::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+           background:white;
+            background-size: 600%;
+            animation: breath 5s ease-in-out infinite;
+            /* filter: blur(8px); */
+            margin-left:-10vw;
+
+        }
 
   .cta h5 {
     font-size: 3vw;
@@ -676,7 +715,8 @@
 <svelte:head>
   <title>Get Started | goHere</title>
 </svelte:head>
-<div class="background">
+<TransitionWrapper>
+<div class="background" style="margin-top:-120px;">
   
   <section class="hero">
     <img class="planet" src="img/space/planet1-min.png" alt="" />
@@ -715,7 +755,7 @@
   </p> -->
   </section>
 
-  <section class="brands whiteBG">
+  <section class="brands">
     <div class="row">
       {#each brands as brand, i}
         {#if i % 2 != 1}
@@ -793,7 +833,7 @@
             <p>Thank You!</p>
             <h3 class="colorDynamic" style="margin:0;">{form.name}</h3>
 
-            <button>Send It</button>
+            <button class="button">Send It</button>
           </div>
         </form>
       </div>
@@ -810,3 +850,4 @@
     <h2>305.999.5595</h2>
   </section>
 </div>
+</TransitionWrapper>

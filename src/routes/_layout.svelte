@@ -2,6 +2,7 @@
 	import Nav from '../components/Nav.svelte';
 	import Audio from '../components/Audio.svelte'
 	import Scrollbar from '../components/Scrollbar.svelte'
+	import Loader from '../components/Loader.svelte'
 	export let segment;
 	
 
@@ -12,9 +13,11 @@
 		position:relative;
 	}
 </style>
+<Loader>
 <Nav {segment}/>
 <main>
 	<slot></slot>
 </main>
 <Audio/>
 <Scrollbar/>
+</Loader>

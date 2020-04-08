@@ -4,6 +4,7 @@
   import Section from "./../components/Section.svelte";
   import Hero from "./../components/Hero.svelte";
   import Nav from '../components/Nav.svelte';
+  import TransitionWrapper from '../components/TransitionWrapper.svelte';
   import Index from "./../components/space.js";
   import { onMount, onDestroy } from "svelte";
   export let phase = 0;
@@ -26,7 +27,6 @@
   });
   onDestroy(()=>{
     phase = 0;
-    console.log('check');
   });
   function fadeScroll() {
     //Get percent scrolled
@@ -154,6 +154,7 @@
       <div class="line3" />
     </div>
 </nav>
+<TransitionWrapper>
     <canvas id="canvas" />
 <div class="frame_track">
   
@@ -248,3 +249,4 @@
     {/if}
   {/each}
 </div>
+</TransitionWrapper>

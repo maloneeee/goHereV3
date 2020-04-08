@@ -5,6 +5,7 @@
   import Hero from "./../components/Hero.svelte";
   import CTA from "./../components/CTA.svelte";
   import Portfolio from "./../components/Portfolio.svelte";
+  import TransitionWrapper from "./../components/TransitionWrapper.svelte";
   let active = 0;
   $: console.log(active);
 
@@ -21,6 +22,7 @@
 <svelte:head>
   <title>{work.title}</title>
 </svelte:head>
+<TransitionWrapper>
 <Hero heading={work.h1} headingSub={work.h1Sub}/>
 
 {#each work.section as section}
@@ -37,3 +39,4 @@
 </section>
 
 <CTA />
+</TransitionWrapper>

@@ -5,12 +5,12 @@
 ## TODO
 
 -   [ ]  Add phone number to contact page
--   [ ]  Add load screen
--   [ ]  Add animation
+-   [x]  Add load screen
+-   [x]  Add animation
 -   [ ]  Fix Main form
 -   [x]  Build Navbar
 -   [ ] Flesh out Hero
--   [ ]  Adjust Who page
+-   [ ] Fix Jacks picture
 -   [x] Build Index
 -   [ ] Integrate SEO meta tags
 -   [x] Build Out Work section
@@ -42,6 +42,10 @@
 ## Changelog
 
 ```
+v0.9.6
+- Loading Transitions
+- Updated Get Started page
+- Bug fixes
 v0.9.5
 - Mobile Fixes
 v0.9.4

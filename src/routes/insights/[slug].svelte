@@ -16,6 +16,7 @@
 </script>
 
 <script>
+  import TransitionWrapper from "./../../components/TransitionWrapper.svelte";
   export let pagedata;
   let date = pagedata.published_at;
   let formatedDate;
@@ -138,6 +139,7 @@
 <svelte:head>
   <title>{pagedata.title} | goHere Insights</title>
 </svelte:head>
+<TransitionWrapper>
 <div class="wrapper">
   <div class="inner">
     <div class="head">
@@ -174,3 +176,4 @@
     </div>
   </div>
 </div>
+</TransitionWrapper>
