@@ -81,6 +81,7 @@
             }
         .emp_holder{
             flex-direction:column;
+            align-items:center;
         }
         h2{
             font-size:6rem;

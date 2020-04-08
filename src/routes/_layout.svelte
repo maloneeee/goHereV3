@@ -1,6 +1,7 @@
 <script>
 	import Nav from '../components/Nav.svelte';
 	import Audio from '../components/Audio.svelte'
+	import Scrollbar from '../components/Scrollbar.svelte'
 	export let segment;
 	
 
@@ -16,3 +17,4 @@
 	<slot></slot>
 </main>
 <Audio/>
+<Scrollbar/>
