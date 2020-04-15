@@ -33,6 +33,13 @@
      -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   }
+   @media (max-width:1068px) {
+     .pause{margin:20px;}
+     i{
+       font-size:3rem;
+       }
+       
+   }
 </style>
 
 <div class="pause" on:click="{toggleAudio}">
