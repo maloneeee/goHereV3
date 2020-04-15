@@ -15,11 +15,11 @@
         right:0;
         bottom:0;
         z-index: 9999999999999999999999999999;
-        background:white;
+        background:black;
         background-image:url('/img/gif/loading2.gif');
         background-size:cover;
         background-position:center;
-        animation: color_rotate 10s infinite;
+        animation: color_rotate_invert 2s infinite;
     }
 </style>
 

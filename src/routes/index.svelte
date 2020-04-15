@@ -92,11 +92,12 @@
     margin-top: 0;
     margin-bottom: -65px;
   }
-  .left {
+  .container.left {
     align-items: flex-start;
-    padding-right: 50vw;
-    max-width: 90%;
+   min-width:800px;
+    max-width: 45%;
   }
+
   .left h2 {
     text-align: left;
     margin-left: 0;
@@ -115,11 +116,22 @@
     /* height:100vh; */
     width:100vw;
   }
+  .clear_inner.left{
+    justify-content:flex-start;
+    padding-left:10vw;
+  }
 
   @media (max-width:1068px) {
-            .left{
+            .container.left{
               padding-right:10vw;
+              min-width:0;
+              max-width:90%;
+              margin-left:0;
             }
+            .clear_inner.left{
+    justify-content:center;
+    padding-left:0;
+  }
         }
 
   @keyframes rotate{
@@ -154,8 +166,8 @@
       <div class="line3" />
     </div>
 </nav>
-<TransitionWrapper>
     <canvas id="canvas" />
+<TransitionWrapper>
 <div class="frame_track">
   
   <div class="frame">
@@ -173,7 +185,9 @@
             <div
               class:clear_inner={section.clear}
               class:section_inner={!section.clear}
-              class:invert={section.invert}>
+              class:invert={section.invert}
+              class:left={section.left}>
+              
               <div
                 class="container"
                 class:inner={!section.clear}
@@ -217,7 +231,8 @@
         class:border_color={!section.clear}
         class:clear={section.clear}
         class:invert={section.invert}
-        class:bottom={section.bottom}>
+        class:bottom={section.bottom}
+        class:left={section.left}>
         <div
           class:clear_inner={section.clear}
           class:section_inner={!section.clear}

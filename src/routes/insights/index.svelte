@@ -22,6 +22,12 @@
     .post_holder{
         display:flex;
     }
+
+    @media (max-width:1068px) {
+      .post_holder{
+        flex-wrap: wrap;
+      }
+    }
 </style>
 <svelte:head>
   <title>{insights.title}</title>

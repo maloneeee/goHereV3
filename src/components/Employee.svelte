@@ -105,6 +105,9 @@
         order:-1;
         margin-right:0px;
     }
+    .flipped .backNeb{
+        margin-right:0;
+    }
     }
 
 </style>

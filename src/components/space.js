@@ -3,7 +3,6 @@ import * as THREE from 'three';
 export let loaded = false;
 export default class Index {
     constructor() {
-        
         let camera,
             scene = new THREE.Scene(),
             renderer,
@@ -15,19 +14,19 @@ export default class Index {
             sun: new THREE.Vector3(2340, 0, 1320),
             main: new THREE.Vector3(-5, 0, 600),
             sec: new THREE.Vector3(100, 0, -600),
-            third: new THREE.Vector3(38, 0, 0)
+            third: new THREE.Vector3(38, 0, 0),
         };
         let mid = {
             camera: new THREE.Vector3(265, 40, -470),
             mainPivot: 0,
             secPivot: -0.1 * Math.PI,
-            thirdPivot: 1.7 * Math.PI
+            thirdPivot: 1.7 * Math.PI,
         };
         let end = {
             camera: new THREE.Vector3(274.2, 29.65, -520),
             mainPivot: 0,
             secPivot: -0.12 * Math.PI,
-            thirdPivot: 3.1 * Math.PI
+            thirdPivot: 3.1 * Math.PI,
         };
         let planets = [];
         let lights = [];
@@ -37,21 +36,21 @@ export default class Index {
         let cloudPos = {
             start: new THREE.Vector3(90, -10, 700),
             mid: new THREE.Vector3(130, 25, 220),
-            end: new THREE.Vector3(280, 30, -700)
+            end: new THREE.Vector3(280, 30, -700),
         };
         let colors = {
             orange: new THREE.Color('hsl(32, 85%, 44%)'),
             blue: new THREE.Color('hsl(186, 85%, 44%)'),
-            purple: new THREE.Color('hsl(308, 85%, 44%)')
+            purple: new THREE.Color('hsl(308, 85%, 44%)'),
         };
         let uniforms;
         let clock = new THREE.Clock(),
             phase = 0,
             delta;
         let fileArray = [
-            { name: 'earth', url: 'tex1.jpg' },
-            { name: 'moon', url: 'tex2.jpg' },
-            { name: 'planet', url: 'GAS3-ns.png' }
+            { name: 'earth', url: 'plt1.png' },
+            { name: 'moon', url: 'planet1.png' },
+            { name: 'planet', url: 'GAS3-ns.png' },
         ];
         let promiseArray = [],
             texturePromiseArray = [],
@@ -93,13 +92,13 @@ export default class Index {
         function init() {
             uniforms = {
                 iTime: { value: 0 },
-                iResolution: { value: new THREE.Vector2() }
+                iResolution: { value: new THREE.Vector2() },
             };
             canvas = document.getElementById('canvas');
             renderer = new THREE.WebGLRenderer({
                 canvas: canvas,
                 antialias: true,
-                alpha: true
+                alpha: true,
             });
             renderer.setPixelRatio(window.divicePixelRatio);
             renderer.setSize(window.innerWidth, window.innerHeight);
@@ -126,12 +125,12 @@ export default class Index {
                 planet.obj.rotation.y +=
                     ((delta / 10) * (i - 0.5) * 20 * Math.PI) / 180;
             });
-            clouds.forEach(p => {
+            clouds.forEach((p) => {
                 p.rotation.z -= 0.001;
             });
             let sin = Math.sin(clock.elapsedTime / 1000);
 
-            lights.forEach(p => {
+            lights.forEach((p) => {
                 p.color.offsetHSL(delta / 3, delta, 0);
             });
 
@@ -142,11 +141,11 @@ export default class Index {
             requestAnimationFrame(render);
         }
         function createClouds(pos, num, x, y, z) {
-            loader.load('img/smoke-1.png', texture => {
+            loader.load('img/smoke-1.png', (texture) => {
                 const geo = new THREE.PlaneBufferGeometry(80, 80);
                 const mat = new THREE.MeshLambertMaterial({
                     map: texture,
-                    transparent: true
+                    transparent: true,
                 });
                 for (let p = 0; p < num; p++) {
                     const cloud = new THREE.Mesh(geo, mat);
@@ -169,7 +168,7 @@ export default class Index {
                 let params = {
                     intensity: 10,
                     distance: 200,
-                    falloff: 9
+                    falloff: 9,
                 };
                 const light = new THREE.PointLight(
                     color,
@@ -187,13 +186,13 @@ export default class Index {
             }
         }
         function loadTextures(callback) {
-            fileArray.forEach(function(fileOBJ) {
+            fileArray.forEach(function (fileOBJ) {
                 texturePromiseArray.push(
-                    new Promise(function(resolve, reject) {
+                    new Promise(function (resolve, reject) {
                         loader.load(
                             path + fileOBJ.url,
 
-                            function(texture) {
+                            function (texture) {
                                 texturesArray.push(texture);
                                 var modelOBJ = new Object();
 
@@ -206,13 +205,13 @@ export default class Index {
                                     resolve(modelOBJ);
                             },
 
-                            function(xhr) {
+                            function (xhr) {
                                 console.log(
                                     (xhr.loaded / xhr.total) * 100 + '% loaded'
                                 );
                             },
 
-                            function(xhr) {
+                            function (xhr) {
                                 reject(
                                     new Error(
                                         xhr +
@@ -226,7 +225,7 @@ export default class Index {
                 );
             });
 
-            Promise.all(texturePromiseArray).then(function(textures) {
+            Promise.all(texturePromiseArray).then(function (textures) {
                 generateSpace();
                 if (
                     callback &&
@@ -276,7 +275,7 @@ export default class Index {
         function genSun() {
             let sunMat = new THREE.MeshStandardMaterial({
                 emissiveIntensity: 1,
-                emissive: 0xf5e6f0 // darkgrey
+                emissive: 0xf5e6f0, // darkgrey
             });
             let sunGeo = new THREE.IcosahedronGeometry(0.2, 6);
             let sun = new THREE.PointLight(0xeee4f5, 1.1, 15000000, 0.01);
@@ -285,7 +284,7 @@ export default class Index {
             sun.position.set(start.sun.x, start.sun.y, start.sun.z);
             planets.push({
                 name: 'sun',
-                obj: sun
+                obj: sun,
             });
         }
         function createPlanet(
@@ -303,7 +302,7 @@ export default class Index {
                 map: texture,
                 // color:0xeee4f5,
                 metalness: 0.1,
-                roughness: 0.5
+                roughness: 0.5,
             });
             let planetGeo = new THREE.SphereGeometry(size, detail, detail);
             let planet = new THREE.Mesh(planetGeo, planetMat);
@@ -315,15 +314,15 @@ export default class Index {
             empty.position.set(position.x, position.y, position.z);
             planets.push({
                 name: name,
-                obj: planet
+                obj: planet,
             });
             pivots.push({
                 name: name + 'Pivot',
-                obj: pivot
+                obj: pivot,
             });
             empties.push({
                 name: name + 'Empty',
-                obj: empty
+                obj: empty,
             });
             if (name == 'secondary') {
                 var rings = [
@@ -332,7 +331,7 @@ export default class Index {
                     createRing(36, 0.3, -2),
                     createRing(43, 3.1, -3),
                     createRing(48, 0.4, 1),
-                    createRing(43, 0.4, 1)
+                    createRing(43, 0.4, 1),
                 ];
             }
         }
@@ -340,7 +339,7 @@ export default class Index {
             let mat = new THREE.ShaderMaterial({
                 fragmentShader,
                 uniforms,
-                side: THREE.DoubleSide
+                side: THREE.DoubleSide,
             });
             let geo = new THREE.RingGeometry(innerW, innerW + width, 360);
             var ring = new THREE.Mesh(geo, mat);

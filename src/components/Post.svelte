@@ -30,6 +30,12 @@
         background-position:center;
         background-size:cover;
     }
+
+    @media (max-width:1068px) {
+        .article{
+            width:100%;
+        }
+    }
 </style>
 
     <div class="article">    

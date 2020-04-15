@@ -42,6 +42,8 @@
 ## Changelog
 
 ```
+v0.9.61
+- Bug fixes
 v0.9.6
 - Loading Transitions
 - Updated Get Started page

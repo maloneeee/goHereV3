@@ -18,6 +18,6 @@
 <main>
 	<slot></slot>
 </main>
-<Audio/>
 <Scrollbar/>
 </Loader>
+<Audio/>
