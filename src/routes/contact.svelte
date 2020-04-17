@@ -2,7 +2,7 @@
   import Hero from './../components/Hero.svelte'
   import {contact} from './../stores/content.js'
   import Section from './../components/Section.svelte'
-  import Main from './../components/forms/Main.svelte'
+  import New from './../components/forms/New.svelte'
   import TransitionWrapper from './../components/TransitionWrapper.svelte'
 </script>
 
@@ -15,6 +15,6 @@
 {#each contact.section as section}
 <Section {...section}/>
 {/each}
-<Main/>
+<New/>
 </TransitionWrapper>
 

@@ -8,6 +8,7 @@
   export let bottom;
   export let clear;
   export let left;
+  import CallButton from './CallButton.svelte'
 </script>
 
 <style>
@@ -56,7 +57,11 @@
       {@html p}
     </p>
     {#if button != ''}
-    <a class="button" href={buttonHref}>{button}</a>
+      {#if button == 'phone'}
+        <CallButton/>
+      {:else}
+      <a class="button" href={buttonHref}>{button}</a>
+      {/if}
     {/if}
   </div>
   </div>

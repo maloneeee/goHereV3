@@ -16,7 +16,8 @@
   .box {
     position: relative;
     height: 650px;
-    background: #131414;
+    background: linear-gradient(322.77deg, #000000 0%, rgba(0, 0, 0, 0.33) 100%);;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +25,7 @@
     transition: 0.5s;
   }
 
+  /* 
   .box::before {
     content: "";
     position: absolute;
@@ -43,7 +45,7 @@
     z-index: -1;
     transform: skew(1deg, 1deg);
     background-size: 600%;
-    animation: colorScroll 20s linear infinite;
+    animation: color_scroll 20s linear infinite;
     transition: 0.3s;
   }
   .box:hover::before {
@@ -51,7 +53,7 @@
     left: -5px;
     right: -5px;
     bottom: -5px;
-    /* transform: skew(2deg, 2deg); */
+     transform: skew(2deg, 2deg); 
   }
   .box:nth-child(2):before {
     background-image: linear-gradient(
@@ -85,7 +87,8 @@
       green,
       #22d8d8
     );
-  }
+  } 
+  */
   .content {
     position: relative;
     padding: 40px;

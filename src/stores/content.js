@@ -1,4 +1,7 @@
 import { writable } from 'svelte/store';
+export const global = {
+    phone: '305.999.5595'
+}
 export const home = {
            title: 'goHere - Creative Solutions',
            metaDesc: 'This is the description',
@@ -102,7 +105,7 @@ export const contact = {
                    p:
                        'We tackle projects of all types and work with organizations across all industries. Discover the power of creative tech solutions for any project you might have.',
                    sub: 'lets go!',
-                   button: '305.999.5595',
+                   button: 'phone',
                    buttonHref: 'tel:309.999.5595'
                }
            ]

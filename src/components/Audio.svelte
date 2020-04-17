@@ -8,7 +8,7 @@
   });
   sound.play();
   Howler.volume(0.0);
-  let audio = false;
+  let audio = true;
 
 	function toggleAudio(){
         audio = !audio;
