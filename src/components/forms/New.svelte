@@ -1,6 +1,7 @@
 <script>
     import { db } from "./../../firebase.js";
     import {global} from './../../stores/content.js'
+    import {fade} from 'svelte/transition';
     let form = {
     name: "",
     email: "",
@@ -22,6 +23,7 @@
     try {
       await db.collection("leads").add(form);
       sent = true;
+      zoom = true;
     } catch (e) {
       console.log(";(", e);
       console.log("Big Error: " + e);
@@ -34,22 +36,22 @@
 <section class="form">
 <div class="form_holder">
     {#if sent == false}
-    <form action="" on:submit|preventDefault={sendContactMessage}>
+    <form action="" on:submit|preventDefault={sendContactMessage} out:fade='{{delay: 0, duration: 500}}'>
         <div class="form_body">
             <h3>Get A Quote</h3>
-            <input type="text" bind:value={form.name} placeholder="Full Name" />
-            <input type="text" bind:value={form.email} placeholder="Email Address" />
-            <input type="text" bind:value={form.phone} placeholder="Phone Number" />
-            <input type="text" bind:value={form.project} placeholder="Type of Project" />
+            <input type="text" bind:value={form.name} class:filled={form.name.length > 2}  placeholder="Full Name" />
+            <input type="text" bind:value={form.website} class:filled={form.website.length > 6} placeholder="Website" />
+            <input type="text" bind:value={form.phone} class:filled={form.phone.length > 10} placeholder="Phone Number" />
+            <input type="text" bind:value={form.project} class:filled={form.project.length > 4} placeholder="Type of Project" />
             <button on:click={sendContactMessage} on:mouseenter={zoomIn} on:mouseleave={zoomOut}>Submit</button>
         </div>
     </form>
     {:else}
-        <div class="form_confirmation">
+        <div class="form_confirmation" in:fade='{{delay: 500, duration: 500}}'>
             <h4>Looks Great, {form.name}</h4>
             <p>Our team will review your website, <span>{form.website}</span></p>
             <p>After we assess your needs one of our brand ambassadors will be in contact with you.</p>
-            <h5>Thank you,</h5>
+            <h5 class="thanks">Thank you,</h5>
             <h5 class="gohere">goHere</h5>
 
             <h6>If you have any questions or need immediate assistance please call us at <a href="tel:{global.phone}">{global.phone}</a></h6>
