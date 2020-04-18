@@ -4,7 +4,6 @@
     import {fade} from 'svelte/transition';
     let form = {
     name: "",
-    email: "",
     project:'',
     phone: "",
     website: ""
@@ -12,6 +11,7 @@
   let error = false;
   let sent = false;
   let zoom=false;
+  let err = '';
 
   function zoomIn(){
     zoom=true;
@@ -21,12 +21,15 @@
   }
   async function sendContactMessage() {
     try {
+        console.log(form);
+        
       await db.collection("leads").add(form);
       sent = true;
       zoom = true;
     } catch (e) {
       console.log(";(", e);
       console.log("Big Error: " + e);
+      error = e;
       error = true;
     }
   }
@@ -43,13 +46,14 @@
             <input type="text" bind:value={form.website} class:filled={form.website.length > 6} placeholder="Website" />
             <input type="text" bind:value={form.phone} class:filled={form.phone.length > 10} placeholder="Phone Number" />
             <input type="text" bind:value={form.project} class:filled={form.project.length > 4} placeholder="Type of Project" />
+            <h6>{err}</h6>
             <button on:click={sendContactMessage} on:mouseenter={zoomIn} on:mouseleave={zoomOut}>Submit</button>
         </div>
     </form>
     {:else}
         <div class="form_confirmation" in:fade='{{delay: 500, duration: 500}}'>
             <h4>Looks Great, {form.name}</h4>
-            <p>Our team will review your website, <span>{form.website}</span></p>
+            <p>Our team will review your website, <a href="{form.website}">{form.website}</a></p>
             <p>After we assess your needs one of our brand ambassadors will be in contact with you.</p>
             <h5 class="thanks">Thank you,</h5>
             <h5 class="gohere">goHere</h5>
