@@ -42,6 +42,10 @@
 ## Changelog
 
 ```
+v0.9.75
+- Updated client page
+- Bug fixes
+- Updated form
 v0.9.7
 - New Form
 - Bug Fixes

@@ -12,11 +12,12 @@ const clients = [
             'UI/UX',
             'SEO',
             'Branding',
-            'Marketing'
+            'Marketing',
         ],
         year: '2019',
         url: 'https://thehofp.org',
-        img: '/img/clients/hofp.png'
+        img: '/img/clients/hofp.png',
+        gif: 'gif/hofp.gif',
     },
     {
         slug: 'barnes',
@@ -30,11 +31,12 @@ const clients = [
             'SEO',
             'Branding',
             'Creative Direction',
-            'Marketing'
+            'Marketing',
         ],
         year: '2019',
         url: 'https://barneshb.com',
-        img: '/img/clients/plm.png'
+        img: '/img/clients/plm.png',
+        gif: '/gif/barnes.gif',
     },
     {
         slug: 'plm',
@@ -48,11 +50,12 @@ const clients = [
             'Branding',
             'SEO',
             'Marketing',
-            'Creative Direction'
+            'Creative Direction',
         ],
         year: '2019',
         url: 'https://plmpaving.com',
-        img: '/img/clients/plm.png'
+        img: '/img/clients/plm.png',
+        gif: '/gif/plm.gif',
     },
     {
         slug: 'major-goolsbys',
@@ -63,7 +66,8 @@ const clients = [
         services: ['UX', 'Visual Design', 'Branding', 'Creative Direction'],
         year: '2018',
         url: 'https://majorgoolsbys.com',
-        img: '/img/clients/majors.png'
+        img: '/img/clients/majors.png',
+        gif: '/gif/major.gif',
     },
     {
         slug: 'divine-chiro',
@@ -74,7 +78,8 @@ const clients = [
         services: ['UX', 'Visual Design', 'Branding', 'Creative Direction'],
         year: '2018',
         url: 'https://divinechiro.com',
-        img: '/img/clients/divine.png'
+        img: '/img/clients/divine.png',
+        gif: '/gif/divine.gif',
     },
     {
         slug: 'tristar-wellness',
@@ -85,7 +90,8 @@ const clients = [
         services: ['UX', 'Visual Design', 'Branding', 'Creative Direction'],
         year: '2018',
         url: 'https://tristarwell.com',
-        img: '/img/clients/divine.png'
+        img: '/img/clients/divine.png',
+        gif: '/gif/tristar.gif',
     },
     {
         slug: 'alexanders',
@@ -96,7 +102,7 @@ const clients = [
         services: ['UX', 'Visual Design', 'Branding', 'Creative Direction'],
         year: '2019',
         url: 'https://alexandersofdoorcounty.com',
-        img: '/img/clients/alex.png'
+        img: '/img/clients/alex.png',
     },
     {
         slug: 'bosman-chiro',
@@ -108,7 +114,7 @@ const clients = [
         services: ['UX', 'Visual Design', 'Branding', 'Creative Direction'],
         year: '2018',
         url: 'https://www.bosmanchiropractic.com/',
-        img: '/img/clients/bosman.png'
+        img: '/img/clients/bosman.png',
     },
 
     {
@@ -120,8 +126,8 @@ const clients = [
         services: ['UX', 'Visual Design', 'Branding', 'Creative Direction'],
         year: '2018',
         url: 'https://michiganintegrativemedicine.com/',
-        img: '/img/clients/mim.png'
-    }
+        img: '/img/clients/mim.png',
+    },
 ];
 
 export default clients;

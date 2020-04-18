@@ -6,27 +6,52 @@
     export let year;
     export let url;
     // export let slug;
-    // export let img;
+    export let gif;
 
 </script>
 
 <style>
    
+    img{
+        max-height:900px;
+        max-width:25vw;
+        
+
+    }
+    .scroll_container{
+        position:sticky;
+        top:180px;
+        margin-top:48px;
+    }
+   .client_container{
+       display:flex;
+       margin-top:100px;
+       margin-bottom:100px;
+       position:relative;
+       
+   }
 </style>
 
-<!-- <div class="client_container">
-<div class="image_holder" style="background: url({img})">
-</div> -->
+<div class="client_container">
+    <div class="image_holder" > 
+        <div class="scroll_container">
+            {#if gif != undefined}
+                <img src="{gif}" alt="goHere" />
+            {/if}
+            <h3 style="text-align:left;margin-top:20px;margin-bottom:5px;">Services Rendered:</h3>
+            <ul>
+                {#each services as service}
+                    <li>{service}</li>
+                {/each}
+            </ul>
+        </div>
+    </div>
 <div class="client_holder">
 
-    <h2 class="colorDynamic" data-glow="{name}">{name}</h2>
+    <h2 class="colorDynamic" data-glow="{name}" style="text-align:left;">{name}</h2>
     <h3>{year}</h3>
     <div class="desc">{@html desc}</div>
-    <ul>
-        {#each services as service}
-        <li>{service}</li>
-        {/each}
-    </ul>
+    
     <a class="button" href="{url}">View Website</a>
 </div>
-<!-- </div> -->
+</div>

@@ -59,7 +59,7 @@
     {/if}
 </div>
 <div class="form_window">
-    <img src="img/astro.png" alt="goHere" id="astro" class:zoom class="colorRotate">
+    <img src="img/astro.png" alt="goHere" id="astro" class:zoom >
     <img src="img/space/planet1-min.png" alt="goHere" id="planet" class:zoom>
 </div>
 </section>
