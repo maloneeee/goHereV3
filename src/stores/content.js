@@ -5,44 +5,46 @@ export const global = {
 export const home = {
            title: 'goHere - Creative Solutions',
            metaDesc: 'This is the description',
-           h1: 'Creative',
-           h1Sub: 'Solutions',
+           h1: "Let's Get",
+           h1Sub: 'Creative',
            sections: [
                {
-                   title: 'What Are Creative Solutions?',
+                   title: 'High Tech, Engineered Solutions',
                    p:
-                       'We develop customized, technology-based strategies to help you solve problems, optimize growth, and reach your unique goals.',
-                   sub: 'masterminds',
-                   button: 'Learn More',
-                   buttonHref: '/what'
+                       'We engineer web based business solutions. You know your industry, is it your job to know every piece of technology?',
+                   sub: 'inciting inspiration',
+
+                   button: 'who we are',
+                   buttonHref: '/who',
                },
+
                {
-                   title: 'Creative Solutions<br>Are Our Business.',
+                   title: 'Experts Helping Experts.',
                    p:
-                       'Give your brand the look and feel of excellence to spark powerful outcomes. Our stunning designs and tailored content will open up a world of opportunities for you and your business.',
-                   sub: '',
+                       'We are thinkers and creators operating with a solution-oriented mindset, a spirit of excellence, and an emphasis on adding value--we place no limits on what we can do!',
                    button: '',
+                   sub: '',
                    buttonHref: '',
                    clear: true,
-                   left:true
+                   left: true,
                },
                {
-                   title: 'Be Exceptional.',
+                   title: 'Who We Are',
                    p:
-                       'At goHere, we have built a community where creative minds flourish, a spirit of excellence is embraced, and adding value is a way of life. Helping you create is what we love to do.',
-                   sub: 'inciting inspiration',
-                   button: 'who we are',
-                   buttonHref: '/who'
+                       'We are a group of innovative consultants and creators. Engineering custom business solutions to maximize your impact, optimize sales, spark prosperity, and bring you peace of mind <b>is what we love to do.</b>',
+                   sub: 'masterminds',
+                   button: 'Learn More',
+                   buttonHref: '/what',
                },
                {
-                   title: 'Join Us At<br>The Cutting Edge.',
-                   p: '',
+                   title: 'Ideas Are Currency',
+                   p: 'And we are the fucking Federal Reserve',
                    sub: 'be creative',
                    button: "let's go",
                    buttonHref: '/get-started',
-                   clear: true
-               }
-           ]
+                   clear: true,
+               },
+           ],
        };
 export const who = {
            title: 'goHere - Creative Solutions',
