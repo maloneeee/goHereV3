@@ -37,9 +37,9 @@
     var y = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100; //0 to 100
     if (y < 3) {
       phase = 0;
-    } else if (y > 40 && y < 60) {
+    } else if (y > 40 && y < 52) {
       phase = 1;
-    } else if (y > 95) {
+    } else if (y > 97) {
       phase = 3;
     } else {
       phase = 0;
@@ -71,10 +71,12 @@
   }
   .fixed_section {
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     right: 0;
+    bottom:0px;
     z-index: 4;
+    padding-top:120px;
   }
   .bottom {
     margin-bottom: -80px;
@@ -90,7 +92,7 @@
 
   .clear a {
     margin-top: 0;
-    margin-bottom: -65px;
+    margin-bottom: -10px;
   }
   .container.left {
     align-items: flex-start;

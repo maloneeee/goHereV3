@@ -10,7 +10,7 @@ export default class Index {
         let loader = new THREE.TextureLoader();
 
         let start = {
-            camera: new THREE.Vector3(70, 15, 800),
+            camera: new THREE.Vector3(70, 10, 870),
             sun: new THREE.Vector3(2340, 0, 1320),
             main: new THREE.Vector3(-5, 0, 600),
             sec: new THREE.Vector3(100, 0, -600),
@@ -23,7 +23,7 @@ export default class Index {
             thirdPivot: 1.7 * Math.PI,
         };
         let end = {
-            camera: new THREE.Vector3(274.2, 29.65, -520),
+            camera: new THREE.Vector3(274.2, 29.66, -520),
             mainPivot: 0,
             secPivot: -0.12 * Math.PI,
             thirdPivot: 3.1 * Math.PI,
@@ -48,9 +48,9 @@ export default class Index {
             phase = 0,
             delta;
         let fileArray = [
-            { name: 'earth', url: 'plt1.png' },
-            { name: 'moon', url: 'planet1.png' },
-            { name: 'planet', url: 'GAS3-ns.png' },
+            { name: 'earth', url: 'GAS2-ns.png' },
+            { name: 'moon', url: 'GAS1-ns.png' },
+            { name: 'planet', url: 'GAS2-old.png' },
         ];
         let promiseArray = [],
             texturePromiseArray = [],

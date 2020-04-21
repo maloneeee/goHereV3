@@ -9,19 +9,19 @@ export const home = {
            h1Sub: 'Creative',
            sections: [
                {
-                   title: 'High Tech, Engineered Solutions',
+                   title: 'Engineered Solutions. <br>Bottom Line.',
                    p:
-                       'We engineer web based business solutions. You know your industry, is it your job to know every piece of technology?',
+                       'You know your industry; is it your job to know every piece of technology? We engineer web-based business solutions.',
                    sub: 'inciting inspiration',
 
-                   button: 'who we are',
-                   buttonHref: '/who',
+                   button: 'what we do',
+                   buttonHref: '/what',
                },
 
                {
-                   title: 'Experts Helping Experts.',
+                   title: 'Merging Tech with Public Relations',
                    p:
-                       'We are thinkers and creators operating with a solution-oriented mindset, a spirit of excellence, and an emphasis on adding value--we place no limits on what we can do!',
+                       'You understand the need to fuse strategic communications with public relation technology. Our solutions will strengthen your reputation, demonstrate thought leadership and establish market position to take on your competitors.',
                    button: '',
                    sub: '',
                    buttonHref: '',
@@ -29,18 +29,18 @@ export const home = {
                    left: true,
                },
                {
-                   title: 'Who We Are',
+                   title: 'We Can Help You',
                    p:
-                       'We are a group of innovative consultants and creators. Engineering custom business solutions to maximize your impact, optimize sales, spark prosperity, and bring you peace of mind <b>is what we love to do.</b>',
+                       "You're looking for something <b>authentic</b>. <b>We love to create</b> business solutions engineered to bring you <b>peace of mind.</b>",
                    sub: 'masterminds',
-                   button: 'Learn More',
-                   buttonHref: '/what',
+                   button: 'Who We Are',
+                   buttonHref: '/who',
                },
                {
-                   title: 'Ideas Are Currency',
-                   p: 'And we are the fucking Federal Reserve',
+                   title: 'Ideas Are <br>Our Currency',
+                   p: '',
                    sub: 'be creative',
-                   button: "let's go",
+                   button: 'Welcome to the Federal Reserve',
                    buttonHref: '/get-started',
                    clear: true,
                },
@@ -49,19 +49,19 @@ export const home = {
 export const who = {
            title: 'goHere - Creative Solutions',
            metaDesc: 'This is the description',
-           h1: 'Trailblazers',
-           h1Sub: 'of Tech',
+           h1: 'Creative',
+           h1Sub: 'Envisioneers',
            section: [
                {
-                   title: 'Envisioneers.',
+                   title: 'Creative Envisioneers.',
                    p:
-                       'We combine technology, design, and communication to create engineered outcomes. Join us at the cutting edge.',
+                       'When beauty, functionality, and originality are bridged with human emotions, impactful impressions are made, and exciting opportunities are brought within reach.',
                    sub: 'nerd alert',
                    button: "Let's get started",
                    buttonHref: '/get-started',
-                   invert: true
-               }
-           ]
+                   invert: true,
+               },
+           ],
        };
 export const what = {
            title: 'goHere - Creative Solutions',
@@ -72,7 +72,7 @@ export const what = {
                {
                    title: 'Sharpening The<br>Cutting Edge.',
                    p:
-                       'Create engaging experiences, designed for connection. Engineer outcomes, designed for growth. Discover solutions, designed for the future.',
+                       'In a field of rapid innovation, sustainability is a luxury, and versatility is essential. We’re not in the business of putting square pegs into round holes, we’re in the business of custom fitting holes of every kind with meticulously calculated and beautifully designed pegs.',
                    sub: 'masterminds',
                    button: '',
                    buttonHref: ''
@@ -108,9 +108,9 @@ export const contact = {
                        'We tackle projects of all types and work with organizations across all industries. Discover the power of creative tech solutions for any project you might have.',
                    sub: 'lets go!',
                    button: 'phone',
-                   buttonHref: 'tel:309.999.5595'
-               }
-           ]
+                   buttonHref: 'tel:309.999.5595',
+               },
+           ],
        };
 export const insights = {
            title: 'goHere - Creative Solutions',
