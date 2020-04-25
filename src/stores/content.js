@@ -53,9 +53,9 @@ export const who = {
            h1Sub: 'Envisioneers',
            section: [
                {
-                   title: 'Creative Envisioneers.',
+                   title: 'Engineering Success.',
                    p:
-                       'When beauty, functionality, and originality are bridged with human emotions, impactful impressions are made, and exciting opportunities are brought within reach.',
+                       'We bridge human emotions with beauty, functionality and orginality. This creates impactful impressions and exciting opportunities are brought within reach.',
                    sub: 'nerd alert',
                    button: "Let's get started",
                    buttonHref: '/get-started',
@@ -72,7 +72,7 @@ export const what = {
                {
                    title: 'Sharpening The<br>Cutting Edge.',
                    p:
-                       'In a field of rapid innovation, sustainability is a luxury, and versatility is essential. We’re not in the business of putting square pegs into round holes, we’re in the business of custom fitting holes of every kind with meticulously calculated and beautifully designed pegs.',
+                       "Constantly shifting: in a field of rapid innovation, sustainability is a luxury, and versatility is essential. We're in the age of emergency solutions and goHere is cornering the market.",
                    sub: 'masterminds',
                    button: '',
                    buttonHref: ''

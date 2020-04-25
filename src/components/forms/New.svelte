@@ -5,6 +5,7 @@
     let form = {
     name: "",
     project:'',
+    email:'',
     phone: "",
     website: ""
   };
@@ -44,7 +45,8 @@
             <h3>Get A Quote</h3>
             <input type="text" bind:value={form.name} class:filled={form.name.length > 2}  placeholder="Full Name" />
             <input type="text" bind:value={form.website} class:filled={form.website.length > 6} placeholder="Website" />
-            <input type="text" bind:value={form.phone} class:filled={form.phone.length > 10} placeholder="Phone Number" />
+            <input type="text" bind:value={form.email} class:filled={form.email.length > 6} placeholder="Email Address" />
+            <input type="text" bind:value={form.phone} class:filled={form.phone.length >= 10} placeholder="Phone Number" />
             <input type="text" bind:value={form.project} class:filled={form.project.length > 4} placeholder="Type of Project" />
             <h6>{err}</h6>
             <button on:click={sendContactMessage} on:mouseenter={zoomIn} on:mouseleave={zoomOut}>Submit</button>
