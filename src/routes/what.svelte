@@ -3,7 +3,7 @@
   import { what } from "./../stores/content.js";
   import Hero from "./../components/Hero.svelte";
   import Main from "./../components/services/Main.svelte";
-  import CTA from "./../components/CTA.svelte";
+  
   import TransitionWrapper from "../components/TransitionWrapper.svelte";
   let y;
     import { onMount, onDestroy } from "svelte";
@@ -34,5 +34,5 @@
     <Section {...section} />
   {/each}
     <Main />
-  <CTA />
+  
 </TransitionWrapper>

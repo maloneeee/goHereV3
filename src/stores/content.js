@@ -11,7 +11,7 @@ export const home = {
                {
                    title: 'Engineered Solutions. <br>Bottom Line.',
                    p:
-                       'You know your industry; is it your job to know every piece of technology? We engineer web-based business solutions.',
+                       "You know your industry but it's not your job to know every piece of technology? We engineer digital business solutions.",
                    sub: 'inciting inspiration',
 
                    button: 'what we do',
@@ -19,9 +19,9 @@ export const home = {
                },
 
                {
-                   title: 'Merging Tech with Public Relations',
+                   title: '',
                    p:
-                       'You understand the need to fuse strategic communications with public relation technology. Our solutions will strengthen your reputation, demonstrate thought leadership and establish market position to take on your competitors.',
+                       'Our solutions will strengthen your reputation, demonstrate thought leadership and establish superior market position to take on your competitors.',
                    button: '',
                    sub: '',
                    buttonHref: '',

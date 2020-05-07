@@ -1,15 +1,19 @@
 <script>
   import { services } from "./../../stores/services.js";
   import { fade } from "svelte/transition";
+  import CTA from "./../../components/CTA.svelte";
   let show = true;
   let number = 0;
-  
+
+  let index;
+  let offset;
+  let progress;
 </script>
 
 <style>
   #rail {
     width: 100vw;
-    height: 400vh;
+    height: 480vh;
     position: relative;
   }
   .window {
@@ -67,7 +71,7 @@
 {#if show}
   <div id="rail" >
     {#each services as service, i}
-      <div class="window">
+      <div class="window" style="top:{150+((i)*30)}px; background-color:{service.color}">
         <div class="mainBox">
           <h4 class="number">
               {i + 1}
@@ -87,7 +91,7 @@
           </ul>
 
         </div>
-        <div class="blackBox">
+        <div class="blackBox" >
 
           <h4>
            
@@ -106,5 +110,8 @@
         </div>
       </div>
     {/each}
+    <div style='position: sticky;top: 0px;'>
+      <CTA />
+    </div>
   </div>
 {/if}

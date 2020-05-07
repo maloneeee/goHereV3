@@ -97,7 +97,7 @@
   .container.left {
     align-items: flex-start;
    min-width:800px;
-    max-width: 45%;
+    max-width: 65%;
   }
 
   .left h2 {
@@ -106,6 +106,7 @@
   }
   .left p {
     text-align: left;
+    font-size:3vw;
   }
 
   .frame_track{

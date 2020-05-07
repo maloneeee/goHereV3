@@ -103,6 +103,7 @@ const clients = [
         year: '2019',
         url: 'https://alexandersofdoorcounty.com',
         img: '/img/clients/alex.png',
+        gif:'/gif/alexanders.gif'
     },
     {
         slug: 'bosman-chiro',
@@ -115,6 +116,7 @@ const clients = [
         year: '2018',
         url: 'https://www.bosmanchiropractic.com/',
         img: '/img/clients/bosman.png',
+        gif:'/gif/bosman.gif'
     },
 
     {
@@ -127,6 +129,7 @@ const clients = [
         year: '2018',
         url: 'https://michiganintegrativemedicine.com/',
         img: '/img/clients/mim.png',
+        gif:'/gif/mim.gif'
     },
 ];
 
