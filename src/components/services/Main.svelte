@@ -26,7 +26,7 @@
     padding: 36px;
     background:rgba(0, 0, 0, 0.95);
     border-top: 10px white solid;
-    box-shadow: 0px -8px 16px rgba(255, 255, 255, 0.01), inset 0px 8px 16px rgba(255, 255, 255, 0.01);
+    box-shadow: 0px -8px 16px rgba(255, 255, 255, 0.1), inset 0px 8px 16px rgba(255, 255, 255, 0.1);
   }
 
   .mainBox {
