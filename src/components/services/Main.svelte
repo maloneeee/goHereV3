@@ -22,10 +22,11 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     padding: 36px;
     background:rgba(0, 0, 0, 0.95);
     border-top: 10px white solid;
+    box-shadow: 0px -8px 16px rgba(255, 255, 255, 0.01), inset 0px 8px 16px rgba(255, 255, 255, 0.01);
   }
 
   .mainBox {
@@ -37,6 +38,8 @@
     padding: 50px 75px;
    
     width: 600px;
+     /* box-shadow: 5px 10px #000000, inset -5px -10px #000000, inset 5px 10px white, -5px -10px white; */
+     /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px rgba(255, 255, 255, 0.1), inset -8px -8px 8px rgba(0, 0, 0, 0.1), inset 8px 8px 8px rgba(255, 255, 255, 0.1); */
   }
   li {
     padding-bottom: 15px;
@@ -104,9 +107,7 @@
           </p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            neque error est rem, quo nostrum culpa magnam qui voluptatem eius
-            eligendi aut unde possimus ipsum placeat ea quaerat! Inventore minus
-            cumque ullam consequatur distinctio incidunt ratione..
+            neque error est rem.
           </p>
         </div>
       </div>
