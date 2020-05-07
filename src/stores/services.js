@@ -13,7 +13,8 @@ export const services = [
                    'Scalable Systems',
                    'UI/UX Design',
                ],
-               color: 'linear-gradient(-4deg, rgba(2,0,36,1) 0%, rgba(80,9,121,1) 35%, rgba(205,54,166,1) 100%',
+               color:
+                   'linear-gradient(172deg, rgba(250,33,88,1) 0%, rgba(63,2,70,1) 100%)',
            },
            {
                name: 'Public Relations & Crisis Management',
@@ -28,7 +29,7 @@ export const services = [
                    'Cause Marketing',
                ],
                color:
-                   'linear-gradient(-4deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)',
+                   'linear-gradient(172deg, rgba(250,33,245,1) 0%, rgba(2,35,70,1) 100%)',
            },
            {
                name: 'Business Consulting',
@@ -43,7 +44,8 @@ export const services = [
                    'Enterprise Resource Planning',
                    'Application Integration',
                ],
-               color: 'rgba(143, 20, 65, 0.9)',
+               color:
+                   'linear-gradient(172deg, rgba(146,106,240,1) 0%, rgba(37,30,121,1) 100%)',
            },
            {
                name: 'Website Development/PPC/SEO',
@@ -59,7 +61,8 @@ export const services = [
                    'Full Content Strategy',
                    '2D and 3D Animation',
                ],
-               color: 'rgba(20, 143, 108, 0.9)',
+               color:
+                   'linear-gradient(172deg, rgba(106,172,240,1) 0%, rgba(48,30,121,1) 100%)',
            },
        ];
 

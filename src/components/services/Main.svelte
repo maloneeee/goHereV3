@@ -18,13 +18,14 @@
   }
   .window {
     position: sticky;
-    top: 150px;
+    top: 160px;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 36px;
     background:rgba(0, 0, 0, 0.95);
+    border-top: 10px white solid;
   }
 
   .mainBox {
@@ -34,7 +35,7 @@
   }
   .blackBox {
     padding: 50px 75px;
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+   
     width: 600px;
   }
   li {
@@ -71,7 +72,7 @@
 {#if show}
   <div id="rail" >
     {#each services as service, i}
-      <div class="window" style="top:{150+((i)*30)}px; background-color:{service.color}">
+      <div class="window colorScrollAlt" style="top:{150+((i)*30)}px; background:{service.color}">
         <div class="mainBox">
           <h4 class="number">
               {i + 1}
@@ -91,7 +92,7 @@
           </ul>
 
         </div>
-        <div class="blackBox" >
+        <div class="blackBox" style=' background:{service.color};'>
 
           <h4>
            
