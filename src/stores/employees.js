@@ -6,9 +6,9 @@ const employees = [
         bioStart:
             'Our <b>visionary leader</b> has over a decade of experience creating solutions in the tech world, and has an endless store of elaborate motivational quotes in his head.',
         bio:
-            'Christopher works with such a <b>spirit of excellence</b> and <b>generosity</b> that the people around him can’t help feeling inspired. He is the architect of the distinctly beautiful designs you see in all goHere’s work, and everything he creates is meant to mesh perfectly with the user--imperceptibly engineering their thoughts, impressions, and experiences.',
+            'Christopher works with such a <b>spirit of excellence</b> and <b>generosity</b>  that the people around him can’t help feeling inspired. He is the architect of the distinctly beautiful designs you see in all goHere’s work, and everything he creates is meant to mesh perfectly with the user--imperceptibly engineering their thoughts, impressions, and emotions.',
         picture: 'img/headshots/chris.png',
-        flipped:false
+        flipped: false,
     },
     {
         name: 'Meghan Breinig',
@@ -19,7 +19,7 @@ const employees = [
         bio:
             'She has <b>expertise</b> in business consulting and development, project management, teaching, marketing, and entrepreneurship. Meghan’s work with goHere centers on project management, and her skillset adds value to just about everything we do. Her creative and uplifting energy gives everyone around her the drive to reach the next level and the inspiration to think outside the box.',
         picture: 'img/headshots/meg.png',
-        flipped:true
+        flipped: true,
     },
     {
         name: 'Corey "Jack" LeMay',
@@ -30,7 +30,7 @@ const employees = [
         bio:
             'Ever since Jack moved in next door to Chris over a decade ago, the two have been an unstoppable entrepreneurial team. When Jack isn’t engineering beautiful tech solutions for our clients, he’s tinkering away with the most <b>cutting edge</b> technology he can get his hands on. We’re always eagerly awaiting his next beautiful, <b>incredible innovation.</b>',
         picture: 'img/headshots/jack.png',
-        flipped:false
+        flipped: false,
     },
     {
         name: 'Theodore "Teddy" Balistreri',
@@ -41,7 +41,7 @@ const employees = [
         bio:
             'After losing his leg as an adult, Teddy fought and earned a story of <b>comeback</b>, overcoming, grit, and <b>determination</b>; he brings that same determination to his work with goHere.',
         picture: 'img/headshots/ted.png',
-        flipped:true
+        flipped: true,
     },
     {
         name: 'Elisabeth "Pippi" Balistreri',
@@ -52,7 +52,7 @@ const employees = [
         bio:
             'While studying psychology and <b>research</b> methods at Washington and Lee University, she honed the vision and versatility needed to transform any information into a <b>powerful message.</b> She has at least three books and her color coded to-do list on her at all times.',
         picture: 'img/headshots/pip.png',
-        flipped:false
-    }
+        flipped: false,
+    },
 ];
 export default employees;

@@ -9,34 +9,33 @@
   let active = 0;
   $: console.log(active);
 
-  function clientClicked(event){
+  function clientClicked(event) {
     console.log(event.target.parentElement);
   }
 </script>
 
 <style>
- 
-  
+
 </style>
 
 <svelte:head>
   <title>{work.title}</title>
 </svelte:head>
 <TransitionWrapper>
-<Hero heading={work.h1} headingSub={work.h1Sub}/>
+  <Hero heading={work.h1} headingSub={work.h1Sub} />
 
-{#each work.section as section}
-  <Section {...section} />
-{/each}
-<section class="section">
-  <div class="container">
-    {#each clients as client, i}
-      <div class="client" on:click={clientClicked}>
-      <Portfolio {...client} />
-      </div>
-    {/each}
-  </div>
-</section>
+  {#each work.section as section}
+    <Section {...section} />
+  {/each}
+  <section class="section">
+    <div class="container">
+      {#each clients as client, i}
+        <div class="client" on:click={clientClicked}>
+          <Portfolio {...client} />
+        </div>
+      {/each}
+    </div>
+  </section>
 
-<CTA />
+  <CTA />
 </TransitionWrapper>

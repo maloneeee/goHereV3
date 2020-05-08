@@ -42,19 +42,19 @@
      /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px rgba(255, 255, 255, 0.1), inset -8px -8px 8px rgba(0, 0, 0, 0.1), inset 8px 8px 8px rgba(255, 255, 255, 0.1); */
   }
   li {
-    padding-bottom: 15px;
+    padding-bottom: 7px;
     font-size: 24px;
   }
 
   h2 {
     font-size: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     font-weight: 700;
   }
 
   h4 {
-    font-size: 50px;
-    padding-bottom: 64px;
+    font-size: 80px;
+    padding-bottom: 20px;
   }
   .number {
     position: absolute;
@@ -104,10 +104,6 @@
           <p>
             
               {@html service.p}
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            neque error est rem.
           </p>
         </div>
       </div>

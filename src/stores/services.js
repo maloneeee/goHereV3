@@ -1,41 +1,49 @@
 export const services = [
            {
                name: 'Enterprise Software Development',
-               heading: 'Captivate Your Audience.',
+               heading: 'Show Your Best Face.',
                p:
-                   "Whether we're building a web app, desktop driven system or mobile application, we excel at creating user-friendly interfacing.  Enjoy our distinct navigation and scroll techniques that will keep your customers naturally engaged, increase conversion, and drive revenue.",
+                   'When beauty, functionality, and originality meet authentic emotion, impactful impressions are made. Every aspect of your digital presence creates an impression; it represents who you are as a company and can make or break the customer experience. It’s fundamental in attracting new customers and retaining old customers. <br><br>We specialize in user-friendly interfacing that increases conversions and drives revenue. Our distinct navigation and scroll techniques and original designs will keep your target audience naturally engaged.',
                li: [
                    'Full Google Suite Integration',
-                   'Full Stack Development',
+                   'Full Stack Website Development',
                    'Web App, Desktop, and Mobile Application',
-                   'Full Content Strategy',
                    '2D and 3D Animation',
                    'Scalable Systems',
                    'UI/UX Design',
+                   'Responsive Mobile First UI',
+                   'PPC Design',
+                   'Platinum Level Hosting',
+                   'SEO',
+                   'White Labeling',
                ],
                color:
                    'linear-gradient(172deg, rgba(250,33,88,1) 0%, rgba(63,2,70,1) 100%)',
            },
            {
-               name: 'Public Relations & Crisis Management',
+               name: 'Public Relations',
                heading: 'Refine Your Identity.',
                p:
-                   'Develop brand identities that reflect your company’s values and resonate with your customers.',
+                   'Your reputation is your most valuable asset as a business, and your digital presence, brand identity, and marketing strategy should work together to reflect your company’s values and build trusting relationships with your customers.<br><br>Engaging, original messaging that feels truly authentic achieved through extensive research and vision matching helps us craft a digital presence that not only represents who you are as a company, but resonates with your optimal customer demographic; by understanding who your target audience is, we can uncover their wants, needs, and habits and reach them through the digital channels they frequent.',
                li: [
-                   'Digital Communications',
+                   'Brand Identity',
+                   'Creative Direction',
+                   'Content Strategy',
+                   'Marketing',
+                   'Digital Communication',
                    'Strategic Rebranding',
                    'Reputation Appraisal',
-                   'Press Release and SEO',
-                   'Cause Marketing',
+                   'Press Releases',
+                   'Campaign Strategy & Planning',
                ],
                color:
                    'linear-gradient(172deg, rgba(250,33,245,1) 0%, rgba(2,35,70,1) 100%)',
            },
            {
-               name: 'Business Consulting',
-               heading: 'Maximize Your Operation',
+               name: 'Consulting & Crisis Management',
+               heading: 'Optimize Your Operation',
                p:
-                   'We are thinkers, creators, and do-ers.  We push ourselves to seek our new and creative solutions in all aspects of business. We know marketing strategies founded in the creative leave the longest lasting impact.',
+                   'We are innovative thinkers, creators, and do-ers, and we are constantly seeking out new and creative solutions to improve all aspects of business. <br><br>We like to think of our services as making technology your business partner; making technology work for you opens up a world of opportunities, especially when it’s fully tailored for your needs. We love coming up with out of the box ideas that set a new standard of excellence and perfectly fulfill your company’s wants and needs--and we have the technological versatility to deliver.',
                li: [
                    'Go to Market Plans',
                    'Lean Six Sigma',
@@ -43,23 +51,21 @@ export const services = [
                    'System Auditing',
                    'Enterprise Resource Planning',
                    'Application Integration',
+                   'Creative Solutions'
                ],
                color:
                    'linear-gradient(172deg, rgba(146,106,240,1) 0%, rgba(37,30,121,1) 100%)',
            },
            {
-               name: 'Website Development/PPC/SEO',
-               heading: 'Show Your Best Face',
+               name: 'Custom Creating',
+               heading: 'You Tell Us!',
                p:
-                   'Although we offer the full suite we understand that you may need your services a-la-carte. You can rest assured our mobile-first, responsive interfaces, distinct navigation and powerful marketing will keep your customers naturally engaged, increase conversion, and drive revenue.',
+                   'We’re not your average tech company. Keeping up with the latest and greatest in technology is our genuine passion, and we’re always looking for opportunities to take on projects that keep us on the cutting edge.  New horizons in technology are coming. Looking to launch your company into the world of virtual reality? goHere. Have a completely out there idea that you’re not even sure is possible? goHere. Want to explore what augmented reality can do for your business? goHere. Let’s explore together!',
                li: [
-                   'Responsive UI',
-                   'Mobile-first Design',
-                   'Full Google Suite Integration',
-                   'PPC Campaigns',
-                   'Platinum Level Hosting',
-                   'Full Content Strategy',
-                   '2D and 3D Animation',
+                   'Virtual Reality',
+                   'Augmented Reality',
+                   'Digital Concerts',
+                   'Invention'
                ],
                color:
                    'linear-gradient(172deg, rgba(106,172,240,1) 0%, rgba(48,30,121,1) 100%)',

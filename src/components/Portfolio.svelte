@@ -49,7 +49,7 @@
 <div class="client_holder">
 
     <h2 class="colorDynamic" data-glow="{name}" style="text-align:left;">{name}</h2>
-    <h3>{year}</h3>
+    <h3>Creating Together Since {year}</h3>
     <div class="desc">{@html desc}</div>
     
     <a class="button" href="{url}">View Website</a>

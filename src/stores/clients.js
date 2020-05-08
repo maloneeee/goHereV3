@@ -33,7 +33,7 @@ const clients = [
             'Creative Direction',
             'Marketing',
         ],
-        year: '2019',
+        year: '2017',
         url: 'https://barneshb.com',
         img: '/img/clients/plm.png',
         gif: '/gif/barnes.gif',
