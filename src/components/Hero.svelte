@@ -11,7 +11,7 @@
   let i =1;
   let randomHead;
   import { onMount } from "svelte";
-  let secondLength = 0.8;
+  let secondLength = 1.4;
 
   onMount(() => {
     randomHead = randomHeadArray[randomInt()];

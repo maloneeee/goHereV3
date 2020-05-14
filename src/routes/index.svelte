@@ -2,11 +2,12 @@
   import { home } from "./../stores/content.js";
   import { fade } from "svelte/transition";
   import Section from "./../components/Section.svelte";
-  import HeroHome from "./../components/HeroHome.svelte";
+  import Hero from "./../components/Hero.svelte";
   import Nav from '../components/Nav.svelte';
   import TransitionWrapper from '../components/TransitionWrapper.svelte';
   import Index from "./../components/space.js";
   import { onMount, onDestroy } from "svelte";
+  import RandomText from './../components/RandomText.svelte'
   export let phase = 0;
   let displayMenu = false;
   
@@ -137,15 +138,7 @@
   }
         }
 
-  @keyframes rotate{
-    0%{
-        transform: rotate(0deg);
-        }
-    100%{
-        transform: rotate(359deg);
-        }
-}
-
+  
 
 </style>
 
@@ -153,7 +146,7 @@
   <title>{home.title}</title>
 </svelte:head>
 <nav style="position:fixed; top:0;">
-	<a class="logo_link" href="." on:click={closeMenu}><div class="logo">go<span>Here</span><img src="logo-192.png" alt="goHere"/></div></a>
+	<a class="logo_link" href="." on:click={closeMenu}><div class="logo">go<span>Here</span><img src="logo-192.png" alt="goHere"/></div><RandomText/></a>
 	<ul class:nav-active={displayMenu}>
 		<li class:act={displayMenu}><a on:click={removeEl} href='who'>who</a></li>
 		<li class:act={displayMenu}><a on:click={removeEl} href='what'>what</a></li>
@@ -222,7 +215,7 @@
     {/each}
   </div>
   <div class="buff" />
-  <HeroHome heading={home.h1} headingSub={home.h1Sub} />
+  <Hero heading={home.h1} headingSub={home.h1Sub} />
   {#each home.sections as section, i}
     {#if i % 2 != 1}
       <section
