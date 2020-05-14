@@ -48,9 +48,9 @@ export default class Index {
             phase = 0,
             delta;
         let fileArray = [
-            { name: 'earth', url: 'GAS2-ns.png' },
-            { name: 'moon', url: 'GAS1-ns.png' },
-            { name: 'planet', url: 'GAS2-old.png' },
+            { name: 'earth', url: 'winner(1).jpg' },
+            { name: 'moon', url: 'winner(2).jpg' },
+            { name: 'planet', url: 'winner(3).jpg' },
         ];
         let promiseArray = [],
             texturePromiseArray = [],

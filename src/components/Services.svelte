@@ -120,6 +120,7 @@
     font-size: 36px;
     font-weight: 500;
     color: #fff;
+    line-height:1;
   }
   p {
     margin: 0;
