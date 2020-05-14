@@ -2,7 +2,7 @@
   import { home } from "./../stores/content.js";
   import { fade } from "svelte/transition";
   import Section from "./../components/Section.svelte";
-  import Hero from "./../components/Hero.svelte";
+  import HeroHome from "./../components/HeroHome.svelte";
   import Nav from '../components/Nav.svelte';
   import TransitionWrapper from '../components/TransitionWrapper.svelte';
   import Index from "./../components/space.js";
@@ -146,9 +146,7 @@
         }
 }
 
-.logo img{
-    animation: rotate 30s infinite 0s linear;
-}
+
 </style>
 
 <svelte:head>
@@ -224,7 +222,7 @@
     {/each}
   </div>
   <div class="buff" />
-  <Hero heading={home.h1} headingSub={home.h1Sub} />
+  <HeroHome heading={home.h1} headingSub={home.h1Sub} />
   {#each home.sections as section, i}
     {#if i % 2 != 1}
       <section

@@ -36,7 +36,7 @@ export const home = {
                    buttonHref: '/who',
                },
                {
-                   title: '<REPLACE ME>',
+                   title: 'REPLACE ME',
                    p: '',
                    sub: 'be creative',
                    button: 'Join Us On the Cutting Edge',
