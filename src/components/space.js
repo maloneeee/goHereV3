@@ -48,7 +48,7 @@ export default class Index {
             phase = 0,
             delta;
         let fileArray = [
-            { name: 'earth', url: 'winner(3).jpg' },
+            { name: 'earth', url: 'pp(4).jpg' },
             { name: 'moon', url: 'winner(2).jpg' },
             { name: 'planet', url: 'winner(1).jpg' }
         ];

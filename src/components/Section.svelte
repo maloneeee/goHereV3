@@ -52,7 +52,7 @@
     {#if sub != ''}
       <h5> <span>{sub}</span></h5>
     {/if}
-    <h2 class:colorDynamic={invert} data-glow="{title}">{title}</h2>
+    <h2 class:colorDynamic={invert} >{@html title}</h2>
     <p>
       {@html p}
     </p>

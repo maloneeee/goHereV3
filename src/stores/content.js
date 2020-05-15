@@ -106,7 +106,7 @@ export const contact = {
            h1Sub: 'Today',
            section: [
                {
-                   title: 'We Want To Hear From You!',
+                   title: 'We Want To<br>Hear From You!',
                    p:
                        'We tackle projects of all types and work with organizations across all industries. Discover the power of creative tech solutions for any project you might have.',
                    sub: 'lets go!',
