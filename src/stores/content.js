@@ -16,6 +16,7 @@ export const home = {
 
                    button: 'what we do',
                    buttonHref: '/what',
+                   invert: true,
                },
 
                {
@@ -30,10 +31,12 @@ export const home = {
                },
                {
                    title: 'Ideas are Our Business',
-                   p:'goHere when you don’t know what you need, when you know exactly what you need, when you need to out-compete in a saturated market, or when you’re looking to break the mold.',
+                   p:
+                       'goHere when you don’t know what you need, when you know exactly what you need, when you need to out-compete in a saturated market, or when you’re looking to break the mold.',
                    sub: 'masterminds',
                    button: 'Who We Are',
                    buttonHref: '/who',
+                   invert: true,
                },
                {
                    title: 'REPLACE ME',
@@ -71,12 +74,13 @@ export const what = {
                {
                    title: 'goHere for Success',
                    p:
-                       "In a field of rapid innovation, sustainability is a luxury, and versatility is essential. We dream bigger and aim higher to create customized solutions that spark extraordinary, lasting results.",
+                       'In a field of rapid innovation, sustainability is a luxury, and versatility is essential. We dream bigger and aim higher to create customized solutions that spark extraordinary, lasting results.',
                    sub: 'masterminds',
                    button: '',
-                   buttonHref: ''
-               }
-           ]
+                   buttonHref: '',
+                   invert: true,
+               },
+           ],
        };
 export const work = {
            title: 'goHere - Creative Solutions',
@@ -102,12 +106,13 @@ export const contact = {
            h1Sub: 'Today',
            section: [
                {
-                   title: 'We Want To<br>Hear From You!',
+                   title: 'We Want To Hear From You!',
                    p:
                        'We tackle projects of all types and work with organizations across all industries. Discover the power of creative tech solutions for any project you might have.',
                    sub: 'lets go!',
                    button: 'phone',
                    buttonHref: 'tel:309.999.5595',
+                   invert: true,
                },
            ],
        };
@@ -123,9 +128,10 @@ export const insights = {
                        'We tackle projects of all types and work with organizations across all industries. Discover the power of creative tech solutions for any project you might have.',
                    sub: 'Learn Something',
                    button: 'What We Do',
-                   buttonHref: '/what'
-               }
-           ]
+                   buttonHref: '/what',
+                   invert: true,
+               },
+           ],
        };
 
 export const cta = {
