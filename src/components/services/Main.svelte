@@ -47,9 +47,10 @@
   }
 
   h2 {
-    font-size: 50px;
+   font-size: 140px;
     padding-bottom: 20px;
     font-weight: 700;
+    line-height: 110%;
   }
 
   h4 {
@@ -72,6 +73,9 @@
     font-size: 22px;
     padding-bottom: 25px;
   }
+  i{
+    margin-right:5px;
+  }
 </style>
 {#if show}
   <div id="rail" >
@@ -90,7 +94,7 @@
             out:fade={{ delay: 0, duration: 200 }}
             in:fade={{ delay: 200, duration: 200 }}>
            
-              {li}
+             <i class="{li.ico}"></i> {li.name}
           </li>
         {/each}
           </ul>
