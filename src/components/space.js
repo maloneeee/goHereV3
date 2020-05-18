@@ -48,9 +48,9 @@ export default class Index {
             phase = 0,
             delta;
         let fileArray = [
-            { name: 'earth', url: 'pp(4).jpg' },
+            { name: 'earth', url: 'winner(1).jpg' },
             { name: 'moon', url: 'winner(2).jpg' },
-            { name: 'planet', url: 'winner(1).jpg' }
+            { name: 'planet', url: 'winner(4).jpg' },
         ];
         let promiseArray = [],
             texturePromiseArray = [],
@@ -251,7 +251,7 @@ export default class Index {
             createPlanet(
                 'secondary',
                 22,
-                texturesArray[1],
+                texturesArray[2],
                 start.sec,
                 pivots[0].obj,
                 20,
@@ -260,7 +260,7 @@ export default class Index {
             createPlanet(
                 'third',
                 0.5,
-                texturesArray[2],
+                texturesArray[1],
                 start.third,
                 empties[1].obj,
                 15,

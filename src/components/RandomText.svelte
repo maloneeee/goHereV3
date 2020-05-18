@@ -1,25 +1,18 @@
 <script>
-  let randomHeadArray = [
-    "invention",
-    "creative direction",
-    "problem-solving",
-    "technology solutions",
-    "custom engineering",
-    "crisis management",
-    " business consulting"
-  ];
+  import {tags} from './../stores/content.js'
+  
   let i = 1;
   let randomHead;
   import { onMount } from "svelte";
   let secondLength = 1.4;
 
   onMount(() => {
-    randomHead = randomHeadArray[randomInt()];
+    randomHead = tags[0];
     requestAnimationFrame(ani);
   });
 
   function randomInt() {
-    return Math.floor(Math.random() * Math.floor(randomHeadArray.length));
+    return Math.floor(Math.random() * Math.floor(tags.length));
   }
 
   function ani() {
@@ -33,7 +26,7 @@
   }
 
   function chooseHead() {
-    let newHead = randomHeadArray[randomInt()];
+    let newHead = tags[randomInt()];
     if (randomHead != newHead) {
       randomHead = newHead;
     } else {
@@ -58,5 +51,3 @@ span{
 
       
    <span class="fart">for</span> <span class="colorDynamic small" data-glow={randomHead}>{randomHead}</span>
- 
-

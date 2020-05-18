@@ -8,6 +8,8 @@
   export let bottom;
   export let clear;
   export let left;
+  export let color1;
+  export let color2;
   import CallButton from './CallButton.svelte'
 </script>
 
@@ -60,7 +62,7 @@
       {#if button == 'phone'}
         <CallButton/>
       {:else}
-      <a class="button" href={buttonHref}>{button}</a>
+      <a class="button  colorRotate" href={buttonHref} style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%), linear-gradient(106.98deg, {color1}, {color2});">{button}</a>
       {/if}
     {/if}
   </div>

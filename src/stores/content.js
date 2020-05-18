@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
 export const global = {
-    phone: '305.999.5595'
-}
+    phone: '305.999.5595',
+};
 export const home = {
            title: 'goHere - Creative Solutions',
            metaDesc: 'This is the description',
@@ -17,6 +17,8 @@ export const home = {
                    button: 'what we do',
                    buttonHref: '/what',
                    invert: true,
+                   color1: 'red',
+                   color2: 'purple',
                },
 
                {
@@ -37,6 +39,9 @@ export const home = {
                    button: 'Who We Are',
                    buttonHref: '/who',
                    invert: true,
+
+                   color1: 'red',
+                   color2: 'purple',
                },
                {
                    title: 'REPLACE ME',
@@ -45,6 +50,8 @@ export const home = {
                    button: 'Join Us On the Cutting Edge',
                    buttonHref: '/get-started',
                    clear: true,
+                   color1: '#2BD9FF',
+                   color2: '#BF37A9',
                },
            ],
        };
@@ -62,26 +69,28 @@ export const who = {
                    button: "Let's get started",
                    buttonHref: '/get-started',
                    invert: true,
+                   color1: 'red',
+                   color2: 'purple',
                },
            ],
        };
 export const what = {
-           title: 'goHere - Creative Solutions',
-           metaDesc: 'This is the description',
-           h1: 'Strategic',
-           h1Sub: 'Outcomes',
-           section: [
-               {
-                   title: 'goHere for Success',
-                   p:
-                       'In a field of rapid innovation, sustainability is a luxury, and versatility is essential. We dream bigger and aim higher to create customized solutions that spark extraordinary, lasting results.',
-                   sub: 'masterminds',
-                   button: '',
-                   buttonHref: '',
-                   invert: true,
-               },
-           ],
-       };
+    title: 'goHere - Creative Solutions',
+    metaDesc: 'This is the description',
+    h1: 'Strategic',
+    h1Sub: 'Outcomes',
+    section: [
+        {
+            title: 'goHere for Success',
+            p:
+                'In a field of rapid innovation, sustainability is a luxury, and versatility is essential. We dream bigger and aim higher to create customized solutions that spark extraordinary, lasting results.',
+            sub: 'masterminds',
+            button: '',
+            buttonHref: '',
+            invert: true,
+        },
+    ],
+};
 export const work = {
            title: 'goHere - Creative Solutions',
            metaDesc: 'This is the description',
@@ -95,27 +104,29 @@ export const work = {
                    sub: 'powerful',
                    button: 'Become a Partner',
                    buttonHref: '/get-started',
-                   invert: true
-               }
-           ]
-       };
-export const contact = {
-           title: 'goHere - Creative Solutions',
-           metaDesc: 'This is the description',
-           h1: 'Call',
-           h1Sub: 'Today',
-           section: [
-               {
-                   title: 'We Want To<br>Hear From You!',
-                   p:
-                       'We tackle projects of all types and work with organizations across all industries. Discover the power of creative tech solutions for any project you might have.',
-                   sub: 'lets go!',
-                   button: 'phone',
-                   buttonHref: 'tel:309.999.5595',
                    invert: true,
+                   color1: 'red',
+                   color2: 'purple',
                },
            ],
        };
+export const contact = {
+    title: 'goHere - Creative Solutions',
+    metaDesc: 'This is the description',
+    h1: 'Call',
+    h1Sub: 'Today',
+    section: [
+        {
+            title: 'We Want To<br>Hear From You!',
+            p:
+                'We tackle projects of all types and work with organizations across all industries. Discover the power of creative tech solutions for any project you might have.',
+            sub: 'lets go!',
+            button: 'phone',
+            buttonHref: 'tel:309.999.5595',
+            invert: true,
+        },
+    ],
+};
 export const insights = {
            title: 'goHere - Creative Solutions',
            metaDesc: 'This is the description',
@@ -130,15 +141,47 @@ export const insights = {
                    button: 'What We Do',
                    buttonHref: '/what',
                    invert: true,
+                   color1: 'red',
+                   color2: 'purple',
                },
            ],
        };
 
 export const cta = {
-    title: "Let's Create<br>Something Beautiful",
-    p: 'Reach out today and find out what goHere can do for you!',
-    sub: 'be creative',
-    button: "Let's Go!",
-    buttonHref: '/get-started#cta',
-    bottom:true
-};
+           title: "Let's Create<br>Something Beautiful",
+           p: 'Reach out today and find out what goHere can do for you!',
+           sub: 'be creative',
+           button: "Let's Go!",
+           buttonHref: '/get-started#cta',
+           bottom: true,
+           color1: '#2BD9FF',
+           color2: '#BF37A9',
+       };
+
+export const tags = [
+    'technology solutions',
+    'creative direction',
+    'problem-solving',
+    'custom engineering',
+    'crisis management',
+    'business consulting',
+    'virtual reality',
+    'augmented reality',
+    'UI/UX',
+    'SEO',
+    'website development',
+    'lead generation',
+    'mobile first design',
+    'responsive UI',
+    'visual design',
+    '3D animation',
+    'PPC design',
+    'white labeling',
+    'go go gadget market plans',
+    'system auditing',
+    'enterprise resource planning',
+    'application integration',
+    'creative solutions',
+    'full stack development',
+    'app development',
+];

@@ -212,12 +212,9 @@
                     {@html section.p}
                   </p>
                   {#if section.button != ''}
-                    <a
-                      class="button"
-                      on:click={removeEl}
-                      href={section.buttonHref}>
-                      {section.button}
-                    </a>
+                    <a class="button  colorRotate" href={section.buttonHref} style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%), linear-gradient(106.98deg, {section.color1}, {section.color2});">
+                  {section.button}
+                </a>
                   {/if}
                 </div>
               </div>
@@ -259,7 +256,7 @@
                 {@html section.p}
               </p>
               {#if section.button != ''}
-                <a class="button" on:click={removeEl} href={section.buttonHref}>
+                <a class="button  colorRotate" href={section.buttonHref} style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%), linear-gradient(106.98deg, {section.color1}, {section.color2});">
                   {section.button}
                 </a>
               {/if}
