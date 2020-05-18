@@ -5,7 +5,7 @@ export const services = [
                p:
                    'When beauty, functionality, and originality meet authentic emotion, impactful impressions are made. Every aspect of your digital presence creates an impression; it represents who you are as a company and can make or break the customer experience. It’s fundamental in attracting new customers and retaining old customers. <br><br>We specialize in user-friendly interfacing that increases conversions and drives revenue. Our distinct navigation and scroll techniques and original designs will keep your target audience naturally engaged.',
                li: [
-                   { name: 'Full Stack Development', ico: 'fas fa-archway' },
+                   { name: 'Full-Stack Development', ico: 'fas fa-archway' },
                    {
                        name: 'Web, Desktop, and Mobile Application',
                        ico: 'fas fa-sitemap',

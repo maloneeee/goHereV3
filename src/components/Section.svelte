@@ -10,61 +10,91 @@
   export let left;
   export let color1;
   export let color2;
-  import CallButton from './CallButton.svelte'
+  import CallButton from "./CallButton.svelte";
 </script>
 
 <style>
-
-  .bottom{
-    margin-bottom:-80px;
+  .bottom {
+    margin-bottom: -80px;
   }
-  .bottom .section_inner{
-    margin-bottom:-20px;
-  }
-
-  .clear{
-    min-height:100vh;
-    color:white;
+  .bottom .section_inner {
+    margin-bottom: -20px;
   }
 
-  .clear a{
-    margin-top:0;
-    margin-bottom:-65px;
-  }
-  .left{
-    align-items:flex-start;
-    padding-right:50vw;
-    max-width:90%;
-  }
-  .left h2{
-    text-align:left;
-    margin-left:0;
-  }
-  .left p{
-    text-align:left;
+  .clear {
+    min-height: 100vh;
+    color: white;
   }
 
-  
-
+  .clear a {
+    margin-top: 0;
+    margin-bottom: -65px;
+  }
+  .left {
+    align-items: flex-start;
+    padding-right: 50vw;
+    max-width: 90%;
+  }
+  .left h2 {
+    text-align: left;
+    margin-left: 0;
+  }
+  .left p {
+    text-align: left;
+  }
+  .btt {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.35) 0%,
+        rgba(135, 135, 135, 0) 46.87%,
+        rgba(0, 0, 0, 0.26) 100%
+      ),
+      linear-gradient(106.98deg, #2BD9FF, #BF37A9);
+  }
+  .btt:hover {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.26) 100%,
+        rgba(135, 135, 135, 0) 46.87%,
+        rgba(255, 255, 255, 0.35) 0%
+      ),
+      linear-gradient(106.98deg, #2BD9FF, #BF37A9);
+  }
 </style>
 
-<section class="section" class:border_color={!clear} class:clear class:invert class:bottom >
-  <div  class:clear_inner={clear} class:section_inner={!clear} class:invert>
-  <div class="container" class:inner={!clear} class:left>
-    {#if sub != ''}
-      <h5> <span>{sub}</span></h5>
-    {/if}
-    <h2 class:colorDynamic={invert} >{@html title}</h2>
-    <p>
-      {@html p}
-    </p>
-    {#if button != ''}
-      {#if button == 'phone'}
-        <CallButton/>
-      {:else}
-      <a class="button  colorRotate" href={buttonHref} style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%), linear-gradient(106.98deg, {color1}, {color2});">{button}</a>
+<section
+  class="section"
+  class:border_color={!clear}
+  class:clear
+  class:invert
+  class:bottom>
+  <div class:clear_inner={clear} class:section_inner={!clear} class:invert>
+    <div class="container" class:inner={!clear} class:left>
+      {#if sub != ''}
+        <h5>
+          <span>{sub}</span>
+        </h5>
       {/if}
-    {/if}
-  </div>
+      <h2 class:colorDynamic={invert}>
+        {@html title}
+      </h2>
+      <p>
+        {@html p}
+      </p>
+      {#if button != ''}
+        {#if button == 'phone'}
+          <CallButton />
+        {:else}
+          <a
+            class="button colorRotate btt"
+            href={buttonHref}
+            style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.35)
+            0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%),
+            linear-gradient(106.98deg, {color1}, {color2});">
+            {button}
+          </a>
+        {/if}
+      {/if}
+    </div>
   </div>
 </section>

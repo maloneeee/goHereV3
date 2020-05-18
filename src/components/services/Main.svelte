@@ -38,6 +38,7 @@
     padding: 50px 75px;
    
     width: 600px;
+    border:white solid 6px;
      /* box-shadow: 5px 10px #000000, inset -5px -10px #000000, inset 5px 10px white, -5px -10px white; */
      /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px rgba(255, 255, 255, 0.1), inset -8px -8px 8px rgba(0, 0, 0, 0.1), inset 8px 8px 8px rgba(255, 255, 255, 0.1); */
   }
@@ -75,6 +76,7 @@
   }
   i{
     margin-right:5px;
+    width:35px;
   }
 </style>
 {#if show}
@@ -100,7 +102,7 @@
           </ul>
 
         </div>
-        <div class="blackBox" style=' background:{service.color};'>
+        <!-- <div class="blackBox" style=' background:{service.color};'>
 
           <h4>
            
@@ -110,7 +112,7 @@
             
               {@html service.p}
           </p>
-        </div>
+        </div> -->
       </div>
     {/each}
     <div style='position: sticky;top: 0px;'>
