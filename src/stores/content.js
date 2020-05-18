@@ -50,8 +50,8 @@ export const home = {
                    button: 'Join Us On the Cutting Edge',
                    buttonHref: '/get-started',
                    clear: true,
-                   color1: '#0cb2da',
-                   color2: '#d4073c',
+                   color1: '#2BD9FF',
+                   color2: '#BF37A9',
                },
            ],
        };
