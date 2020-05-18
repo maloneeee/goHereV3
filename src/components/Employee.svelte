@@ -12,6 +12,7 @@
     .emp_holder{
         display:flex;
         width:100%;
+        padding:3rem 0px;
     }
     
     .col{
@@ -61,7 +62,7 @@
     .col:first-child{
         margin-right:100px;
         width:55%;
-        padding: 7rem 0;
+        /* padding: 7rem 0; */
     }
 
     /*Flip*/
@@ -94,7 +95,7 @@
         .col:first-child{
         margin-right:0;
         width:95%;
-        padding: 7rem 0;
+        /* padding: 7rem 0; */
         margin-top:0px;
         padding-top:0px;
     }
