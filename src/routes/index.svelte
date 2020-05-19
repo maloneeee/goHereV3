@@ -6,8 +6,12 @@
   import Nav from "../components/Nav.svelte";
   import TransitionWrapper from "../components/TransitionWrapper.svelte";
   import Index from "./../components/space.js";
+  import CTAOverlay from "./../components/CTAOverlay.svelte";
   import { onMount, onDestroy } from "svelte";
   import RandomText from "./../components/RandomText.svelte";
+  import {showingCTA} from './../stores/var.js'
+
+
   export let phase = 0;
   let displayMenu = false;
 
@@ -23,7 +27,7 @@
       let create3d = new Index();
       resolve(create3d);
     });
-    createScene;
+    createScene.then();
     window.addEventListener("scroll", fadeScroll);
   });
   onDestroy(() => {
@@ -52,6 +56,10 @@
   function removeEl() {
     phase = 0;
     displayMenu = false;
+  }
+
+  function displayCTA(){
+    showingCTA.set(true);
   }
 </script>
 
@@ -140,6 +148,7 @@
 <svelte:head>
   <title>{home.title}</title>
 </svelte:head>
+
 <nav style="position:fixed; top:0;">
   <a class="logo_link" href="." on:click={closeMenu}>
     <div class="logo">
@@ -212,9 +221,9 @@
                     {@html section.p}
                   </p>
                   {#if section.button != ''}
-                    <a class="button  colorRotate" href={section.buttonHref} style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%), linear-gradient(106.98deg, {section.color1}, {section.color2});">
+                    <button class="button  colorRotate" on:click={displayCTA}  style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%), linear-gradient(106.98deg, {section.color1}, {section.color2});">
                   {section.button}
-                </a>
+                </button>
                   {/if}
                 </div>
               </div>

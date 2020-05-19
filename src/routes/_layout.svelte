@@ -3,6 +3,7 @@
 	import Audio from '../components/Audio.svelte'
 	import Scrollbar from '../components/Scrollbar.svelte'
 	import Loader from '../components/Loader.svelte'
+	import CTAOverlay from '../components/CTAOverlay.svelte'
 	export let segment;
 	
 
@@ -21,3 +22,4 @@
 <Scrollbar/>
 </Loader>
 <Audio/>
+<CTAOverlay/>

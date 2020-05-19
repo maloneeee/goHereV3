@@ -1,6 +1,9 @@
 <script>
     export let postdata;
-
+    let postedOn =new Date(postdata.published_at);
+    let date = postedOn.getMonth()+"-"+postedOn.getDate()+"-"+postedOn.getFullYear();
+    console.log(date);
+    
 </script>
 
 <style>
@@ -11,7 +14,8 @@
         flex-direction:column;
         padding:10px;
         margin:20px;
-        width:32%;
+        flex-shrink:1;
+        width:22.2%
     }
 
     h2{
@@ -36,6 +40,12 @@
             width:100%;
         }
     }
+
+    .content{
+        margin-top:10px;
+        display:block;
+        margin-bottom:40px;
+    }
 </style>
 
     <div class="article">    
@@ -43,9 +53,11 @@
     <div class="img" style="background-image:url({postdata.feature_image})"></div>
     <h2>{postdata.title}</h2>
     <h3>
-    {postdata.published_at} | {postdata.reading_time} MIN READ
+    {date} | {postdata.reading_time} MIN READ
     </h3>
+    <span class="content">
     {@html postdata.excerpt}
+    </span>
     </a>
     </div>
     

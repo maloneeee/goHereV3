@@ -11,6 +11,12 @@
   export let color1;
   export let color2;
   import CallButton from "./CallButton.svelte";
+
+  import {showingCTA} from './../stores/var.js'
+
+  function displayCTA(){
+    showingCTA.set(true);
+  }
 </script>
 
 <style>
@@ -84,6 +90,15 @@
       {#if button != ''}
         {#if button == 'phone'}
           <CallButton />
+          {:else if buttonHref == 'cta'}
+            <button
+            class="button colorRotate"
+            on:click={displayCTA}
+            style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.35)
+            0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%),
+            linear-gradient(106.98deg, {color1}, {color2});">
+            {button}
+          </button>
         {:else}
           <a
             class="button colorRotate btt"

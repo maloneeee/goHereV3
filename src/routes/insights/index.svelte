@@ -21,6 +21,7 @@
 <style>
     .post_holder{
         display:flex;
+        flex-wrap:wrap;
     }
 
     @media (max-width:1068px) {
