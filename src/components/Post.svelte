@@ -15,7 +15,7 @@
         padding:10px;
         margin:20px;
         flex-shrink:1;
-        width:22.2%
+        width:22.5%
     }
 
     h2{
