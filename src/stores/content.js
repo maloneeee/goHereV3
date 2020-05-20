@@ -44,10 +44,10 @@ export const home = {
                    color2: 'purple',
                },
                {
-                   title: 'goHere for Results',
+                   title: 'Join Us On the Cutting Edge',
                    p: '',
                    sub: 'be creative',
-                   button: 'Join Us On the Cutting Edge',
+                   button: 'Get Started',
                    buttonHref: '/get-started',
                    clear: true,
                    color1: '#2BD9FF',

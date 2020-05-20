@@ -123,7 +123,7 @@
     <p>{@html bio}</p>
 </div>
 <div class="col backNeb colorRotateLess">
-    <div class=" headshot " style="background-image:url({picture})"/>
+    <div class=" headshot " style="background-image:url(https://gohere2-f295.kxcdn.com/{picture})"/>
 </div>
 </div>
 </div>

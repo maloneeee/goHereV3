@@ -154,7 +154,7 @@
     <div class="logo">
       go
       <span>Here</span>
-      <img src="logo-192.png" alt="goHere" />
+      <img src="https://gohere2-f295.kxcdn.com/logo-192.png" alt="goHere" />
     </div>
     <RandomText />
   </a>

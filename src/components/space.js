@@ -54,7 +54,7 @@ export default class Index {
         ];
         let promiseArray = [],
             texturePromiseArray = [],
-            path = 'img/Planets/',
+            path = 'https://gohere2-f295.kxcdn.com/img/Planets/',
             texturesArray = [];
         const fragmentShader = `
             #include <common>
@@ -141,25 +141,28 @@ export default class Index {
             requestAnimationFrame(render);
         }
         function createClouds(pos, num, x, y, z) {
-            loader.load('img/smoke-1.png', (texture) => {
-                const geo = new THREE.PlaneBufferGeometry(80, 80);
-                const mat = new THREE.MeshLambertMaterial({
-                    map: texture,
-                    transparent: true,
-                });
-                for (let p = 0; p < num; p++) {
-                    const cloud = new THREE.Mesh(geo, mat);
-                    cloud.position.set(
-                        pos.x + (Math.random() * 20 * x - 10 * x),
-                        pos.y + (Math.random() * 20 * y - 10 * y),
-                        pos.z + (Math.random() * 20 * z - 10 * z)
-                    );
-                    cloud.rotation.z = Math.random() * 2 * Math.PI;
-                    cloud.material.opacity = 0.2;
-                    clouds.push(cloud);
-                    scene.add(cloud);
+            loader.load(
+                'https://gohere2-f295.kxcdn.com/img/smoke-1.png',
+                (texture) => {
+                    const geo = new THREE.PlaneBufferGeometry(80, 80);
+                    const mat = new THREE.MeshLambertMaterial({
+                        map: texture,
+                        transparent: true,
+                    });
+                    for (let p = 0; p < num; p++) {
+                        const cloud = new THREE.Mesh(geo, mat);
+                        cloud.position.set(
+                            pos.x + (Math.random() * 20 * x - 10 * x),
+                            pos.y + (Math.random() * 20 * y - 10 * y),
+                            pos.z + (Math.random() * 20 * z - 10 * z)
+                        );
+                        cloud.rotation.z = Math.random() * 2 * Math.PI;
+                        cloud.material.opacity = 0.2;
+                        clouds.push(cloud);
+                        scene.add(cloud);
+                    }
                 }
-            });
+            );
             createLight(colors.orange);
             createLight(colors.blue);
             createLight(colors.purple);
