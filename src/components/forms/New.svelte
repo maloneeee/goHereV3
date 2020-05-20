@@ -49,7 +49,7 @@
             <input type="text" bind:value={form.phone} class:filled={form.phone.length >= 10} placeholder="Phone Number" />
             <input type="text" bind:value={form.project} class:filled={form.project.length > 4} placeholder="Type of Project" />
             <h6>{err}</h6>
-            <button on:click={sendContactMessage} on:mouseenter={zoomIn} on:mouseleave={zoomOut}>Submit</button>
+            <button class="button" on:click={sendContactMessage} on:mouseenter={zoomIn} on:mouseleave={zoomOut}>Submit</button>
         </div>
     </form>
     {:else}

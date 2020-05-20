@@ -38,9 +38,9 @@
     padding: 50px 75px;
    
     width: 900px;
-    background: #FDFAF5;
-border: 6px solid #FFFFFF;
-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3), inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -2px 4px #FFFFFF;
+    /* background: #FDFAF5; */
+/* border: 6px solid #FFFFFF; */
+/* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3), inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -2px 4px #FFFFFF; */
 border-radius: 5px;
 display:flex;
 flex-direction:column;
@@ -111,7 +111,7 @@ justify-content:center;
           </ul>
 
         </div>
-        <div class="blackBox" style='background:{service.color}; color:{service.color1}'>
+        <div class="blackBox" style='color:{service.color1}'>
 
           <!-- <h4>
            
