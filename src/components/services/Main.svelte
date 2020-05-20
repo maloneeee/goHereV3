@@ -79,7 +79,7 @@ justify-content:center;
   p {
     font-size: 35px;
     /* padding-bottom: 25px; */
-    font-weight:600;
+    font-weight:500;
     color:#888;
   }
   i{
@@ -93,7 +93,7 @@ justify-content:center;
     {#each services as service, i}
       <div class="window colorScrollAlt" style="top:{150+((i)*30)}px; background:{service.color}">
         <div class="mainBox">
-          <h4 class="number" style="color:white; text-shadow: 4px 4px 4px {service.color2};">
+          <h4 class="number" style="color:{service.color1}; text-shadow: -2px -2px 4px {service.color2};">
               {i + 1}
           </h4>
           <h2>
@@ -111,13 +111,13 @@ justify-content:center;
           </ul>
 
         </div>
-        <div class="blackBox" style=' background:white; color:{service.color1}'>
+        <div class="blackBox" style='background:{service.color}; color:{service.color1}'>
 
           <!-- <h4>
            
               {service.heading}
           </h4> -->
-          <p style="color:grey;">
+          <p style="color: rgba(228, 228, 228, 0.8);">
             
               {@html service.p}
           </p>

@@ -29,7 +29,7 @@ export const services = [
                color:
                    'linear-gradient(172deg, rgba(250,33,88,1) 0%, rgba(63,2,70,1) 100%)',
                color1: 'rgba(250, 33, 88, 1)',
-               color2: 'rgba(63,2,70,0.5)',
+               color2: 'rgba(63,2,70,0.3)',
            },
            {
                name: 'Grow',
@@ -59,7 +59,7 @@ export const services = [
                color:
                    'linear-gradient(172deg, rgba(250,33,245,1) 0%, rgba(2,35,70,1) 100%)',
                color1: 'rgba(250, 33, 245, 1)',
-               color2: ' rgba(2,35,70,0.5)',
+               color2: ' rgba(2,35,70,0.3)',
            },
            {
                name: 'Manage',
@@ -92,7 +92,7 @@ export const services = [
                color:
                    'linear-gradient(172deg, rgba(146,106,240,1) 0%, rgba(37,30,121,1) 100%)',
                color1: 'rgba(146,106,240,1)',
-               color2: 'rgba(37,30,121,0.5)',
+               color2: 'rgba(37,30,121,0.3)',
            },
            {
                name: 'Impress',
@@ -121,7 +121,7 @@ export const services = [
                color:
                    'linear-gradient(172deg, rgba(106,172,240,1) 0%, rgba(48,30,121,1) 100%)',
                color1: 'rgba(106, 172, 240, 1)',
-               color2: 'rgba(48,30,121,0.5)',
+               color2: 'rgba(48,30,121,0.3)',
            },
        ];
 
