@@ -13,16 +13,16 @@
 <style>
   #rail {
     width: 100vw;
-    height: 480vh;
+    height: 380vh;
     position: relative;
   }
   .window {
     position: sticky;
     top: 160px;
-    height: 100vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     padding: 36px;
     background:rgba(0, 0, 0, 0.95);
     border-top: 10px white solid;
@@ -37,10 +37,15 @@
   .blackBox {
     padding: 50px 75px;
    
-    width: 600px;
-    border:white solid 6px;
-     /* box-shadow: 5px 10px #000000, inset -5px -10px #000000, inset 5px 10px white, -5px -10px white; */
-     /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px rgba(255, 255, 255, 0.1), inset -8px -8px 8px rgba(0, 0, 0, 0.1), inset 8px 8px 8px rgba(255, 255, 255, 0.1); */
+    width: 900px;
+    background: #FDFAF5;
+border: 6px solid #FFFFFF;
+box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3), inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -2px 4px #FFFFFF;
+border-radius: 5px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
   }
   li {
     padding-bottom: 7px;
@@ -59,6 +64,7 @@
     padding-bottom: 20px;
     line-height:1;
   }
+  
   .number {
     position: absolute;
     top: 40px;
@@ -71,20 +77,23 @@
     text-align:right;
   }
   p {
-    font-size: 22px;
-    padding-bottom: 25px;
+    font-size: 35px;
+    /* padding-bottom: 25px; */
+    font-weight:600;
+    color:#888;
   }
   i{
     margin-right:5px;
     width:35px;
   }
+  
 </style>
 {#if show}
   <div id="rail" >
     {#each services as service, i}
       <div class="window colorScrollAlt" style="top:{150+((i)*30)}px; background:{service.color}">
         <div class="mainBox">
-          <h4 class="number">
+          <h4 class="number" style="color:white; text-shadow: 4px 4px 4px {service.color2};">
               {i + 1}
           </h4>
           <h2>
@@ -102,13 +111,13 @@
           </ul>
 
         </div>
-        <div class="blackBox" style=' background:{service.color};'>
+        <div class="blackBox" style=' background:white; color:{service.color1}'>
 
-          <h4>
+          <!-- <h4>
            
               {service.heading}
-          </h4>
-          <p>
+          </h4> -->
+          <p style="color:grey;">
             
               {@html service.p}
           </p>
