@@ -9,9 +9,9 @@ export const home = {
            h1Sub: 'Solutions',
            sections: [
                {
-                   title: 'Engineered Solutions.',
+                   title: 'We Engineer Breakthroughs.',
                    p:
-                       'goHere is a team of innovative consultants and creators. We bring our clients peace of mind with creative, customized solutions that maximize impact and prosperity.',
+                       'goHere is a team of innovative consultants and creators. We bring our clients peace of mind with creative, customized solutions that optimize impact and prosperity in every area of business.',
                    sub: 'inciting inspiration',
 
                    button: 'what we do',
@@ -24,7 +24,7 @@ export const home = {
                {
                    title: '',
                    p:
-                       'You know your industry, but it’s not your job to know everything about the opportunities of technology for business in the digital age. That’s where we come in.',
+                       'Setting new standards of excellence is our passion. We work hard to stay ahead of the curve so you can too.',
                    button: '',
                    sub: '',
                    buttonHref: '',
@@ -32,9 +32,9 @@ export const home = {
                    left: true,
                },
                {
-                   title: 'Ideas are Our Business',
+                   title: 'Emotion Creates Motion.',
                    p:
-                       'goHere when you don’t know what you need, when you know exactly what you need, when you need to out-compete in a saturated market, or when you’re looking to break the mold.',
+                       'We help you discover what makes your brand stand out and channel it into moving digital experiences that convert. Our job isn’t done until your customers feel it.',
                    sub: 'masterminds',
                    button: 'Who We Are',
                    buttonHref: '/who',
@@ -44,7 +44,7 @@ export const home = {
                    color2: 'purple',
                },
                {
-                   title: 'REPLACE ME',
+                   title: 'goHere for Results',
                    p: '',
                    sub: 'be creative',
                    button: 'Join Us On the Cutting Edge',
@@ -62,12 +62,11 @@ export const who = {
            h1Sub: 'Envisioneers',
            section: [
                {
-                   title: 'goHere for Success.',
-                   p:
-                       'Setting new standards of excellence is our passion--and we have the technological versatility to deliver.',
+                   title: 'Envisioning Success.',
+                   p:'A combination of nerds, cool kids, and thought leaders = people who get results, people who get people, and people who think differently. That’s goHere. We love to bring our clients peace of mind with technology-based solutions that get results.',
                    sub: 'nerd alert',
-                   button: "Let's get started",
-                   buttonHref: '/get-started',
+                   button: "Envision With Us!",
+                   buttonHref: 'cta',
                    invert: true,
                    color1: 'red',
                    color2: 'purple',
@@ -75,32 +74,31 @@ export const who = {
            ],
        };
 export const what = {
-    title: 'goHere - Creative Solutions',
-    metaDesc: 'This is the description',
-    h1: 'Strategic',
-    h1Sub: 'Outcomes',
-    section: [
-        {
-            title: 'goHere for Success',
-            p:
-                'In a field of rapid innovation, sustainability is a luxury, and versatility is essential. We dream bigger and aim higher to create customized solutions that spark extraordinary, lasting results.',
-            sub: 'masterminds',
-            button: '',
-            buttonHref: '',
-            invert: true,
-        },
-    ],
-};
+           title: 'goHere - Creative Solutions',
+           metaDesc: 'This is the description',
+           h1: 'Powerful',
+           h1Sub: 'Outcomes',
+           section: [
+               {
+                   title: 'goHere for Results',
+                   p: 'Customized solutions for measurable results in every area of business. Drive growth, communicate clearly, optimize conversion rates, and stand out.',
+                   sub: 'masterminds',
+                   button: '',
+                   buttonHref: '',
+                   invert: true,
+               },
+           ],
+       };
 export const work = {
            title: 'goHere - Creative Solutions',
            metaDesc: 'This is the description',
-           h1: 'Tech',
-           h1Sub: 'Renaissance',
+           h1: 'The',
+           h1Sub: 'Vault',
            section: [
                {
                    title: 'goHere for Partnership',
                    p:
-                       'Whether you’re a startup, nonprofit, or a household brand--goHere! We select clients we <b>resonate,</b> with, bringing <b>passion and inspiration</b> to any project.',
+                       'Whether you’re a startup, nonprofit, or a household brand, goHere has solutions for you. We select clients we resonate with, bringing passion and inspiration to any project.',
                    sub: 'powerful',
                    button: 'Become a Partner',
                    buttonHref: '/get-started',
@@ -111,22 +109,22 @@ export const work = {
            ],
        };
 export const contact = {
-    title: 'goHere - Creative Solutions',
-    metaDesc: 'This is the description',
-    h1: 'Call',
-    h1Sub: 'Today',
-    section: [
-        {
-            title: 'We Want To<br>Hear From You!',
-            p:
-                'We tackle projects of all types and work with organizations across all industries. Discover the power of creative tech solutions for any project you might have.',
-            sub: 'lets go!',
-            button: 'phone',
-            buttonHref: 'tel:309.999.5595',
-            invert: true,
-        },
-    ],
-};
+           title: 'goHere - Creative Solutions',
+           metaDesc: 'This is the description',
+           h1: 'Call',
+           h1Sub: 'Today',
+           section: [
+               {
+                   title: 'We Want To<br>Hear From You!',
+                   p:
+                       'goHere and discover the power of creative solutions for your next project.',
+                   sub: 'lets go!',
+                   button: 'phone',
+                   buttonHref: 'tel:309.999.5595',
+                   invert: true,
+               },
+           ],
+       };
 export const insights = {
            title: 'goHere - Creative Solutions',
            metaDesc: 'This is the description',

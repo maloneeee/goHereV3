@@ -102,7 +102,7 @@
           </ul>
 
         </div>
-        <!-- <div class="blackBox" style=' background:{service.color};'>
+        <div class="blackBox" style=' background:{service.color};'>
 
           <h4>
            
@@ -112,7 +112,7 @@
             
               {@html service.p}
           </p>
-        </div> -->
+        </div>
       </div>
     {/each}
     <div style='position: sticky;top: 0px;'>
