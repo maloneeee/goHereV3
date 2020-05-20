@@ -15,8 +15,9 @@
         right:0;
         bottom:0;
         z-index:9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
-        background:url('/img/space/space.jpg');
+        background:url('/img/space/space1x.png');
         padding: 2vh 4vw;
+        background-size:cover;
     }
 
     .close{

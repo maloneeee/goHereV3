@@ -48,13 +48,13 @@ export default class Index {
             phase = 0,
             delta;
         let fileArray = [
-            { name: 'earth', url: 'winner(1).jpg' },
-            { name: 'moon', url: 'winner(2).jpg' },
-            { name: 'planet', url: 'winner(4).jpg' },
+            { name: 'earth', url: 'planet3-full.png' },
+            { name: 'moon', url: 'planet1-full.png' },
+            { name: 'planet', url: 'planet2-full.png' },
         ];
         let promiseArray = [],
             texturePromiseArray = [],
-            path = 'https://gohere2-f295.kxcdn.com/img/Planets/',
+            path = '/img/Planets/',
             texturesArray = [];
         const fragmentShader = `
             #include <common>
@@ -245,7 +245,7 @@ export default class Index {
             createPlanet(
                 'main',
                 70,
-                texturesArray[0],
+                texturesArray[2],
                 start.main,
                 scene,
                 25,
@@ -254,7 +254,7 @@ export default class Index {
             createPlanet(
                 'secondary',
                 22,
-                texturesArray[2],
+                texturesArray[1],
                 start.sec,
                 pivots[0].obj,
                 20,
@@ -263,7 +263,7 @@ export default class Index {
             createPlanet(
                 'third',
                 0.5,
-                texturesArray[1],
+                texturesArray[0],
                 start.third,
                 empties[1].obj,
                 15,
