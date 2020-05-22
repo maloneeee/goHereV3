@@ -2,6 +2,7 @@
   import { home } from "./../stores/content.js";
   import { fade } from "svelte/transition";
   import Section from "./../components/Section.svelte";
+  import SectionNew from "./../components/Section.svelte";
   import Hero from "./../components/Hero.svelte";
   import Nav from "../components/Nav.svelte";
   import TransitionWrapper from "../components/TransitionWrapper.svelte";
