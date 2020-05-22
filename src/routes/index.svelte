@@ -234,7 +234,7 @@
       {/each}
     </div>
     <div class="buff" />
-    <Hero heading={home.h1} headingSub={home.h1Sub} />
+    <Hero heading={home.h1} headingSub={home.h1Sub} color={false}/>
     {#each home.sections as section, i}
       {#if i % 2 != 1}
         <section
