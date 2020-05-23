@@ -69,38 +69,13 @@
 </style>
 
 <section
-  class="section"
-  class:border_color={!clear}
-  class:clear
-  class:invert
-  class:bottom>
-  <div class:clear_inner={clear} class:section_inner={!clear} class:invert>
-    <div class="container" class:inner={!clear} class:left>
+  class="section invert">
+  <div class="section_inner invert" >
+    <div class="container inner" class:left>
       
       <p>
-        <span class:colorDynamic={invert}>{@html title}</span> {@html p}
+        <span class="colorDynamic"}>{@html title}</span> {@html p}
       </p>
-      <!-- {#if button != ''}
-        {#if buttonHref == 'cta'}
-          <button
-            class="button colorRotate"
-            on:click={displayCTA}
-            style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.35)
-            0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%),
-            linear-gradient(106.98deg, {color1}, {color2});">
-            {button}
-          </button>
-        {:else}
-          <a
-            class="button colorRotate btt"
-            href={buttonHref}
-            style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.35)
-            0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%),
-            linear-gradient(106.98deg, {color1}, {color2});">
-            {button}
-          </a>
-        {/if}
-      {/if} -->
-    </div>
+      
   </div>
 </section>

@@ -24,7 +24,7 @@ export const home = {
                {
                    title: '',
                    p:
-                       'Setting new standards of excellence is our passion. We work hard to stay ahead of the curve so you can too.',
+                       '<b>Setting new standards of excellence</b> is our passion. We work hard to stay ahead of the curve so you can too.',
                    button: '',
                    sub: '',
                    buttonHref: '',
@@ -44,7 +44,7 @@ export const home = {
                    color2: 'purple',
                },
                {
-                   title: 'Join Us On the Cutting Edge',
+                   title: 'Join Us On <br>the Cutting Edge',
                    p: '',
                    sub: 'be creative',
                    button: 'Get Started',
