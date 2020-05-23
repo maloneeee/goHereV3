@@ -15,7 +15,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    background: url("https://gohere2-f295.kxcdn.com/img/headshots/background.png");
+    background: url("/img/headshots/background.png");
     background-size: cover;
     background-position: center;
     animation: fadeHero 30s ease-in infinite;
