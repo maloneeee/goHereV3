@@ -42,6 +42,7 @@ span{
   .small {
     font-size: 3vw;
     line-height: 110%;
+    text-transform: lowercase;
   }
   .fart{
      padding:0vw 0.8vw 0vw 0.5vw;

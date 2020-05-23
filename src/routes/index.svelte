@@ -210,7 +210,7 @@
                   class:left={section.left}>
                   {#if section.sub != ''}
                     <h5>
-                      <span>{section.sub}</span>
+                      <span>{@html section.sub}</span>
                     </h5>
                   {/if}
                   <h2
@@ -256,7 +256,7 @@
               class:left={section.left}>
               {#if section.sub != ''}
                 <h5>
-                  <span>{section.sub}</span>
+                  <span>{@html section.sub}</span>
                 </h5>
               {/if}
               <h2 class:colorDynamic={section.invert} data-glow={section.title}>

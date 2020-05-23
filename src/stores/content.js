@@ -9,9 +9,9 @@ export const home = {
            h1Sub: 'Solutions',
            sections: [
                {
-                   title: 'We Engineer Breakthroughs.',
+                   title: 'We Engineer Success.',
                    p:
-                       'goHere is a team of innovative consultants and creators. We bring our clients peace of mind with creative, customized solutions that optimize impact and prosperity in every area of business.',
+                       '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> is a team of <b>innovative</b> consultants and <b>creators</b>. We bring our clients peace of mind with creative, customized solutions that optimize impact and prosperity in every area of business.',
                    sub: 'inciting inspiration',
 
                    button: 'what we do',
@@ -34,7 +34,7 @@ export const home = {
                {
                    title: 'Emotion Creates Motion.',
                    p:
-                       'We help you discover what makes your brand stand out and channel it into moving digital experiences that convert. Our job isn’t done until your customers feel it.',
+                       'We help you discover what makes your brand stand out and channel it into <b>moving</b> digital experiences that convert. Our job isn’t done until your customers <b>feel</b> it.',
                    sub: 'masterminds',
                    button: 'Who We Are',
                    buttonHref: '/who',
@@ -44,10 +44,10 @@ export const home = {
                    color2: 'purple',
                },
                {
-                   title: 'Join Us On <br>the Cutting Edge',
+                   title: 'Discover Your<br>Powerful Outcome.',
                    p: '',
-                   sub: 'be creative',
-                   button: 'Get Started',
+                   sub: 'Start Your Journey',
+                   button: "Let's Get Started",
                    buttonHref: '/get-started',
                    clear: true,
                    color1: '#2BD9FF',
@@ -63,9 +63,10 @@ export const who = {
            section: [
                {
                    title: 'Envisioning Success.',
-                   p:'A combination of nerds, cool kids, and thought leaders = people who get results, people who get people, and people who think differently. That’s goHere. We love to bring our clients peace of mind with technology-based solutions that get results.',
+                   p:
+                       '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> is a team of innovative consultants and creators fueled by ideas that break the mold. We love to bring our clients <b>peace of mind</b> with custom designed technology that gets results.<br><br> We bring our clients peace of mind with creative, customized solutions that optimize impact and prosperity in every area of business.',
                    sub: 'nerd alert',
-                   button: "Envision With Us!",
+                   button: 'Envision With Us!',
                    buttonHref: 'cta',
                    invert: true,
                    color1: 'red',
@@ -80,8 +81,9 @@ export const what = {
            h1Sub: 'Outcomes',
            section: [
                {
-                   title: 'goHere for Results',
-                   p: 'Customized solutions for measurable results in every area of business. Drive growth, communicate clearly, optimize conversion rates, and stand out.',
+                   title: '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for Results',
+                   p:
+                       'Data-driven. Intuitive. Creative. Beautiful.<br/> Simple principles. Powerful outcomes.',
                    sub: 'masterminds',
                    button: '',
                    buttonHref: '',
@@ -96,9 +98,10 @@ export const work = {
            h1Sub: 'Vault',
            section: [
                {
-                   title: 'goHere for Partnership',
+                   title:
+                       '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for Partnership',
                    p:
-                       'Whether you’re a startup, nonprofit, or a household brand, goHere has solutions for you. We select clients we resonate with, bringing passion and inspiration to any project.',
+                       'Whether you’re a startup, nonprofit, or a household brand, <span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> has solutions for you. We select clients we resonate with, bringing passion and inspiration to any project.',
                    sub: 'powerful',
                    button: 'Become a Partner',
                    buttonHref: '/get-started',
@@ -117,7 +120,7 @@ export const contact = {
                {
                    title: 'We Want To<br>Hear From You!',
                    p:
-                       'goHere and discover the power of creative solutions for your next project.',
+                       '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> and discover the power of creative solutions for <b>your next project</b>.',
                    sub: 'lets go!',
                    button: 'phone',
                    buttonHref: 'tel:309.999.5595',
@@ -147,34 +150,15 @@ export const insights = {
 
 export const cta = {
            title: "Let's Create<br>Something Beautiful",
-           p: 'Reach out today and find out what goHere can do for you!',
+           p: 'Reach out today and find out what <span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> can do for you!',
            sub: 'be creative',
            button: "Let's Go",
-           buttonHref: "cta",
+           buttonHref: 'cta',
            bottom: true,
            color1: '#2BD9FF',
            color2: '#BF37A9',
        };
 
 export const tags = [
-    'technology solutions',
-    'creative direction',
-    'problem-solving',
-    'custom engineering',
-    'crisis management',
-    'business consulting',
-    'virtual reality',
-    'augmented reality',
-    'website development',
-    'lead generation',
-    'mobile first design',
-    'responsive UI',
-    'visual design',
-    'white labeling',
-    'system auditing',
-    'enterprise resource planning',
-    'application integration',
-    'creative solutions',
-    'full-stack development',
-    'app development',
+    'Problem Solving', 'Web Development', 'UI/UX', 'Platinum Level Hosting', 'White Labeling', 'Conversion Rate Optimization', 'Lead Generation', 'Creative Direction', 'Content Strategy', 'Digital Marketing', 'SEO', 'Asset Creation', 'Digital Communications', 'PPC Advertising', 'Public Relations', 'Brand Identity', 'Reputation Management', 'GTM Strategy', 'System Auditing', 'Application Integration', 'Creative Solutions', 'Virtual Reality', 'Machine Learning', 'Edge Computing', 'Blockchain Technologies', 'Technology Solutions', 'Mobile First Design', 'App Development', 'Business Consulting', 'Full-Stack Development', 'Crisis Management'
 ];
