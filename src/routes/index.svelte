@@ -215,7 +215,7 @@
                   {/if}
                   <h2
                     class:colorDynamic={section.invert}
-                    data-glow={section.title}>
+                    data-glow=''>
                     {@html section.title}
                   </h2>
                   <p>
@@ -259,7 +259,7 @@
                   <span>{@html section.sub}</span>
                 </h5>
               {/if}
-              <h2 class:colorDynamic={section.invert} data-glow={section.title}>
+              <h2 class:colorDynamic={section.invert} data-glow=''>
                 {@html section.title}
               </h2>
               <p>

@@ -9,12 +9,13 @@ export const home = {
            h1Sub: 'Solutions',
            sections: [
                {
-                   title: 'We Engineer Success.',
+                   title:
+                       '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for Success.',
                    p:
-                       '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> is a team of <b>innovative</b> consultants and <b>creators</b>. We bring our clients peace of mind with creative, customized solutions that optimize impact and prosperity in every area of business.',
+                       '<b>Fueled by creativity. Driven by excellence.</b> We love creating authentic, memorable, and moving digital experiences that bring growth and prosperity.',
                    sub: 'inciting inspiration',
 
-                   button: 'what we do',
+                   button: '',
                    buttonHref: '/what',
                    invert: true,
                    color1: 'red',
@@ -24,7 +25,7 @@ export const home = {
                {
                    title: '',
                    p:
-                       '<b>Setting new standards of excellence</b> is our passion. We work hard to stay ahead of the curve so you can too.',
+                       '<b>Technology designed for you.</b> Our solutions are built to drive your business into the future. ',
                    button: '',
                    sub: '',
                    buttonHref: '',
@@ -34,9 +35,9 @@ export const home = {
                {
                    title: 'Emotion Creates Motion.',
                    p:
-                       'We help you discover what makes your brand stand out and channel it into <b>moving</b> digital experiences that convert. Our job isn’t done until your customers <b>feel</b> it.',
+                       'We help you discover what makes your brand stand out and channel it into <b>moving</br> digital experiences that convert. Our job isn’t done until your customers <b>feel</b> it.',
                    sub: 'masterminds',
-                   button: 'Who We Are',
+                   button: '',
                    buttonHref: '/who',
                    invert: true,
 
@@ -44,7 +45,7 @@ export const home = {
                    color2: 'purple',
                },
                {
-                   title: 'Discover Your<br>Powerful Outcome.',
+                   title: '',
                    p: '',
                    sub: 'Start Your Journey',
                    button: "Let's Get Started",
