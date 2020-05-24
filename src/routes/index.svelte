@@ -10,8 +10,8 @@
   import CTAOverlay from "./../components/CTAOverlay.svelte";
   import { onMount, onDestroy } from "svelte";
   import RandomText from "./../components/RandomText.svelte";
-  import {showingCTA} from './../stores/var.js'
-
+  import { showingCTA, scrollPer } from "./../stores/var.js";
+  import ScrollAnimation from '../components/ScrollAnimation.svelte'
 
   export let phase = 0;
   let displayMenu = false;
@@ -45,7 +45,7 @@
       phase = 0;
     } else if (y > 40 && y < 52) {
       phase = 1;
-    } else if (y > 97) {
+    } else if (y > 99.1) {
       phase = 3;
     } else {
       phase = 0;
@@ -59,7 +59,7 @@
     displayMenu = false;
   }
 
-  function displayCTA(){
+  function displayCTA() {
     showingCTA.set(true);
   }
 </script>
@@ -75,7 +75,10 @@
   }
 
   .buff_section {
-    height: 125vh;
+    height: 110vh;
+  }
+  .buff_section:last-child{
+    height: 90vh;
   }
   .fixed_section {
     position: absolute;
@@ -130,6 +133,19 @@
   .clear_inner.left {
     justify-content: flex-start;
     padding-left: 10vw;
+  }
+
+  .cta {
+    font-size: 4vw;
+    /* text-transform:uppercase; */
+    background:none;
+    margin-top:-2%;
+    transition: all 200ms;
+  }
+  .cta:hover{
+    
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%), linear-gradient(106.98deg, #2BD9FF, #BF37A9);
+  font-size: 5vw;
   }
 
   @media (max-width: 1068px) {
@@ -188,7 +204,7 @@
 
     <div class="frame">
       {#each home.sections as section, i}
-        {#if i % 2 == 1}
+        {#if i % 2 == 1 && i < 3}
           {#if phase == i}
             <section
               class="section fixed_section"
@@ -210,23 +226,61 @@
                   class:left={section.left}>
                   {#if section.sub != ''}
                     <h5>
-                      <span>{@html section.sub}</span>
+                      <span>
+                        {@html section.sub}
+                      </span>
                     </h5>
                   {/if}
-                  <h2
-                    class:colorDynamic={section.invert}
-                    data-glow=''>
+                  <h2 class:colorDynamic={section.invert} data-glow="">
                     {@html section.title}
                   </h2>
                   <p>
                     {@html section.p}
                   </p>
                   {#if section.button != ''}
-                    <button class="button  colorRotate" on:click={displayCTA}  style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%), linear-gradient(106.98deg, {section.color1}, {section.color2});">
-                  {section.button}
-                </button>
+                    <button
+                      class="button colorRotate"
+                      on:click={displayCTA}
+                      style="background: linear-gradient(180deg, rgba(255, 255,
+                      255, 0.35) 0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0,
+                      0, 0.26) 100%), linear-gradient(106.98deg, {section.color1},
+                      {section.color2});">
+                      {section.button}
+                    </button>
                   {/if}
                 </div>
+              </div>
+            </section>
+          {/if}
+        {/if}
+
+        <!--- Button Section -->
+        {#if i == 3}
+          {#if phase == i}
+            <section
+              class="section fixed_section"
+              id="sec-{i}"
+              transition:fade={{ duration: 300 }}
+              class:clear={section.clear}
+              class:bottom={section.bottom}>
+              <div
+                class:clear_inner={section.clear}
+                class:section_inner={!section.clear}
+                class:invert={section.invert}
+                class:left={section.left}>
+
+                <div
+                  class="container"
+                  class:inner={!section.clear}
+                  class:left={section.left}>
+                   <button
+                      class="button cta"
+                      on:click={displayCTA}
+                      >
+                      {section.button}
+                    </button>
+                </div>
+
               </div>
             </section>
           {/if}
@@ -234,7 +288,7 @@
       {/each}
     </div>
     <div class="buff" />
-    <Hero heading={home.h1} headingSub={home.h1Sub} color={false}/>
+    <Hero heading={home.h1} headingSub={home.h1Sub} color={false} />
     {#each home.sections as section, i}
       {#if i % 2 != 1}
         <section
@@ -256,17 +310,24 @@
               class:left={section.left}>
               {#if section.sub != ''}
                 <h5>
-                  <span>{@html section.sub}</span>
+                  <span>
+                    {@html section.sub}
+                  </span>
                 </h5>
               {/if}
-              <h2 class:colorDynamic={section.invert} data-glow=''>
+              <h2 class:colorDynamic={section.invert} data-glow="">
                 {@html section.title}
               </h2>
               <p>
                 {@html section.p}
               </p>
               {#if section.button != ''}
-                <a class="button  colorRotate" href={section.buttonHref} style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%), linear-gradient(106.98deg, {section.color1}, {section.color2});">
+                <a
+                  class="button colorRotate"
+                  href={section.buttonHref}
+                  style="background: linear-gradient(180deg, rgba(255, 255, 255,
+                  0.35) 0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26)
+                  100%), linear-gradient(106.98deg, {section.color1}, {section.color2});">
                   {section.button}
                 </a>
               {/if}
@@ -278,3 +339,8 @@
     {/each}
   </div>
 </TransitionWrapper>
+{#if $scrollPer == 0 }
+<div class="hide"  transition:fade={{ duration: 300 }}>
+  <ScrollAnimation />
+</div>
+{/if}

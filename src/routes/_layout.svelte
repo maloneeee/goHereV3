@@ -4,6 +4,7 @@
 	import Scrollbar from '../components/Scrollbar.svelte'
 	import Loader from '../components/Loader.svelte'
 	import CTAOverlay from '../components/CTAOverlay.svelte'
+	
 	import {scrollPosition, scrollPer} from './../stores/var.js'
 	import {onMount} from 'svelte';
 	export let segment;
