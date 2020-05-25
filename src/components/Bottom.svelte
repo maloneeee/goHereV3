@@ -466,6 +466,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 0vw;
+    width:100%;
   }
 
   .form form {
