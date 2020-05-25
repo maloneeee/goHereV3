@@ -393,7 +393,7 @@ export default class Index {
             } else if( y >= ratio ) {
                  camera.position.x = end.camera.x;
                  camera.position.y = end.camera.y;
-                 camera.position.z = end.camera.z-((y-ratio)/20);
+                 camera.position.z = end.camera.z-((y-ratio)/30);
 
                  pivots[1].obj.rotation.y = end.secPivot;
                  pivots[2].obj.rotation.y = end.thirdPivot;

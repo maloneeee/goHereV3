@@ -283,8 +283,6 @@
   function displayCTA() {
     showingCTA.set(true);
   }
-
-
 </script>
 
 <style>
@@ -469,6 +467,11 @@
     flex-direction: column;
     padding: 0 0vw;
   }
+
+  .form form {
+    max-width: 80vw;
+    flex-direction: column;
+  }
   .form .form__section {
     margin-bottom: 100px;
     padding-right: 0vw;
@@ -603,7 +606,7 @@
       padding: 50px 4vw;
       position: relative;
     }
-    .hero .astro {
+    /* .hero .astro {
       left: auto;
       right: -6vw;
       width: 135vw;
@@ -623,7 +626,7 @@
       font-size: 36px;
       line-height: 34px;
       visibility: hidden;
-    }
+    } */
 
     .feed h3 {
       margin-top: 0px;
@@ -684,6 +687,8 @@
       padding: 0px;
       margin-bottom: 3vw;
       line-height: 13vw;
+      max-width: 80vw;
+      flex-direction: column;
     }
     .form .form__section {
       padding-right: 0vw;
@@ -694,8 +699,10 @@
       line-height: 100%;
       margin: 0px 4vw;
     }
-    form {
+    .form form {
       background: transparent;
+      max-width: 80vw;
+      flex-direction: column;
     }
     .call {
       padding: 00px 4vw 50px 4vw;
@@ -707,28 +714,7 @@
     .call h2:last-child {
       font-size: 15vw;
       margin-top: -16vw;
-      
     }
-  }
-
-  .ctaaa {
-    font-size: 4vw;
-    /* text-transform:uppercase; */
-    background: none;
-    margin-top: -2%;
-    transition: all 200ms;
-    padding: 20px 40px;
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.35) 0%,
-        rgba(135, 135, 135, 0) 46.87%,
-        rgba(0, 0, 0, 0.26) 100%
-      ),
-      linear-gradient(106.98deg, #2bd9ff, #bf37a9);
-  }
-  .ctaaa:hover {
-    font-size: 5vw;
-    padding: 17px 27px;
   }
 </style>
 
