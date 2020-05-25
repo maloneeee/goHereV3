@@ -1,7 +1,7 @@
 <script>
-//   import * as animateScroll from "svelte-scrollto";
+  //   import * as animateScroll from "svelte-scrollto";
   // import { onMount } from "svelte";
-  import TransitionWrapper from '../components/TransitionWrapper.svelte'
+  import TransitionWrapper from "../components/TransitionWrapper.svelte";
   let form = {
     name: "",
     project: "",
@@ -10,236 +10,229 @@
     website: ""
   };
   import { onMount } from "svelte";
+  import { showingCTA } from "./../stores/var.js";
   let hash = window.location.hash;
   onMount(() => {
+    (function($) {
+      $(document).ready(function() {
+        $.jScrollability([
+          {
+            selector: ".astro",
+            start: function($el) {
+              return $el.offset().top;
+            },
+            end: function($el) {
+              return $el.offset().top + $el.height() + 1000;
+            },
+            fn: {
+              bottom: {
+                start: 100,
+                end: -400,
+                unit: "px"
+              }
+            }
+          }
+        ]);
+        $.jScrollability([
+          {
+            selector: ".planet",
+            start: function($el) {
+              return $el.offset().top + 500;
+            },
+            end: function($el) {
+              return $el.offset().top + $el.height() + 1000;
+            },
+            fn: {
+              top: {
+                start: -90,
+                end: 0,
+                unit: "vh"
+              }
+            }
+          }
+        ]);
+        $.jScrollability([
+          {
+            selector: ".keywords h3:first-child",
+            start: 0,
+            end: 1000,
+            fn: {
+              right: {
+                start: 0,
+                end: 90,
+                unit: "vw"
+              }
+            }
+          }
+        ]);
+        $.jScrollability([
+          {
+            selector: ".keywords h3:last-child",
+            start: 0,
+            end: 1000,
+            fn: {
+              right: {
+                start: 90,
+                end: 0,
+                unit: "vw"
+              }
+            }
+          }
+        ]);
+        $.jScrollability([
+          {
+            selector: ".hero .text",
+            start: function($el) {
+              return $el.offset().top + 700;
+            },
+            end: function($el) {
+              return $el.offset().top + $el.height() + 700;
+            },
+            fn: {
+              opacity: {
+                start: 100,
+                end: 0,
+                unit: "%"
+              }
+            }
+          }
+        ]);
+        $.jScrollability([
+          {
+            selector: ".feed h3",
+            start: function($el) {
+              return $el.offset().top + 100;
+            },
+            end: function($el) {
+              return $el.offset().top + $el.height() + 200;
+            },
+            fn: {
+              opacity: {
+                start: 0,
+                end: 100,
+                unit: "%"
+              }
+            }
+          }
+        ]);
+        $.jScrollability([
+          {
+            selector: ".feed h2",
+            start: function($el) {
+              return $el.offset().top;
+            },
+            end: function($el) {
+              return $el.offset().top + $el.height() + 200;
+            },
+            fn: {
+              opacity: {
+                start: 0,
+                end: 100,
+                unit: "%"
+              }
+            }
+          }
+        ]);
+        $.jScrollability([
+          {
+            selector: ".feed p",
+            start: function($el) {
+              return $el.offset().top + 200;
+            },
+            end: function($el) {
+              return $el.offset().top + $el.height() + 300;
+            },
+            fn: {
+              opacity: {
+                start: 0,
+                end: 100,
+                unit: "%"
+              }
+            }
+          }
+        ]);
+        $.jScrollability([
+          {
+            selector: ".quote p",
+            start: function($el) {
+              return $el.offset().top - 500;
+            },
+            end: function($el) {
+              return $el.offset().top + $el.height() + 1500;
+            },
+            fn: {
+              top: {
+                start: 200,
+                end: -50,
+                unit: "px"
+              }
+            }
+          }
+        ]);
 
-      
-  (function($) {
-    $(document).ready(function() {
-      $.jScrollability([
-        {
-          selector: ".astro",
-          start: function($el) {
-            return $el.offset().top;
-          },
-          end: function($el) {
-            return $el.offset().top + $el.height() + 1000;
-          },
-          fn: {
-            bottom: {
-              start: 100,
-              end: -400,
-              unit: "px"
+        $.jScrollability([
+          {
+            selector: ".call h2:last-child",
+            start: function($el) {
+              return $el.offset().top - 200;
+            },
+            end: function($el) {
+              return $el.offset().top + $el.height();
+            },
+            fn: {
+              opacity: {
+                start: 0,
+                end: 100,
+                unit: "%"
+              }
             }
           }
-        }
-      ]);
-      $.jScrollability([
-        {
-          selector: ".planet",
-          start: function($el) {
-            return $el.offset().top + 500;
-          },
-          end: function($el) {
-            return $el.offset().top + $el.height() + 1000;
-          },
-          fn: {
-            top: {
-              start: -90,
-              end: 0,
-              unit: "vh"
+        ]);
+        $.jScrollability([
+          {
+            selector: ".cta h3",
+            start: function($el) {
+              return $el.offset().top - 500;
+            },
+            end: function($el) {
+              return $el.offset().top + $el.height() + 500;
+            },
+            fn: {
+              opacity: {
+                start: 0,
+                end: 100,
+                unit: "%"
+              }
             }
           }
-        }
-      ]);
-      $.jScrollability([
-        {
-          selector: ".keywords h3:first-child",
-          start: 0,
-          end: 1000,
-          fn: {
-            right: {
-              start: 0,
-              end: 90,
-              unit: "vw"
-            }
-          }
-        }
-      ]);
-      $.jScrollability([
-        {
-          selector: ".keywords h3:last-child",
-          start: 0,
-          end: 1000,
-          fn: {
-            right: {
-              start: 90,
-              end: 0,
-              unit: "vw"
-            }
-          }
-        }
-      ]);
-      $.jScrollability([
-        {
-          selector: ".hero .text",
-          start: function($el) {
-            return $el.offset().top + 700;
-          },
-          end: function($el) {
-            return $el.offset().top + $el.height() + 700;
-          },
-          fn: {
-            opacity: {
-              start: 100,
-              end: 0,
-              unit: "%"
-            }
-          }
-        }
-      ]);
-      $.jScrollability([
-        {
-          selector: ".feed h3",
-          start: function($el) {
-            return $el.offset().top + 100;
-          },
-          end: function($el) {
-            return $el.offset().top + $el.height() + 200;
-          },
-          fn: {
-            opacity: {
-              start: 0,
-              end: 100,
-              unit: "%"
-            }
-          }
-        }
-      ]);
-      $.jScrollability([
-        {
-          selector: ".feed h2",
-          start: function($el) {
-            return $el.offset().top;
-          },
-          end: function($el) {
-            return $el.offset().top + $el.height() + 200;
-          },
-          fn: {
-            opacity: {
-              start: 0,
-              end: 100,
-              unit: "%"
-            }
-          }
-        }
-      ]);
-      $.jScrollability([
-        {
-          selector: ".feed p",
-          start: function($el) {
-            return $el.offset().top + 200;
-          },
-          end: function($el) {
-            return $el.offset().top + $el.height() + 300;
-          },
-          fn: {
-            opacity: {
-              start: 0,
-              end: 100,
-              unit: "%"
-            }
-          }
-        }
-      ]);
-      $.jScrollability([
-        {
-          selector: ".quote p",
-          start: function($el) {
-            return $el.offset().top - 500;
-          },
-          end: function($el) {
-            return $el.offset().top + $el.height() + 1500;
-          },
-          fn: {
-            top: {
-              start: 200,
-              end: -50,
-              unit: "px"
-            }
-          }
-        }
-      ]);
-
-      $.jScrollability([
-        {
-          selector: ".call h2:last-child",
-          start: function($el) {
-            return $el.offset().top - 200;
-          },
-          end: function($el) {
-            return $el.offset().top + $el.height();
-          },
-          fn: {
-            opacity: {
-              start: 0,
-              end: 100,
-              unit: "%"
-            }
-          }
-        }
-      ]);
-      $.jScrollability([
-        {
-          selector: ".cta h3",
-          start: function($el) {
-            return $el.offset().top - 500;
-          },
-          end: function($el) {
-            return $el.offset().top + $el.height() + 500;
-          },
-          fn: {
-            opacity: {
-              start: 0,
-              end: 100,
-              unit: "%"
-            }
-          }
-        }
-      ]);
-    });
-  })(jQuery);
+        ]);
+      });
+    })(jQuery);
     if (hash == "#cta") {
-    //   animateScroll.scrollTo({ element: "#cta" });
+      //   animateScroll.scrollTo({ element: "#cta" });
     }
   });
 
   let error = false;
 
-
-
-
-
   import { db } from "./../firebase.js";
 
-   
- 
   let sent = false;
 
   async function sendContactMessage() {
     try {
       await db.collection("leads").add(form);
       //gtag
-				
-				gtag('event', 'aaa', {
-					'event_category': 'bbb',
-					'event_label': 'ccc'
-				});
-				ga('send', 'event', 'form', 'submit', 'success');
-				dataLayer.push({
-					'event': 'formSubmitRegister'
-				});
-				clearInterval(myVar);
+
+      gtag("event", "aaa", {
+        event_category: "bbb",
+        event_label: "ccc"
+      });
+      ga("send", "event", "form", "submit", "success");
+      dataLayer.push({
+        event: "formSubmitRegister"
+      });
+      clearInterval(myVar);
       sent = true;
     } catch (e) {
       console.log(";(", e);
@@ -247,11 +240,6 @@
       error = true;
     }
   }
-
-
-
-
-
 
   const brands = [
     {
@@ -292,13 +280,18 @@
     }
   ];
 
+  function displayCTA() {
+    showingCTA.set(true);
+  }
+
+
 </script>
 
 <style>
   * {
     margin: 0px;
     padding: 0px;
-    text-align:left;
+    text-align: left;
   }
   section {
     /* background: white; */
@@ -328,7 +321,7 @@
     height: 100vh;
     z-index: 1;
   }
-  
+
   .hero .text {
     padding-left: 25vw;
     text-align: right;
@@ -348,7 +341,7 @@
     font-size: 160px;
     line-height: 150px;
     margin-top: 50px;
-    text-align:right;
+    text-align: right;
   }
   .hero_scroll {
     display: flex;
@@ -414,7 +407,7 @@
     outline: none;
     border: none;
     padding: 40px 0px;
-    background:white;
+    background: white;
     padding-bottom: 140px;
   }
   .brands .row {
@@ -498,7 +491,7 @@
     opacity: 70%;
     text-align: center;
     transition: 200ms;
-    line-height:100%;
+    line-height: 100%;
   }
   .cta .form input:focus {
     outline: none;
@@ -558,41 +551,47 @@
     background: white;
     background-image: url("/img/tilev1-invert.png");
     background-position: center;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-size: 220px;
     /* animation: breath 5s ease-in-out infinite; */
-    position:relative;
+    position: relative;
     /* filter:invert(1); */
   }
- 
 
- .whiteBG::before {
-            content: '';
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            z-index: -1;
-            background-image: linear-gradient(to right, green, #22d8d8, purple, #d624a6, #f7a140, green);
-            background-size: 600%;
-            animation: color_scroll 20s linear infinite;
-            margin-left:-10vw;
-        }
+  .whiteBG::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-image: linear-gradient(
+      to right,
+      green,
+      #22d8d8,
+      purple,
+      #d624a6,
+      #f7a140,
+      green
+    );
+    background-size: 600%;
+    animation: color_scroll 20s linear infinite;
+    margin-left: -10vw;
+  }
 
-   .whiteBG::after {
-            content: '';
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            z-index: -1;
-           background:white;
-            background-size: 600%;
-            animation: breath 5s ease-in-out infinite;
-            /* filter: blur(8px); */
-            margin-left:-10vw;
-
-        }
+  .whiteBG::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background: white;
+    background-size: 600%;
+    animation: breath 5s ease-in-out infinite;
+    /* filter: blur(8px); */
+    margin-left: -10vw;
+  }
 
   .cta h5 {
     font-size: 3vw;
@@ -692,7 +691,7 @@
     }
     .cta .form input {
       font-size: 6vw;
-      line-height:100%;
+      line-height: 100%;
       margin: 0px 4vw;
     }
     form {
@@ -708,35 +707,37 @@
     .call h2:last-child {
       font-size: 15vw;
       margin-top: -16vw;
+      
     }
+  }
+
+  .ctaaa {
+    font-size: 4vw;
+    /* text-transform:uppercase; */
+    background: none;
+    margin-top: -2%;
+    transition: all 200ms;
+    padding: 20px 40px;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.35) 0%,
+        rgba(135, 135, 135, 0) 46.87%,
+        rgba(0, 0, 0, 0.26) 100%
+      ),
+      linear-gradient(106.98deg, #2bd9ff, #bf37a9);
+  }
+  .ctaaa:hover {
+    font-size: 5vw;
+    padding: 17px 27px;
   }
 </style>
 
-<svelte:head>
-  <title>Get Started | goHere</title>
-</svelte:head>
-<TransitionWrapper>
-<div class="background" style="margin-top:-120px;">
-  
-  <section class="hero">
-    <img class="planet" src="img/space/planet1-min.png" alt="" />
-    <img class="astro" src="img/astro.png" alt="" />
-    <div class="text">
-      <h3>Creative Vision</h3>
-      <h1>
-        Let's get
-        <br />
-        <span class="colorDynamic" data-glow="astro-naughty">astro-naughty.</span>
-      </h1>
-      <div class="hero_scroll">
-        <h3>Scroll Down</h3>
-        <div class="circle">
-          <div class="arrow" />
-        </div>
-      </div>
-    </div>
+<div class="background">
+
+  <section class="hero" style="align-items:center; justify-content:center">
+    <!-- <button class="button ctaaa" on:click={displayCTA}>Let's Get Started</button> -->
   </section>
-  <section class="feed  whiteBG">
+  <section class="feed whiteBG">
     <h3>Envisioning</h3>
     <h2>Creative.</h2>
     <h2 class="hh">Solutions.</h2>
@@ -789,7 +790,9 @@
     {#if !sent}
       <h3>
         Tell us about
-        <span class="colorDynamic" data-glow="your project.">your project.</span>
+        <span class="colorDynamic" data-glow="your project.">
+          your project.
+        </span>
       </h3>
       <div class="form">
         <form on:submit|preventDefault={sendContactMessage}>
@@ -799,7 +802,8 @@
               class="colorDynamic"
               bind:value={form.name}
               type="text"
-              placeholder="Full Name" data-glow="{form.name}"/>
+              placeholder="Full Name"
+              data-glow={form.name} />
             <p>and I am creating a</p>
             <input
               bind:value={form.project}
@@ -840,7 +844,7 @@
     {:else}
       <h3>
         Thank you,
-        <span class="colorDynamic" data-glow="{form.name}">{form.name}!</span>
+        <span class="colorDynamic" data-glow={form.name}>{form.name}!</span>
       </h3>
       <h5>We look forward to speaking with you soon.</h5>
     {/if}
@@ -850,4 +854,3 @@
     <h2>305.999.5595</h2>
   </section>
 </div>
-</TransitionWrapper>

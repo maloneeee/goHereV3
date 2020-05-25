@@ -10,8 +10,9 @@
   import CTAOverlay from "./../components/CTAOverlay.svelte";
   import { onMount, onDestroy } from "svelte";
   import RandomText from "./../components/RandomText.svelte";
-  import { showingCTA, scrollPer } from "./../stores/var.js";
-  import ScrollAnimation from '../components/ScrollAnimation.svelte'
+  import { showingCTA, scrollPer, loaded } from "./../stores/var.js";
+  import ScrollAnimation from "../components/ScrollAnimation.svelte";
+  import Bottom from "./../components/Bottom.svelte";
 
   export let phase = 0;
   let displayMenu = false;
@@ -28,12 +29,14 @@
       let create3d = new Index();
       resolve(create3d);
     });
-    createScene.then();
+    createScene.then(loaded.set(true));
     window.addEventListener("scroll", fadeScroll);
   });
   onDestroy(() => {
     phase = 0;
   });
+
+  $: console.log($scrollPer);
   function fadeScroll() {
     //Get percent scrolled
     var h = document.documentElement,
@@ -43,9 +46,9 @@
     var y = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100; //0 to 100
     if (y < 3) {
       phase = 0;
-    } else if (y > 40 && y < 52) {
+    } else if (y > 40 * 0.31 && y < 52 * 0.31) {
       phase = 1;
-    } else if (y > 99.1) {
+    } else if (y > 99.1 * 0.31 && y < 110 * 0.31) {
       phase = 3;
     } else {
       phase = 0;
@@ -77,7 +80,7 @@
   .buff_section {
     height: 110vh;
   }
-  .buff_section:last-child{
+  .buff_section:last-child {
     height: 90vh;
   }
   .fixed_section {
@@ -110,7 +113,10 @@
     min-width: 800px;
     max-width: 65%;
   }
-
+  .left {
+    width: 100%;
+    padding: 2vw;
+  }
   .left h2 {
     text-align: left;
     margin-left: 0;
@@ -135,19 +141,7 @@
     padding-left: 10vw;
   }
 
-  .cta {
-    font-size: 4vw;
-    /* text-transform:uppercase; */
-    background:none;
-    margin-top:-2%;
-    transition: all 200ms;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%), linear-gradient(106.98deg, #2BD9FF, #BF37A9);
   
-  }
-  .cta:hover{
-    
-    font-size: 5vw;
-  }
 
   @media (max-width: 1068px) {
     .container.left {
@@ -274,12 +268,9 @@
                   class="container"
                   class:inner={!section.clear}
                   class:left={section.left}>
-                   <button
-                      class="button cta"
-                      on:click={displayCTA}
-                      >
-                      {section.button}
-                    </button>
+                  <button class="button cta" on:click={displayCTA}>
+                    {section.button}
+                  </button>
                 </div>
 
               </div>
@@ -335,13 +326,18 @@
             </div>
           </div>
         </section>
-        <div class="buff buff_section" />
+        {#if i == 0}
+          <div class="buff buff_section" />
+        {/if}
       {/if}
     {/each}
   </div>
+  <div class="above" style="position:relative; z-index:5;">
+    <Bottom />
+  </div>
 </TransitionWrapper>
-{#if $scrollPer == 0 }
-<div class="hide"  transition:fade={{ duration: 300 }}>
-  <ScrollAnimation />
-</div>
+{#if $scrollPer == 0}
+  <div class="hide" transition:fade={{ duration: 300 }}>
+    <ScrollAnimation />
+  </div>
 {/if}

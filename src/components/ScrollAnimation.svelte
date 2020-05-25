@@ -1,9 +1,9 @@
 <style>
   .mouse {
     position: fixed;
-    width: 150px;
+    width: 85px;
     left: 50%;
-    bottom: 0vh;
+    bottom: -1vh;
     transform: translateX(-50%);
     display: flex;
     flex-direction: row;
@@ -17,13 +17,13 @@
 
   @keyframes scrollDot {
     0% {
-      bottom: 0vh;
+      bottom: -2vh;
     }
     50% {
-      bottom: 2vh;
+      bottom: 0vh;
     }
     100% {
-      mbottom: 0vh;
+      mbottom: -2vh;
     }
   }
 </style>

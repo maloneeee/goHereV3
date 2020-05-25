@@ -12,7 +12,7 @@ export const home = {
                    title:
                        '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for Success.',
                    p:
-                       '<b>Fueled by creativity. Driven by excellence.</b> We love creating authentic, memorable, and moving digital experiences that bring growth and prosperity.',
+                       '<b>Fueled by creativity. Driven by excellence.</b><br/>We love creating unique, authentic, and memorable digital experiences that bring growth and prosperity.',
                    sub: 'inciting inspiration',
 
                    button: '',
@@ -25,7 +25,7 @@ export const home = {
                {
                    title: '',
                    p:
-                       '<b>Technology designed for you.</b> Our solutions are built to drive your business into the future. ',
+                       '<b>Technology designed for you.</b> <br>Our solutions are built to drive your business into the future. ',
                    button: '',
                    sub: '',
                    buttonHref: '',
@@ -33,9 +33,10 @@ export const home = {
                    left: true,
                },
                {
-                   title: 'Emotion Creates Motion.',
+                   title:
+                       '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for Performance.',
                    p:
-                       'We help you discover what makes your brand stand out and channel it into <b>moving</br> digital experiences that convert. Our job isn’t done until your customers <b>feel</b> it.',
+                       '<b>Data-driven. Business simplified.</b><br> <span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> helps you solve problems, grow, and streamline your business.',
                    sub: 'masterminds',
                    button: '',
                    buttonHref: '/who',
@@ -63,9 +64,9 @@ export const who = {
            h1Sub: 'Envisioneers',
            section: [
                {
-                   title: 'Envisioning Success.',
+                   title: '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for Vision.',
                    p:
-                       '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> is a team of innovative consultants and creators fueled by ideas that break the mold. We love to bring our clients <b>peace of mind</b> with custom designed technology that gets results.<br><br> We bring our clients peace of mind with creative, customized solutions that optimize impact and prosperity in every area of business.',
+                       '<b>Powerful experiences. By design.</b> <br> We’re a team of innovative consultants and creators with a passion for excellence and an eye for opportunity. ',
                    sub: 'nerd alert',
                    button: 'Envision With Us!',
                    buttonHref: 'cta',
@@ -84,7 +85,7 @@ export const what = {
                {
                    title: '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for Results',
                    p:
-                       'Data-driven. Intuitive. Creative. Beautiful.<br/> Simple principles. Powerful outcomes.',
+                       '<b>Build. Grow. Optimize. Impress.</b><br> Solutions to drive business. We design and build custom technology solutions that bring structure, growth, and peace of mind.',
                    sub: 'masterminds',
                    button: '',
                    buttonHref: '',

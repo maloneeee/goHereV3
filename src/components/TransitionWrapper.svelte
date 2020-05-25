@@ -1,12 +1,18 @@
 <script>
     import {onMount} from 'svelte';
     import {blur} from 'svelte/transition';
-
+    import {loaded} from './../stores/var.js'
     let show = false;
-
-    onMount(()=>{
+    $: if ($loaded == true){
+        // alert('it worked')
         show = true;
-    })
+    }else{
+        show = false;
+        // alert('its clsoed');
+    }
+    // onMount(()=>{
+    //     show = true;
+    // })
 </script>
 <style>
     div{

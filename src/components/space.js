@@ -44,6 +44,10 @@ export default class Index {
             purple: new THREE.Color('hsl(308, 85%, 44%)'),
         };
         let uniforms;
+
+        //Page Length Percent
+        var ratio = 32;
+
         let clock = new THREE.Clock(),
             phase = 0,
             delta;
@@ -358,21 +362,24 @@ export default class Index {
         function onScroll() {
             //Get percent scrolled
             var h = document.documentElement,
-                b = document.body,
-                st = 'scrollTop',
-                sh = 'scrollHeight';
+            b = document.body,
+            st = 'scrollTop',
+            sh = 'scrollHeight';
             var y =
-                ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100; //0 to 100
-            if (y < 50) {
-                let v = y * 0.02;
+            ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100; //0 to 100
+
+            console.log('camera change:' + ((y - ratio) / 1000));
+
+            if (y < ratio / 2) {
+                let v = y * 0.02 * (100 / ratio);
                 camera.position.x = lerp(start.camera.x, mid.camera.x, v);
                 camera.position.y = lerp(start.camera.y, mid.camera.y, v);
                 camera.position.z = lerp(start.camera.z, mid.camera.z, v);
 
                 pivots[1].obj.rotation.y = lerp(0, mid.secPivot, v);
                 pivots[2].obj.rotation.y = lerp(0, mid.thirdPivot, v);
-            } else {
-                let v = y * 0.02 - 1;
+            } else if (y < ratio*1.0) {
+                let v = y * 0.02 * (100 / ratio) - 1;
                 camera.position.x = lerp(mid.camera.x, end.camera.x, v);
                 camera.position.y = lerp(mid.camera.y, end.camera.y, v);
                 camera.position.z = lerp(mid.camera.z, end.camera.z, v);
@@ -383,6 +390,13 @@ export default class Index {
                     end.thirdPivot,
                     v
                 );
+            } else if( y >= ratio ) {
+                 camera.position.x = end.camera.x;
+                 camera.position.y = end.camera.y;
+                 camera.position.z = end.camera.z-((y-ratio)/20);
+
+                 pivots[1].obj.rotation.y = end.secPivot;
+                 pivots[2].obj.rotation.y = end.thirdPivot;
             }
         }
         function lerp(min, max, value) {
