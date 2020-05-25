@@ -372,7 +372,7 @@
 
   .feed {
     color: #e5e5e5;
-    padding-top: 270px;
+    /* padding-top: 270px; */
     padding-bottom: 170px;
   }
   .feed h3 {
@@ -457,16 +457,16 @@
     margin: 200px 0px;
     font-size: 132px;
     text-align: right;
-    color: #b9b9b9;
+    color: #353535;
   }
   .cta .form {
-    color: #353535;
+    color: #b9b9b9;
     font-size: 4vw;
     line-height: 8vw;
     display: flex;
     flex-direction: column;
     padding: 0 0vw;
-    width:100%;
+    width: 100%;
   }
 
   .form form {
@@ -725,9 +725,9 @@
     <!-- <button class="button ctaaa" on:click={displayCTA}>Let's Get Started</button> -->
   </section>
   <section class="feed whiteBG">
-    <h3>Envisioning</h3>
+    <!-- <h3>Envisioning</h3>
     <h2>Creative.</h2>
-    <h2 class="hh">Solutions.</h2>
+    <h2 class="hh">Solutions.</h2> -->
     <p>
       We love to create
       <b class="colorDynamic" data-glow="unique">unique,</b>

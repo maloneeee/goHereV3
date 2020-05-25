@@ -46,7 +46,7 @@
     var y = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100; //0 to 100
     if (y < 3) {
       phase = 0;
-    } else if (y > 40 * 0.31 && y < 52 * 0.31) {
+    } else if (y > 42 * 0.31 && y < 54 * 0.31) {
       phase = 1;
     } else if (y > 99.1 * 0.31 && y < 110 * 0.31) {
       phase = 3;
