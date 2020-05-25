@@ -141,11 +141,12 @@
     background:none;
     margin-top:-2%;
     transition: all 200ms;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%), linear-gradient(106.98deg, #2BD9FF, #BF37A9);
+  
   }
   .cta:hover{
     
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%), linear-gradient(106.98deg, #2BD9FF, #BF37A9);
-  font-size: 5vw;
+    font-size: 5vw;
   }
 
   @media (max-width: 1068px) {

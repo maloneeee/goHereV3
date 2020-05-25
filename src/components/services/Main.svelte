@@ -31,13 +31,14 @@
 
   .mainBox {
     padding: 50px 75px;
-    width: 600px;
+    margin-left:100px;
+    width: 550px;
     position: relative;
   }
   .blackBox {
     padding: 50px 75px;
    
-    width: 900px;
+    width: 700px;
     /* background: #FDFAF5; */
 /* border: 6px solid #FFFFFF; */
 /* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3), inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -2px 4px #FFFFFF; */
