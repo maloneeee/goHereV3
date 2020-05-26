@@ -33,24 +33,24 @@
             }
           }
         ]);
-        $.jScrollability([
-          {
-            selector: ".planet",
-            start: function($el) {
-              return $el.offset().top + 500;
-            },
-            end: function($el) {
-              return $el.offset().top + $el.height() + 1000;
-            },
-            fn: {
-              top: {
-                start: -90,
-                end: 0,
-                unit: "vh"
-              }
-            }
-          }
-        ]);
+        // $.jScrollability([
+        //   {
+        //     selector: ".planet",
+        //     start: function($el) {
+        //       return $el.offset().top + 500;
+        //     },
+        //     end: function($el) {
+        //       return $el.offset().top + $el.height() + 1000;
+        //     },
+        //     fn: {
+        //       top: {
+        //         start: -90,
+        //         end: 0,
+        //         unit: "vh"
+        //       }
+        //     }
+        //   }
+        // ]);
         $.jScrollability([
           {
             selector: ".keywords h3:first-child",
@@ -721,8 +721,23 @@
 
 <div class="background">
 
-  <section class="hero" style="align-items:center; justify-content:center">
+  <section class="hero">
     <!-- <button class="button ctaaa" on:click={displayCTA}>Let's Get Started</button> -->
+    <img class="astro" src="img/astro.png" alt="" />
+    <div class="text">
+      <h3>Creative Vision</h3>
+      <h1>
+        Let's get
+        <br />
+        <span class="colorDynamic" data-glow="astro-naughty">astro-naughty.</span>
+      </h1>
+      <div class="hero_scroll">
+        <h3>Scroll Down</h3>
+        <div class="circle">
+          <div class="arrow" />
+        </div>
+      </div>
+    </div>
   </section>
   <section class="feed whiteBG">
     <!-- <h3>Envisioning</h3>

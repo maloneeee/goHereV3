@@ -141,8 +141,6 @@
     padding-left: 10vw;
   }
 
-  
-
   @media (max-width: 1068px) {
     .container.left {
       padding-right: 10vw;
@@ -250,7 +248,7 @@
         {/if}
 
         <!--- Button Section -->
-        {#if i == 3}
+        <!-- {#if i == 3}
           {#if phase == i}
             <section
               class="section fixed_section"
@@ -276,7 +274,7 @@
               </div>
             </section>
           {/if}
-        {/if}
+        {/if} -->
       {/each}
     </div>
     <div class="buff" />
