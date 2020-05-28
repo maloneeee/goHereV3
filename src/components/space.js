@@ -14,7 +14,7 @@ export default class Index {
             sun: new THREE.Vector3(2340, 0, 1320),
             main: new THREE.Vector3(-5, 0, 600),
             sec: new THREE.Vector3(100, 0, -600),
-            third: new THREE.Vector3(38, -6, 0),
+            third: new THREE.Vector3(38, -7, 0),
         };
         let mid = {
             camera: new THREE.Vector3(265, 40, -470),
@@ -23,7 +23,7 @@ export default class Index {
             thirdPivot: 1.7 * Math.PI,
         };
         let end = {
-            camera: new THREE.Vector3(276.3, 23.4, -521),
+            camera: new THREE.Vector3(276.3, 22.4, -521),
             mainPivot: 0,
             secPivot: -0.12 * Math.PI,
             thirdPivot: 3.1 * Math.PI,

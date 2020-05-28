@@ -33,6 +33,24 @@
             }
           }
         ]);
+        $.jScrollability([
+          {
+            selector: ".astro",
+            start: function($el) {
+              return $el.offset().top;
+            },
+            end: function($el) {
+              return $el.offset().top + $el.height() + 1000;
+            },
+            fn: {
+              filterScale: {
+                start: 0,
+                end: 1,
+                unit: ""
+              }
+            }
+          }
+        ]);
         // $.jScrollability([
         //   {
         //     selector: ".planet",
@@ -602,6 +620,11 @@
     margin-bottom: 2vw;
   }
 
+  .bb{
+    padding: 20px 40px;
+    line-height:3.5rem;
+  }
+
   @media screen and (max-width: 1100px) {
     section {
       padding: 50px 4vw;
@@ -839,7 +862,7 @@
             <p>Thank You!</p>
             <h3 class="colorDynamic" style="margin:0;">{form.name}</h3>
 
-            <button class="button">Send It</button>
+            <button class="button bb">Send It</button>
           </div>
         </form>
       </div>
