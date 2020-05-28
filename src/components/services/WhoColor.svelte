@@ -111,10 +111,6 @@
     align-items: center;
     justify-content: center;
   }
-  li {
-    padding-bottom: 7px;
-    font-size: 24px;
-  }
 
   h2 {
     font-size: 140px;
@@ -145,10 +141,6 @@
     /* padding-bottom: 25px; */
     font-weight: 500;
     color: #888;
-  }
-  i {
-    margin-right: 5px;
-    width: 35px;
   }
 
   .holder {
