@@ -46,7 +46,7 @@
     var y = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100; //0 to 100
     if (y < 3) {
       phase = 0;
-    } else if (y > 40 * 0.31 && y < 52 * 0.31) {
+    } else if (y > 42 * 0.31 && y < 54 * 0.31) {
       phase = 1;
     } else if (y > 99.1 * 0.31 && y < 110 * 0.31) {
       phase = 3;
@@ -140,8 +140,6 @@
     justify-content: flex-start;
     padding-left: 10vw;
   }
-
-  
 
   @media (max-width: 1068px) {
     .container.left {
@@ -250,7 +248,7 @@
         {/if}
 
         <!--- Button Section -->
-        {#if i == 3}
+        <!-- {#if i == 3}
           {#if phase == i}
             <section
               class="section fixed_section"
@@ -276,7 +274,7 @@
               </div>
             </section>
           {/if}
-        {/if}
+        {/if} -->
       {/each}
     </div>
     <div class="buff" />

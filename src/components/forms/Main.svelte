@@ -8,7 +8,7 @@
   let form = {
     name: "",
     email: "",
-    project:'',
+    project: "",
     phone: "",
     website: ""
   };
@@ -156,6 +156,7 @@
     }
   }
 </script>
+
 <style>
   form {
     position: relative;
@@ -176,7 +177,7 @@
     width: 93%;
     height: 13vh;
     padding: 0px 15px;
-    color:rgb(39, 39, 39);
+    color: rgb(39, 39, 39);
   }
 
   .arrow {
@@ -208,21 +209,29 @@
   }
   button {
     width: 100%;
-    
-    background-image: linear-gradient(to right, #d624a6, #f7a140, green, #22d8d8, purple, #d624a6);
+
+    background-image: linear-gradient(
+      to right,
+      #d624a6,
+      #f7a140,
+      green,
+      #22d8d8,
+      purple,
+      #d624a6
+    );
     background-size: 600%;
     animation: color_scroll 20s linear infinite;
     font-size: 0px;
-    height:100%;
-    border:none;
+    height: 100%;
+    border: none;
     filter: blur(15px);
   }
-  #pOT{
-      margin-top: 40px;
-     background:white;
-     border-radius:20px;
-      width:100%;
-      width: 20%;
+  #pOT {
+    margin-top: 40px;
+    background: white;
+    border-radius: 20px;
+    width: 100%;
+    width: 20%;
   }
   .frm {
     width: 100%;
@@ -242,14 +251,14 @@
     animation: colorRotate 2s infinite;
   } */
 
-  .thanks{
-      color:White;
+  .thanks {
+    color: White;
   }
-  .thanks h1{
-      font-size:3vw
+  .thanks h1 {
+    font-size: 3vw;
   }
-  .thanks h3{
-      font-size:2em;
+  .thanks h3 {
+    font-size: 2em;
   }
 
   @media screen and (max-width: 1100px) {
@@ -267,87 +276,90 @@
       margin-top: 12px;
     }
 
-    #pOT{
+    #pOT {
       margin-top: 20px;
     }
-    .arrow{
-      border-width:4vw;
+    .arrow {
+      border-width: 4vw;
     }
-    .arrow__left{
-      margin-left:20px;
+    .arrow__left {
+      margin-left: 20px;
     }
-    .arrow__right{
-      margin-right:20px;
-    }.thanks{
-      margin:0px 10vw;
+    .arrow__right {
+      margin-right: 20px;
+    }
+    .thanks {
+      margin: 0px 10vw;
     }
   }
 </style>
+
 <section class="section" style="padding-bottom:100px;">
-<div class="container">
-{#if !sent}
-  <form action="" on:submit|preventDefault={sendContactMessage}>
+  <div class="container">
+    {#if !sent}
+      <form action="" on:submit|preventDefault={sendContactMessage}>
 
-    <div class="holder">
-      <div
-        class="arrow arrow__right"
-        class:visible={visible.previous}
-        on:click={previousPosition} />
-      <div class="frm">
-        <input
-          type="text"
-          class:visible={position == 0}
-          bind:value={form.name}
-          on:focus={focus0}
-          placeholder="Name" />
-        <input
-          type="text"
-          class:visible={position == 1}
-          bind:value={form.phone}
-          on:focus={focus3}
-          placeholder="Phone" />
-        <input
-          type="text"
-          class:visible={position == 2}
-          bind:value={form.email}
-          on:focus={focus4}
-          placeholder="Email" />
-        <input
-          type="text"
-          class:visible={position == 3}
-          bind:value={form.project}
-          on:focus={focus1}
-          placeholder="Type of Project" />
-        <input
-          type="text"
-          class:visible={position == 4}
-          bind:value={form.website}
-          on:focus={focus2}
-          placeholder="Company" />
+        <div class="holder">
+          <div
+            class="arrow arrow__right"
+            class:visible={visible.previous}
+            on:click={previousPosition} />
+          <div class="frm">
+            <input
+              type="text"
+              class:visible={position == 0}
+              bind:value={form.name}
+              on:focus={focus0}
+              placeholder="Name" />
+            <input
+              type="text"
+              class:visible={position == 1}
+              bind:value={form.phone}
+              on:focus={focus3}
+              placeholder="Phone" />
+            <input
+              type="text"
+              class:visible={position == 2}
+              bind:value={form.email}
+              on:focus={focus4}
+              placeholder="Email" />
+            <input
+              type="text"
+              class:visible={position == 3}
+              bind:value={form.project}
+              on:focus={focus1}
+              placeholder="Type of Project" />
+            <input
+              type="text"
+              class:visible={position == 4}
+              bind:value={form.website}
+              on:focus={focus2}
+              placeholder="Company" />
+          </div>
+          {#if position == 4}
+            <div
+              class="arrow arrow__left visible"
+              id="submit"
+              on:click={sendContactMessage} />
+          {:else}
+            <div
+              class="arrow arrow__left"
+              class:visible={visible.next}
+              on:click={nextPosition} />
+          {/if}
+        </div>
+        <span id="pOT">
+          <button id="progress">
+            <span>Submit</span>
+          </button>
+        </span>
+      </form>
+    {:else}
+      <div class="thanks">
+        <h1>Thank You, {form.name}</h1>
+        <h3>Our team will review your website, {form.website}</h3>
+        <span>One of our ambassadors will contact you shortly.</span>
       </div>
-      {#if position == 4}
-        <div
-          class="arrow arrow__left visible"
-          id="submit"
-          on:click={sendContactMessage} />
-      {:else}
-        <div
-          class="arrow arrow__left"
-          class:visible={visible.next}
-          on:click={nextPosition} />
-      {/if}
-    </div>
-    <span id="pOT">
-        <button id="progress"><span>Submit</span></button>
-    </span>
-  </form>
-{:else}
-  <div class="thanks">
-    <h1>Thank You, {form.name}</h1>
-    <h3>Our team will review your website, {form.website}</h3>
-    <span>One of our ambassadors will contact you shortly.</span>
+    {/if}
   </div>
-{/if}
-</div>
 </section>
-

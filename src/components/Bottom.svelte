@@ -35,22 +35,40 @@
         ]);
         $.jScrollability([
           {
-            selector: ".planet",
+            selector: ".astro",
             start: function($el) {
-              return $el.offset().top + 500;
+              return $el.offset().top;
             },
             end: function($el) {
               return $el.offset().top + $el.height() + 1000;
             },
             fn: {
-              top: {
-                start: -90,
-                end: 0,
-                unit: "vh"
+              filterScale: {
+                start: 0,
+                end: 1,
+                unit: ""
               }
             }
           }
         ]);
+        // $.jScrollability([
+        //   {
+        //     selector: ".planet",
+        //     start: function($el) {
+        //       return $el.offset().top + 500;
+        //     },
+        //     end: function($el) {
+        //       return $el.offset().top + $el.height() + 1000;
+        //     },
+        //     fn: {
+        //       top: {
+        //         start: -90,
+        //         end: 0,
+        //         unit: "vh"
+        //       }
+        //     }
+        //   }
+        // ]);
         $.jScrollability([
           {
             selector: ".keywords h3:first-child",
@@ -283,8 +301,6 @@
   function displayCTA() {
     showingCTA.set(true);
   }
-
-
 </script>
 
 <style>
@@ -374,7 +390,7 @@
 
   .feed {
     color: #e5e5e5;
-    padding-top: 270px;
+    /* padding-top: 270px; */
     padding-bottom: 170px;
   }
   .feed h3 {
@@ -459,15 +475,21 @@
     margin: 200px 0px;
     font-size: 132px;
     text-align: right;
-    color: #b9b9b9;
+    color: #353535;
   }
   .cta .form {
-    color: #353535;
+    color: #b9b9b9;
     font-size: 4vw;
     line-height: 8vw;
     display: flex;
     flex-direction: column;
     padding: 0 0vw;
+    width: 100%;
+  }
+
+  .form form {
+    max-width: 80vw;
+    flex-direction: column;
   }
   .form .form__section {
     margin-bottom: 100px;
@@ -598,12 +620,17 @@
     margin-bottom: 2vw;
   }
 
+  .bb{
+    padding: 20px 40px;
+    line-height:3.5rem;
+  }
+
   @media screen and (max-width: 1100px) {
     section {
       padding: 50px 4vw;
       position: relative;
     }
-    .hero .astro {
+    /* .hero .astro {
       left: auto;
       right: -6vw;
       width: 135vw;
@@ -623,7 +650,7 @@
       font-size: 36px;
       line-height: 34px;
       visibility: hidden;
-    }
+    } */
 
     .feed h3 {
       margin-top: 0px;
@@ -684,6 +711,8 @@
       padding: 0px;
       margin-bottom: 3vw;
       line-height: 13vw;
+      max-width: 80vw;
+      flex-direction: column;
     }
     .form .form__section {
       padding-right: 0vw;
@@ -694,8 +723,10 @@
       line-height: 100%;
       margin: 0px 4vw;
     }
-    form {
+    .form form {
       background: transparent;
+      max-width: 80vw;
+      flex-direction: column;
     }
     .call {
       padding: 00px 4vw 50px 4vw;
@@ -707,40 +738,34 @@
     .call h2:last-child {
       font-size: 15vw;
       margin-top: -16vw;
-      
     }
-  }
-
-  .ctaaa {
-    font-size: 4vw;
-    /* text-transform:uppercase; */
-    background: none;
-    margin-top: -2%;
-    transition: all 200ms;
-    padding: 20px 40px;
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.35) 0%,
-        rgba(135, 135, 135, 0) 46.87%,
-        rgba(0, 0, 0, 0.26) 100%
-      ),
-      linear-gradient(106.98deg, #2bd9ff, #bf37a9);
-  }
-  .ctaaa:hover {
-    font-size: 5vw;
-    padding: 17px 27px;
   }
 </style>
 
 <div class="background">
 
-  <section class="hero" style="align-items:center; justify-content:center">
+  <section class="hero">
     <!-- <button class="button ctaaa" on:click={displayCTA}>Let's Get Started</button> -->
+    <img class="astro" src="img/astro.png" alt="" />
+    <div class="text">
+      <h3>Creative Vision</h3>
+      <h1>
+        Let's get
+        <br />
+        <span class="colorDynamic" data-glow="astro-naughty">astro-naughty.</span>
+      </h1>
+      <div class="hero_scroll">
+        <h3>Scroll Down</h3>
+        <div class="circle">
+          <div class="arrow" />
+        </div>
+      </div>
+    </div>
   </section>
   <section class="feed whiteBG">
-    <h3>Envisioning</h3>
+    <!-- <h3>Envisioning</h3>
     <h2>Creative.</h2>
-    <h2 class="hh">Solutions.</h2>
+    <h2 class="hh">Solutions.</h2> -->
     <p>
       We love to create
       <b class="colorDynamic" data-glow="unique">unique,</b>
@@ -837,7 +862,7 @@
             <p>Thank You!</p>
             <h3 class="colorDynamic" style="margin:0;">{form.name}</h3>
 
-            <button class="button">Send It</button>
+            <button class="button bb">Send It</button>
           </div>
         </form>
       </div>

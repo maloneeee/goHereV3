@@ -125,6 +125,8 @@
       <div
         class="window colorScrollAlt"
         style="top:{150 + i * 30}px; background:{service.color}">
+        <img src={service.icon} alt="goHere for Greatnessness" />
+
         <div class="mainBox">
           <h4
             class="number"
