@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   import { values } from "./../../stores/values.js";
   import { fade } from "svelte/transition";
   import CTA from "./../../components/CTA.svelte";
@@ -67,9 +67,7 @@
       slide.style.transform = "translateX(" + trans + "vw)";
     });
   }
-</script>
-
-<style>
+</script><style>
   #railr {
     width: 100vw;
     height: 280vh;
@@ -150,9 +148,7 @@
     height: 100vh;
     overflow: hidden;
   }
-</style>
-
-{#if show}
+</style>{#if show}
   <div id="railr">
     <div class="holder">
       {#each values as value, i}
@@ -181,4 +177,4 @@
       {/each}
     </div>
   </div>
-{/if}
+{/if} -->
