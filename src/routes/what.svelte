@@ -3,23 +3,24 @@
   import { what } from "./../stores/content.js";
   import Hero from "./../components/Hero.svelte";
   import Main from "./../components/services/Main.svelte";
-
+  
   import TransitionWrapper from "../components/TransitionWrapper.svelte";
   let y;
-
-  import { onMount } from "svelte";
-  import { loaded } from "./../stores/var.js";
+    import { onMount, onDestroy } from "svelte";
   onMount(() => {
-    loaded.set(true);
+    // window.addEventListener("scroll", detectPosition);
   });
 
+
   function detectPosition() {
+
     var h = document.documentElement,
       b = document.body,
       st = "scrollTop",
       sh = "scrollHeight";
     y = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100; //0 to 100
     console.log(y);
+
   }
 </script>
 
@@ -32,6 +33,6 @@
   {#each what.section as section}
     <Section {...section} />
   {/each}
-  <Main />
-
+    <Main />
+  
 </TransitionWrapper>

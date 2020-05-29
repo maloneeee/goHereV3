@@ -33,24 +33,6 @@
             }
           }
         ]);
-        $.jScrollability([
-          {
-            selector: ".astro",
-            start: function($el) {
-              return $el.offset().top;
-            },
-            end: function($el) {
-              return $el.offset().top + $el.height() + 1000;
-            },
-            fn: {
-              filterScale: {
-                start: 0,
-                end: 1,
-                unit: ""
-              }
-            }
-          }
-        ]);
         // $.jScrollability([
         //   {
         //     selector: ".planet",
@@ -328,7 +310,7 @@
     position: relative;
     padding: 0px;
   }
-  /* .hero .planet {
+  .hero .planet {
     position: absolute;
     background-size: contain;
     top: -50%;
@@ -336,7 +318,7 @@
     width: auto;
     height: 100vh;
     z-index: 1;
-  } */
+  }
 
   .hero .text {
     padding-left: 25vw;
@@ -393,11 +375,11 @@
     /* padding-top: 270px; */
     padding-bottom: 170px;
   }
-  /* .feed h3 {
+  .feed h3 {
     font-size: 63px;
-  } */
+  }
 
-  /* .feed h2 {
+  .feed h2 {
     margin-top: 42px;
     font-size: 268px;
     line-height: 250px;
@@ -406,7 +388,7 @@
   .feed .hh {
     font-size: 300px;
     color: #b9b9b9;
-  } */
+  }
 
   .feed p {
     margin-top: 150px;
@@ -620,11 +602,6 @@
     margin-bottom: 2vw;
   }
 
-  .bb {
-    padding: 20px 40px;
-    line-height: 3.5rem;
-  }
-
   @media screen and (max-width: 1100px) {
     section {
       padding: 50px 4vw;
@@ -652,7 +629,7 @@
       visibility: hidden;
     } */
 
-    /* .feed h3 {
+    .feed h3 {
       margin-top: 0px;
       font-size: 7vw;
     }
@@ -664,7 +641,7 @@
       font-size: 21vw;
       line-height: 20vw;
       margin-top: 20px;
-    } */
+    }
     .feed p {
       margin-top: 100px;
       font-size: 13vw;
@@ -752,9 +729,7 @@
       <h1>
         Let's get
         <br />
-        <span class="colorDynamic" data-glow="astro-naughty">
-          astro-naughty.
-        </span>
+        <span class="colorDynamic" data-glow="astro-naughty">astro-naughty.</span>
       </h1>
       <div class="hero_scroll">
         <h3>Scroll Down</h3>
@@ -864,7 +839,7 @@
             <p>Thank You!</p>
             <h3 class="colorDynamic" style="margin:0;">{form.name}</h3>
 
-            <button class="button bb">Send It</button>
+            <button class="button">Send It</button>
           </div>
         </form>
       </div>

@@ -8,11 +8,7 @@
   import TransitionWrapper from "./../components/TransitionWrapper.svelte";
   let active = 0;
   $: console.log(active);
-  import { onMount } from "svelte";
-  import { loaded } from "./../stores/var.js";
-  // onMount(() => {
-  //   loaded.set(true);
-  // });
+
   function clientClicked(event) {
     console.log(event.target.parentElement);
   }
