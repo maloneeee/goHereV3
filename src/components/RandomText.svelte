@@ -1,6 +1,6 @@
 <script>
-  import {tags} from './../stores/content.js'
-  
+  import { tags } from "./../stores/content.js";
+
   let i = 1;
   let randomHead;
   import { onMount } from "svelte";
@@ -36,19 +36,18 @@
 </script>
 
 <style>
-span{
-      font-size: 2.5vw;
+  span {
+    font-size: 2.5vw;
   }
   .small {
     font-size: 3vw;
     line-height: 110%;
     text-transform: lowercase;
   }
-  .fart{
-     padding:0vw 0.8vw 0vw 0.5vw;
+  .fart {
+    padding: 0vw 0.8vw 0vw 0.5vw;
   }
 </style>
 
-
-      
-   <span class="fart">for</span> <span class="colorDynamic small" data-glow={randomHead}>{randomHead}</span>
+<span class="fart">for</span>
+<span class="colorDynamic small" data-glow={randomHead}>{randomHead}</span>

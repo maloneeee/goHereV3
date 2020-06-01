@@ -7,10 +7,9 @@
 </script>
 
 <style>
-
-.hero{
-  overflow:hidden;
-}
+  .hero {
+    overflow: hidden;
+  }
   .colorful {
     content: "";
     width: 100%;
@@ -31,10 +30,8 @@
 
 <div class="hero" id="sec-1">
   {#if color}
-    <div class="colorful" style="top:{parseInt($scrollPosition*0.95)}px" />
+    <div class="colorful" style="top:{parseInt($scrollPosition * 0.85)}px" />
   {/if}
   <h1 class="colorDynamic" data-glow={heading}>{heading}</h1>
-  <h1 class="colorDynamic" data-glow={headingSub}>
-    {headingSub}
-  </h1>
+  <h1 class="colorDynamic" data-glow={headingSub}>{headingSub}</h1>
 </div>
