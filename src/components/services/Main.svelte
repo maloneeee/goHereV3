@@ -42,7 +42,7 @@
 <style>
   #rail {
     width: 100vw;
-    height: 380vh;
+    height: 410vh;
     position: relative;
   }
   .window {

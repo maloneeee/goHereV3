@@ -37,7 +37,7 @@
     <slot />
   </main>
   <Scrollbar />
+  <Footer />
 </Loader>
 <Audio />
 <CTAOverlay />
-<Footer />

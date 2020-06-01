@@ -6,6 +6,7 @@
   import Section from "./../../components/Section.svelte";
   import Post from "./../../components/Post.svelte";
   import CTA from "./../../components/CTA.svelte";
+  import { loaded } from "./../../stores/var.js";
 
   export let posts = [];
   const apiURL =
@@ -15,36 +16,40 @@
     const response = await fetch(apiURL);
     data = await response.json();
     posts = data.posts;
+    loaded.set(true);
   });
+
+  onMount(() => {});
 </script>
 
 <style>
-    .post_holder{
-        display:flex;
-        flex-wrap:wrap;
-    }
+  .post_holder {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    @media (max-width:1068px) {
-      .post_holder{
-        flex-wrap: wrap;
-      }
+  @media (max-width: 1068px) {
+    .post_holder {
+      flex-wrap: wrap;
     }
+  }
 </style>
+
 <svelte:head>
   <title>{insights.title}</title>
 </svelte:head>
 <TransitionWrapper>
-<Hero heading={insights.h1} headingSub={insights.h1Sub}/>
+  <Hero heading={insights.h1} headingSub={insights.h1Sub} />
 
-{#each insights.section as section}
-  <Section {...section} />
-{/each}
-    <div class="post_holder">
-{#each posts as postdata}
-    {#if postdata.visibility == 'public'}
-    <Post {postdata}/>
-    {/if}
-{/each}
-    </div>
-<CTA />
+  {#each insights.section as section}
+    <Section {...section} />
+  {/each}
+  <div class="post_holder">
+    {#each posts as postdata}
+      {#if postdata.visibility == 'public'}
+        <Post {postdata} />
+      {/if}
+    {/each}
+  </div>
+  <CTA />
 </TransitionWrapper>

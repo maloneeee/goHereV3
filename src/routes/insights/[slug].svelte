@@ -17,6 +17,7 @@
 
 <script>
   import TransitionWrapper from "./../../components/TransitionWrapper.svelte";
+  import { onMount } from "svelte";
   export let pagedata;
   let date = pagedata.published_at;
   let formatedDate;
@@ -44,13 +45,17 @@
     const dayName = days[DD.getDay()];
     formatedDate = `${dayName}, ${d} ${m} ${y}`;
   }
+  import { loaded } from "./../../stores/var.js";
+  onMount(() => {
+    loaded.set(true);
+  });
 </script>
 
 <style>
-*{
-    color:black;
-    text-align:left;
-}
+  * {
+    color: black;
+    text-align: left;
+  }
   .wrapper {
     background: white;
     padding: 0 5vw;
@@ -140,40 +145,41 @@
   <title>{pagedata.title} | goHere Insights</title>
 </svelte:head>
 <TransitionWrapper>
-<div class="wrapper">
-  <div class="inner">
-    <div class="head">
-      <h1>{pagedata.title}</h1>
-      <div class="byline">
-        <div class="byline-content">
-          <div class="author-profile-image">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <g fill="none" fill-rule="evenodd">
-                <path
-                  d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487
-                  5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12
-                  12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z"
-                  fill="#FFF" />
-              </g>
-            </svg>
-          </div>
-          <div class="meta-content">
-            <h5>Elisabeth Balistreri</h5>
-            <div class="sm">
-              <time>{formatedDate}</time>
-              <span>·</span>
-              <span>{pagedata.reading_time} MIN READ</span>
+  <div class="wrapper">
+    <div class="inner">
+      <div class="head">
+        <h1>{pagedata.title}</h1>
+        <div class="byline">
+          <div class="byline-content">
+            <div class="author-profile-image">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <path
+                    d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504
+                    8.487 5.998C18.47 21.442 15.417 23 12
+                    23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79
+                    4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z"
+                    fill="#FFF" />
+                </g>
+              </svg>
+            </div>
+            <div class="meta-content">
+              <h5>Elisabeth Balistreri</h5>
+              <div class="sm">
+                <time>{formatedDate}</time>
+                <span>·</span>
+                <span>{pagedata.reading_time} MIN READ</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <figure class="full-image">
-      <img src={pagedata.feature_image} alt={pagedata.title} />
-    </figure>
-    <div class="full-content">
-      {@html pagedata.html}
+      <figure class="full-image">
+        <img src={pagedata.feature_image} alt={pagedata.title} />
+      </figure>
+      <div class="full-content">
+        {@html pagedata.html}
+      </div>
     </div>
   </div>
-</div>
 </TransitionWrapper>
