@@ -46,7 +46,7 @@ export default class Index {
         let uniforms;
 
         //Page Length Percent
-        var ratio = 35;
+        var ratio = 32.8;
 
         let clock = new THREE.Clock(),
             phase = 0,
@@ -379,36 +379,32 @@ export default class Index {
                 pivots[1].obj.rotation.y = lerp(0, mid.secPivot, v);
                 pivots[2].obj.rotation.y = lerp(0, mid.thirdPivot, v);
             } else if (y < ratio * 1.0) {
-                       let v = y * 0.02 * (100 / ratio) - 1;
-                       camera.position.x = lerp(mid.camera.x, end.camera.x, v);
-                       camera.position.y = lerp(mid.camera.y, end.camera.y, v);
-                       camera.position.z = lerp(mid.camera.z, end.camera.z, v);
+                let v = y * 0.02 * (100 / ratio) - 1;
+                camera.position.x = lerp(mid.camera.x, end.camera.x, v);
+                camera.position.y = lerp(mid.camera.y, end.camera.y, v);
+                camera.position.z = lerp(mid.camera.z, end.camera.z, v);
 
-                       pivots[1].obj.rotation.y = lerp(
-                           mid.secPivot,
-                           end.secPivot,
-                           v
-                       );
-                       pivots[2].obj.rotation.y = lerp(
-                           mid.thirdPivot,
-                           end.thirdPivot,
-                           v
-                       );
-                   } else if (y >= ratio * 1 && y<= ratio * 1.5) {
-                       camera.position.x = end.camera.x;
-                       camera.position.y = end.camera.y - (y - ratio) * 0.13;
-                       camera.position.z = end.camera.z;
+                pivots[1].obj.rotation.y = lerp(mid.secPivot, end.secPivot, v);
+                pivots[2].obj.rotation.y = lerp(
+                    mid.thirdPivot,
+                    end.thirdPivot,
+                    v
+                );
+            } else if (y >= ratio * 1 && y <= ratio * 1.5) {
+                camera.position.x = end.camera.x;
+                camera.position.y = end.camera.y - (y - ratio) * 0.13;
+                camera.position.z = end.camera.z;
 
-                       pivots[1].obj.rotation.y = end.secPivot;
-                       pivots[2].obj.rotation.y = end.thirdPivot;
-                   } else if (y >= ratio * 1.5) {
-                       camera.position.x = end.camera.x;
-                       camera.position.y = end.camera.y;
-                       camera.position.z = end.camera.z - (y - ratio) / 0.7;
+                pivots[1].obj.rotation.y = end.secPivot;
+                pivots[2].obj.rotation.y = end.thirdPivot;
+            } else if (y >= ratio * 1.5) {
+                camera.position.x = end.camera.x;
+                camera.position.y = end.camera.y;
+                camera.position.z = end.camera.z - (y - ratio) / 0.7;
 
-                       pivots[1].obj.rotation.y = end.secPivot;
-                       pivots[2].obj.rotation.y = end.thirdPivot;
-                   }
+                pivots[1].obj.rotation.y = end.secPivot;
+                pivots[2].obj.rotation.y = end.thirdPivot;
+            }
         }
         function lerp(min, max, value) {
             return (max - min) * value + min;

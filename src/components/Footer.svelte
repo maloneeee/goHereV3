@@ -18,7 +18,7 @@
     background: black;
     padding: 10vh 10vw;
     color: white;
-    z-index: 999999999999;
+    z-index: 999999999;
     position: relative;
     display: flex;
     width: 100%;
@@ -29,6 +29,7 @@
   }
   .footer_col {
     padding: 10px 20px;
+    margin-right: 20px;
   }
 
   h3 {

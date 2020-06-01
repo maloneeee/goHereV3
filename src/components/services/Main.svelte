@@ -55,8 +55,8 @@
     padding: 36px;
     background: rgba(0, 0, 0, 0.95);
     border-top: 10px white solid;
-    box-shadow: 0px -8px 16px rgba(255, 255, 255, 0.1),
-      inset 0px 8px 16px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px -4px 8px rgba(255, 255, 255, 0.3),
+      inset 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .mainBox {
@@ -124,13 +124,13 @@
     {#each services as service, i}
       <div
         class="window colorScrollAlt"
-        style="top:{150 + i * 30}px; background:{service.color}">
-        <img src={service.icon} alt="goHere for Greatnessness" />
+        style="top:{150 + i * 30}px; background: linear-gradient(180deg, {service.color1}
+        0%, {service.color2} 100%);">
 
         <div class="mainBox">
           <h4
             class="number"
-            style="color:{service.color1}; text-shadow: -2px -2px 4px {service.color2};">
+            style="color:white; text-shadow: 2px 2px 4px {service.color2};">
             {i + 1}
           </h4>
           <h2>{service.name}</h2>
@@ -147,6 +147,10 @@
           </ul>
 
         </div>
+        <img
+          src={service.icon}
+          alt="goHere for Greatnessness"
+          style="width:350px;" />
         <div class="blackBox" style="color:{service.color1}">
 
           <!-- <h4>

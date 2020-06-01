@@ -5,6 +5,10 @@
   import New from "./../components/forms/New.svelte";
   import TransitionWrapper from "./../components/TransitionWrapper.svelte";
   import { onMount } from "svelte";
+  import { loaded } from "./../stores/var.js";
+  onMount(() => {
+    loaded.set(true);
+  });
 </script>
 
 <svelte:head>

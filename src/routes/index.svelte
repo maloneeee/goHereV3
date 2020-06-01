@@ -31,9 +31,10 @@
     });
     createScene.then(loaded.set(true));
     window.addEventListener("scroll", fadeScroll);
-  });
-  onDestroy(() => {
-    phase = 0;
+
+    return () => {
+      phase = 0;
+    };
   });
 
   $: console.log($scrollPer);

@@ -27,10 +27,8 @@ export const services = [
         ],
         icon: 'img/svg/Management.svg',
 
-        color:
-            'linear-gradient(172deg, rgba(250,33,88,1) 0%, rgba(63,2,70,1) 100%)',
-        color1: 'rgba(250, 33, 88, 1)',
-        color2: 'rgba(63,2,70,0.3)',
+        color1: '#36C9F7',
+        color2: '#0EAA72',
     },
     {
         name: 'Grow',
@@ -58,10 +56,9 @@ export const services = [
             { name: 'Digital Communications', ico: 'fas fa-brush' },
         ],
         icon: 'img/svg/Statistic.svg',
-        color:
-            'linear-gradient(172deg, rgba(250,33,245,1) 0%, rgba(2,35,70,1) 100%)',
-        color1: 'rgba(250, 33, 245, 1)',
-        color2: ' rgba(2,35,70,0.3)',
+
+        color1: '#D053FC',
+        color2: '#6E2EBF',
     },
     {
         name: 'Manage',
@@ -92,10 +89,9 @@ export const services = [
             },
         ],
         icon: 'img/svg/Strategy.svg',
-        color:
-            'linear-gradient(172deg, rgba(146,106,240,1) 0%, rgba(37,30,121,1) 100%)',
-        color1: 'rgba(146,106,240,1)',
-        color2: 'rgba(37,30,121,0.3)',
+
+        color1: '#D24477',
+        color2: '#C8522D',
     },
     {
         name: 'Impress',
@@ -122,10 +118,9 @@ export const services = [
             },
         ],
         icon: 'img/svg/Badge.svg',
-        color:
-            'linear-gradient(172deg, rgba(106,172,240,1) 0%, rgba(48,30,121,1) 100%)',
-        color1: 'rgba(106, 172, 240, 1)',
-        color2: 'rgba(48,30,121,0.3)',
+
+        color1: '#F2C72B',
+        color2: '#F59B7F',
     },
 ];
 
