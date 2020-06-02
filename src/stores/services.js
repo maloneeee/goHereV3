@@ -1,9 +1,9 @@
 export const services = [
     {
         name: 'Build',
-        heading: 'Show Your Best Face.',
+        subhead: 'Powerful systems. <br> Powerful outcomes.',
         p:
-            '<span>When beauty, functionality, and originality meet authentic emotion, impactful impressions are made.</span> Every aspect of your digital presence creates an impression; it represents who you are as a company and can make or break the customer experience.',
+            'Systems produce order in a chaotic world. Let us make technology your business partner with powerful, custom made systems that streamline operations, attract and retain customers, and drive revenue.',
         li: [
             { name: 'Full-Stack Development', ico: 'fas fa-archway' },
             {
@@ -32,9 +32,9 @@ export const services = [
     },
     {
         name: 'Grow',
-        heading: 'Refine Your Identity.',
+        subhead: 'Powerful impressions. <br>Drive conversions.',
         p:
-            '<span>Your reputation is your most valuable asset as a business,</span> and your digital presence, brand identity, and marketing strategy should work together to reflect your company’s values and build trusting relationships with your customers.',
+            'Memorable stories and engaging experiences captivate attention. A compelling digital presence builds your reputation, drives brand loyalty, and optimizes growth. Let us create a digital reputation worthy of your brand.',
         li: [
             {
                 name: 'Conversion Rate Optimization',
@@ -62,9 +62,9 @@ export const services = [
     },
     {
         name: 'Manage',
-        heading: 'Optimize Your Operation',
+        subhead: 'Data-driven objectives. <br>Powerful outcomes.',
         p:
-            '<span>We are innovative thinkers, creators, and do-ers,</span> and we are constantly seeking out new and creative solutions to improve all aspects of business. We like to think of our services as making technology your business partner; making technology work for you opens up a world of opportunities.',
+            'Setting the right goals for your business produces the roadmap for success. We work to identify pain points, evaluate strengths, and explore opportunities for clear-cut vision. Get the most out of your business with data-driven objectives.',
         li: [
             {
                 name: 'Public Relations',
@@ -95,9 +95,9 @@ export const services = [
     },
     {
         name: 'Impress',
-        heading: 'You Tell Us!',
+        subhead: 'The power of technology. <br>Taken further.',
         p:
-            '<span>We’re not your average tech company. </span>Keeping up with the latest and greatest in technology is our genuine passion, and we’re always looking for opportunities to take on projects that keep us on the cutting edge.  goHere. Let’s explore together!',
+            'Lead your industry with cutting edge technology. Looking to launch your company into the world of virtual reality? goHere. Want to explore what augmented reality can do for your business? goHere. Have a completely out there idea you’re not even sure is possible? goHere. Let’s chart the new world together.',
         li: [
             {
                 name: 'Virtual Reality',
@@ -117,7 +117,7 @@ export const services = [
                 ico: 'fab fa-google',
             },
         ],
-        icon: 'img/svg/Badge.svg',
+        icon: 'img/svg/DataAnalysis.svg',
 
         color1: '#F2C72B',
         color2: '#F59B7F',

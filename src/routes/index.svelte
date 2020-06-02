@@ -34,6 +34,7 @@
 
     return () => {
       phase = 0;
+      window.removeEventListener("scroll", fadeScroll, false);
     };
   });
 
