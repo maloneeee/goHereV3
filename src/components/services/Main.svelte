@@ -50,13 +50,14 @@
   }
   let rail, tStart, tEnd, vars;
 
+  let sections = [];
+
   function transitionSlides() {
     rail = document.getElementById("rail");
+    sections = document.getElementsByClassName("window");
     tStart = rail.offsetTop;
     tEnd = rail.offsetHeight + tStart;
     vars = genLinear(tStart, tEnd, 0, 100);
-
-    console.log("Trans Start and End: " + tStart + ", " + tEnd);
   }
   function genLinear(x1, x2, y1, y2) {
     let m = (y2 - y1) / (x2 - x1);
@@ -68,18 +69,34 @@
   function checkTrans() {
     let per = vars[0] * $scrollPosition + vars[1];
     console.log(per);
-    if (per < -10) {
-      number = 7;
+    if (per < -5) {
+      for (let i = 0; i < sections.length; i++) {
+        sections[i].classList.remove("showing");
+      }
     } else if (per < 20) {
-      number = 0;
+      for (let i = 0; i < sections.length; i++) {
+        sections[i].classList.remove("showing");
+      }
+      sections[0].classList.add("showing");
     } else if (per < 40) {
-      number = 1;
+      for (let i = 0; i < sections.length; i++) {
+        sections[i].classList.remove("showing");
+      }
+      sections[1].classList.add("showing");
     } else if (per < 60) {
-      number = 2;
+      for (let i = 0; i < sections.length; i++) {
+        sections[i].classList.remove("showing");
+      }
+      sections[2].classList.add("showing");
     } else if (per < 80) {
-      number = 3;
-    } else if (per < 100) {
-      number = 7;
+      for (let i = 0; i < sections.length; i++) {
+        sections[i].classList.remove("showing");
+      }
+      sections[3].classList.add("showing");
+    } else if (per < 110) {
+      for (let i = 0; i < sections.length; i++) {
+        sections[i].classList.remove("showing");
+      }
     }
   }
 </script>
@@ -87,9 +104,10 @@
 <style>
   #rail {
     width: 100vw;
-    height: 400vh;
+    height: 450vh;
     position: relative;
     padding: 100px 0px;
+    margin-top: -120px;
   }
   .window {
     position: absolute;
@@ -101,10 +119,16 @@
     justify-content: center;
     align-items: center;
     padding: 36px;
+    opacity: 0%;
+    transition: opacity 300ms;
     /* background: rgba(0, 0, 0, 0.95); */
     /* border-top: 10px white solid;
     box-shadow: 0px -4px 8px rgba(255, 255, 255, 0.3),
       inset 0px 4px 8px rgba(0, 0, 0, 0.1); */
+  }
+
+  .showing {
+    opacity: 100%;
   }
   .view {
     position: sticky;
@@ -181,52 +205,45 @@
   <div id="rail">
     <div class="view">
       {#each services as service, i}
-        {#if number == i}
-          <div
-            class="window colorScrollAlt"
-            in:fade={{ delay: 150, duration: 150 }}
-            out:fade={{ delay: 0, duration: 150 }}>
+        <div
+          class="window colorScrollAlt"
+          in:fade={{ delay: 150, duration: 150 }}
+          out:fade={{ delay: 0, duration: 150 }}>
 
-            <div class="mainBox">
-              <h4
-                class="number"
-                style="color:white; text-shadow: 2px 2px 4px {service.color2};">
-                {i + 1}
-              </h4>
-              <h2>{service.name}</h2>
-              <ul>
-                {#each service.li as li}
-                  <li
-                    out:fade={{ delay: 0, duration: 150 }}
-                    in:fade={{ delay: 150, duration: 150 }}>
+          <div class="mainBox">
+            <h4
+              class="number"
+              style="color:white; text-shadow: 2px 2px 4px {service.color2};">
+              {i + 1}
+            </h4>
+            <h2>{service.name}</h2>
+            <ul>
+              {#each service.li as li}
+                <li
+                  out:fade={{ delay: 0, duration: 150 }}
+                  in:fade={{ delay: 150, duration: 150 }}>
 
-                    <i class={li.ico} />
-                    {li.name}
-                  </li>
-                {/each}
-              </ul>
+                  <i class={li.ico} />
+                  {li.name}
+                </li>
+              {/each}
+            </ul>
 
-            </div>
-
-            <!-- <h4>
-           
-              {service.heading}
-          </h4> -->
-            <div class="blackBox">
-              <img
-                src={service.icon}
-                alt="goHere for Greatnessness"
-                style="width:222px;" />
-              <h2 class="subhead">
-                {@html service.subhead}
-              </h2>
-              <p style="color: rgba(228, 228, 228, 0.8);">
-
-                {@html service.p}
-              </p>
-            </div>
           </div>
-        {/if}
+          <div class="blackBox">
+            <img
+              src={service.icon}
+              alt="goHere for Greatnessness"
+              style="width:222px;" />
+            <h2 class="subhead">
+              {@html service.subhead}
+            </h2>
+            <p style="color: rgba(228, 228, 228, 0.8);">
+
+              {@html service.p}
+            </p>
+          </div>
+        </div>
       {/each}
     </div>
 
