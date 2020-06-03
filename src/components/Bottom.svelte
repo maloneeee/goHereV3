@@ -620,9 +620,9 @@
     margin-bottom: 2vw;
   }
 
-  .bb{
+  .bb {
     padding: 20px 40px;
-    line-height:3.5rem;
+    line-height: 3.5rem;
   }
 
   @media screen and (max-width: 1100px) {
@@ -750,9 +750,9 @@
     <div class="text">
       <h3>Creative Vision</h3>
       <h1>
-        Let's get
+        Creating is what
         <br />
-        <span class="colorDynamic" data-glow="astro-naughty">astro-naughty.</span>
+        <span class="colorDynamic" data-glow="Love to Do!">Love to Do!</span>
       </h1>
       <div class="hero_scroll">
         <h3>Scroll Down</h3>
@@ -829,7 +829,14 @@
               type="text"
               placeholder="Full Name"
               data-glow={form.name} />
-            <p>and I am creating a</p>
+            <p>
+              , and I want
+              <span style="font-family:Arial;">
+                go
+                <b style="font-family:Arial;">Here's</b>
+              </span>
+              input on my next
+            </p>
             <input
               bind:value={form.project}
               type="text"
@@ -841,7 +848,6 @@
               class="colorDynamic"
               bind:value={form.website}
               placeholder="Company" />
-            <p>and want to get goHere's input.</p>
           </div>
           <div class="form__section">
             <p>Please call me at</p>
@@ -856,13 +862,12 @@
               type="text"
               bind:value={form.email}
               placeholder="Email Address" />
-            <p>at your earliest convenience.</p>
+            <p>.</p>
           </div>
           <div class="form__section form__close">
-            <p>Thank You!</p>
             <h3 class="colorDynamic" style="margin:0;">{form.name}</h3>
 
-            <button class="button bb">Send It</button>
+            <button class="button bb">Let's Make a Deal</button>
           </div>
         </form>
       </div>

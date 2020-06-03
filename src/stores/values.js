@@ -3,15 +3,15 @@ export const values = [
         heading: 'Lead by example.',
         p:
             'Adding value is a lifestyle at goHere. Ask yourself daily not only how you can better serve our clients, but how you can better serve your team. Put people and relationships first.',
-        quote: 'Nothing great was ever accomplished without enthusiasm.',
-        author: 'Ralph Waldo Emerson',
+        quote: 'Strive not to be a success, but rather to be of value.',
+        author: 'Albert Einstein',
         color:
             'linear-gradient(172deg, rgba(250,33,88,1) 0%, rgba(63,2,70,1) 100%)',
         color1: 'rgba(250, 33, 88, 1)',
         color2: 'rgba(63,2,70,0.3)',
     },
     {
-        heading: 'Refine Your Identity.',
+        heading: 'Powerful emotion, powerful results.',
         p:
             'Creativity flows from enthusiasm. Excellence flows from passion. We emphasize and foster powerful emotions because they give life to powerful results.',
         quote: 'Nothing great was ever accomplished without enthusiasm.',
@@ -22,22 +22,23 @@ export const values = [
         color2: ' rgba(2,35,70,0.3)',
     },
     {
-        heading: 'Optimize Your Operation',
+        heading: 'Turn pressure into power.',
         p:
-            '<span>We are innovative thinkers, creators, and do-ers,</span> and we are constantly seeking out new and creative solutions to improve all aspects of business. We like to think of our services as making technology your business partner; making technology work for you opens up a world of opportunities.',
-        quote: 'Nothing great was ever accomplished without enthusiasm.',
-        author: 'Ralph Waldo Emerson',
+            'We learn the greatest lessons through struggle. When you encounter problems, get excited--then get your creative solutions flowing, it’s an opportunity to do something great.',
+        quote: 'Victory comes from finding opportunities in problems.',
+        author: 'Sun Tzu',
         color:
             'linear-gradient(172deg, rgba(146,106,240,1) 0%, rgba(37,30,121,1) 100%)',
         color1: 'rgba(146,106,240,1)',
         color2: 'rgba(37,30,121,0.3)',
     },
     {
-        heading: 'You Tell Us!',
+        heading: 'Art of Greatness.',
         p:
-            '<span>We’re not your average tech company. </span>Keeping up with the latest and greatest in technology is our genuine passion, and we’re always looking for opportunities to take on projects that keep us on the cutting edge.  goHere. Let’s explore together!',
-        quote: 'Nothing great was ever accomplished without enthusiasm.',
-        author: 'Ralph Waldo Emerson',
+            'How you do anything is how you do everything. Approach every detail of your work and relationships with a spirit of excellence, and mediocrity won’t come near you.',
+        quote:
+            'We are what we repeatedly do. Excellence, then, is not an act, but a habit.',
+        author: 'Aristotle',
         color:
             'linear-gradient(172deg, rgba(106,172,240,1) 0%, rgba(48,30,121,1) 100%)',
         color1: 'rgba(106, 172, 240, 1)',

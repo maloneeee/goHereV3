@@ -38,7 +38,7 @@ export const home = {
             title:
                 '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for Performance.',
             p:
-                '<b>Data-driven. Business simplified.</b><br> <span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> helps you solve problems, grow, and streamline your business.',
+                '<b>Data-driven. Business simplified.</b><br> We help you solve problems, grow, and streamline your business.',
             sub: 'masterminds',
             button: '',
             buttonHref: '/who',
@@ -67,9 +67,9 @@ export const who = {
     section: [
         {
             title:
-                '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for Vision.',
+                '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for Service.',
             p:
-                '<b>Powerful experiences. By design.</b> <br> We’re a team of innovative consultants and creators with a passion for excellence and an eye for opportunity. ',
+                '<b>Powerful experiences. By design.</b> <br> We’re a team of innovative consultants and creators with a passion for excellence, an eye for opportunity, and a love of service. Sharing our talents with others to make a positive impact drives us. ',
             sub: 'nerd alert',
             button: 'Envision With Us!',
             buttonHref: 'cta',

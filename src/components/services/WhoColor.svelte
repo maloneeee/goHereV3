@@ -64,7 +64,12 @@
       if (trans < 0) {
         trans = 0;
       }
-      slide.style.transform = "translateX(" + trans + "vw)";
+      slide.style.transform =
+        "translateX(" +
+        trans +
+        "vw) scale(" +
+        (1 - (values.length - i) / 100) +
+        ")";
     });
   }
 </script>
@@ -72,7 +77,7 @@
 <style>
   #railr {
     width: 100vw;
-    height: 280vh;
+    height: 300vh;
     position: relative;
   }
   .windowr {
@@ -88,8 +93,12 @@
     padding: 36px;
     background: rgba(0, 0, 0, 0.95);
     border-left: 10px white solid;
+    border-top: 10px white solid;
+    border-bottom: 10px white solid;
     box-shadow: -8px 0px 4px rgba(255, 255, 255, 0.1),
       inset 8px 0px 4px rgba(3, 3, 3, 0.082);
+
+    border-radius: 11px 0px 0px 11px;
   }
 
   .mainBox {
@@ -108,23 +117,25 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
   }
 
   h2 {
-    font-size: 140px;
+    font-size: 5vw;
     padding-bottom: 20px;
     font-weight: 700;
     line-height: 110%;
   }
 
   h4 {
-    font-size: 80px;
+    font-size: 3vw;
     padding-bottom: 20px;
     line-height: 1;
   }
-
+  h6 {
+    padding-right: 60px;
+  }
   .number {
     position: absolute;
     top: 40px;
@@ -158,7 +169,7 @@
       {#each values as value, i}
         <div
           class="windowr colorScrollAlt"
-          style=" left:{i * 40}px; background:{value.color}">
+          style=" left:{i * 40}px; background:{value.color};">
           <div class="mainBox">
             <h4
               class="number"
@@ -174,7 +185,7 @@
           <div class="blackBox" style="color:{value.color1}">
 
             <h4>{value.quote}</h4>
-            <h8>{value.author}</h8>
+            <h6>{value.author}</h6>
 
           </div>
         </div>
