@@ -55,7 +55,7 @@
         aria-current={segment === 'who' ? 'page' : undefined}
         href="who"
         on:click={closeMenu}>
-        who
+        about us
       </a>
     </li>
     <li class:act={displayMenu}>
@@ -63,7 +63,7 @@
         aria-current={segment === 'what' ? 'page' : undefined}
         href="what"
         on:click={closeMenu}>
-        what
+        services
       </a>
     </li>
     <li class:act={displayMenu}>
@@ -71,7 +71,17 @@
         aria-current={segment === 'work' ? 'page' : undefined}
         href="work"
         on:click={closeMenu}>
-        work
+        our work
+      </a>
+    </li>
+
+    <li class:act={displayMenu}>
+      <a
+        rel="prefetch"
+        aria-current={segment === 'insights' ? 'page' : undefined}
+        href="insights"
+        on:click={closeMenu}>
+        insights
       </a>
     </li>
     <li class:act={displayMenu}>
@@ -80,15 +90,6 @@
         href="contact"
         on:click={closeMenu}>
         contact
-      </a>
-    </li>
-    <li class:act={displayMenu}>
-      <a
-        rel="prefetch"
-        aria-current={segment === 'insights' ? 'page' : undefined}
-        href="insights"
-        on:click={closeMenu}>
-        insights
       </a>
     </li>
   </ul>

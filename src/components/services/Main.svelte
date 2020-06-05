@@ -183,7 +183,7 @@
     top: 40px;
     left: -50px;
     font-size: 170px;
-    color: rgba(255, 255, 255, 0.1);
+    color: rgba(29, 29, 29, 0.8);
     font-weight: 800;
     font-family: "Roboto", sans-serif;
     line-height: 100%;
@@ -213,7 +213,7 @@
           <div class="mainBox">
             <h4
               class="number"
-              style="color:white; text-shadow: 2px 2px 4px {service.color2};">
+              style="text-shadow: 2px 2px 4px {service.color2};">
               {i + 1}
             </h4>
             <h2>{service.name}</h2>
@@ -249,4 +249,3 @@
 
   </div>
 {/if}
-<CTA />

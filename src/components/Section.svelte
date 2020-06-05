@@ -10,11 +10,12 @@
   export let left;
   export let color1;
   export let color2;
+  export let xtra;
   import CallButton from "./CallButton.svelte";
 
-  import {showingCTA} from './../stores/var.js'
+  import { showingCTA } from "./../stores/var.js";
 
-  function displayCTA(){
+  function displayCTA() {
     showingCTA.set(true);
   }
 </script>
@@ -55,7 +56,7 @@
         rgba(135, 135, 135, 0) 46.87%,
         rgba(0, 0, 0, 0.26) 100%
       ),
-      linear-gradient(106.98deg, #2BD9FF, #BF37A9);
+      linear-gradient(106.98deg, #2bd9ff, #bf37a9);
   }
   .btt:hover {
     background: linear-gradient(
@@ -64,7 +65,7 @@
         rgba(135, 135, 135, 0) 46.87%,
         rgba(255, 255, 255, 0.35) 0%
       ),
-      linear-gradient(106.98deg, #2BD9FF, #BF37A9);
+      linear-gradient(106.98deg, #2bd9ff, #bf37a9);
   }
 </style>
 
@@ -82,7 +83,11 @@
         </h5>
       {/if}
       <h2 class:colorDynamic={invert}>
-        {@html title}
+        {#if xtra != null}
+          {@html xtra.head}
+        {:else}
+          {@html title}
+        {/if}
       </h2>
       <p>
         {@html p}
@@ -90,14 +95,16 @@
       {#if button != ''}
         {#if button == 'phone'}
           <CallButton />
-          {:else if buttonHref == 'cta'}
-            <button
+        {:else if buttonHref == 'cta'}
+          <button
             class="button colorRotate"
             on:click={displayCTA}
             style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.35)
             0%, rgba(135, 135, 135, 0) 46.87%, rgba(0, 0, 0, 0.26) 100%),
             linear-gradient(106.98deg, {color1}, {color2});">
-            {button}
+            {#if xtra != null}
+              {@html xtra.button}
+            {:else}{button}{/if}
           </button>
         {:else}
           <a

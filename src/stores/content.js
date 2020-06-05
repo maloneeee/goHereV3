@@ -78,6 +78,11 @@ export const who = {
             color2: 'purple',
         },
     ],
+
+    cta: {
+        head: 'This is the WHO CTA',
+        button: 'Ya Heard?',
+    },
 };
 export const what = {
     title: 'goHere - Creative Solutions',
@@ -96,6 +101,10 @@ export const what = {
             invert: true,
         },
     ],
+    cta: {
+        head: 'This is the WHAT CTA',
+        button: 'Get It?',
+    },
 };
 export const work = {
     title: 'goHere - Creative Solutions',
@@ -116,6 +125,10 @@ export const work = {
             color2: 'purple',
         },
     ],
+    cta: {
+        head: 'You Dont Tell Me WHat to Do!!!',
+        button: 'You arent my DADDY!?',
+    },
 };
 export const contact = {
     title: 'goHere - Creative Solutions',
@@ -152,6 +165,10 @@ export const insights = {
             color2: 'purple',
         },
     ],
+    cta: {
+        head: 'Lets Get Physical',
+        button: 'Ya Heard?',
+    },
 };
 
 export const cta = {

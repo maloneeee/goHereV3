@@ -51,5 +51,5 @@
       {/if}
     {/each}
   </div>
-  <CTA />
+  <CTA extra={insights.cta} />
 </TransitionWrapper>

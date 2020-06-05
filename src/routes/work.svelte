@@ -41,5 +41,5 @@
     </div>
   </section>
 
-  <CTA />
+  <CTA extra={work.cta} />
 </TransitionWrapper>

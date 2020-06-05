@@ -28,5 +28,5 @@
   {#each employees as employee}
     <Employee {...employee} />
   {/each}
-  <CTA />
+  <CTA extra={who.cta} />
 </TransitionWrapper>

@@ -119,6 +119,7 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+    position: relative;
   }
 
   h2 {
@@ -161,6 +162,15 @@
     height: 100vh;
     overflow: hidden;
   }
+
+  .qmark {
+    font-size: 16vw;
+    position: absolute;
+    opacity: 0.1;
+    color: white;
+    top: -40%;
+    left: -5%;
+  }
 </style>
 
 {#if show}
@@ -183,7 +193,7 @@
             </p>
           </div>
           <div class="blackBox" style="color:{value.color1}">
-
+            <span class="qmark">"</span>
             <h4>{value.quote}</h4>
             <h6>{value.author}</h6>
 

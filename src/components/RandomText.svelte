@@ -37,17 +37,22 @@
 
 <style>
   span {
-    font-size: 2.5vw;
+    font-size: 1.5vw;
   }
   .small {
-    font-size: 3vw;
+    font-size: 1.5vw;
     line-height: 110%;
     text-transform: lowercase;
   }
   .fart {
     padding: 0vw 0.8vw 0vw 0.5vw;
   }
+  .holder {
+    padding-top: 20px;
+  }
 </style>
 
-<span class="fart">for</span>
-<span class="colorDynamic small" data-glow={randomHead}>{randomHead}</span>
+<div class="holder">
+  <span class="fart">for</span>
+  <span class="colorDynamic small" data-glow={randomHead}>{randomHead}</span>
+</div>

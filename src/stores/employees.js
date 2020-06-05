@@ -32,17 +32,7 @@ const employees = [
         picture: 'img/headshots/jack.png',
         flipped: false,
     },
-    {
-        name: 'Theodore "Teddy" Balistreri',
-        title: 'Lead Growth Envisioneer',
-        nick: 'Odd Job',
-        bioStart:
-            'Teddy has a truly uncanny ability to make friends with anyone he meets; it makes him a great asset to our creative partners.',
-        bio:
-            'After losing his leg as an adult, Teddy fought and earned a story of <b>comeback</b>, overcoming, grit, and <b>determination</b>; he brings that same determination to his work with goHere.',
-        picture: 'img/headshots/ted.png',
-        flipped: true,
-    },
+
     {
         name: 'Elisabeth "Pippi" Balistreri',
         title: 'Content Envisioneer',
@@ -52,7 +42,29 @@ const employees = [
         bio:
             'While studying psychology and <b>research</b> methods at Washington and Lee University, she honed the vision and versatility needed to transform any information into a <b>powerful message.</b> She has at least three books and her color coded to-do list on her at all times.',
         picture: 'img/headshots/pip.png',
+        flipped: true,
+    },
+    {
+        name: 'Theodore "Teddy" Balistreri',
+        title: 'Lead Growth Envisioneer',
+        nick: 'Odd Job',
+        bioStart:
+            'Teddy has a truly uncanny ability to make friends with anyone he meets; it makes him a great asset to our creative partners.',
+        bio:
+            'After losing his leg as an adult, Teddy fought and earned a story of <b>comeback</b>, overcoming, grit, and <b>determination</b>; he brings that same determination to his work with goHere.',
+        picture: 'img/headshots/ted.png',
         flipped: false,
+    },
+    {
+        name: 'Keaton Hansen',
+        title: 'Design Envisioneer',
+        nick: 'The Protegee',
+        bioStart:
+            'We are snatching up the best and newest talent with Keaton--he is a <b>brilliant</b> artist and budding <b>graphic designer</b>.',
+        bio:
+            'You’ll rarely meet someone with the same level of self-taught knowledge as Keaton. We often find him making randomly <b>beautiful creations</b> and contraptions out of whatever he gets his hands on; creative energy is practically bursting out of him, and we can’t wait to see the heights he reaches.',
+        picture: 'img/headshots/keaton.png',
+        flipped: true,
     },
 ];
 export default employees;
