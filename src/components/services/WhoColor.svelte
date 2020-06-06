@@ -164,11 +164,11 @@
   }
 
   .qmark {
-    font-size: 16vw;
+    font-size: 20vw;
     position: absolute;
     opacity: 0.1;
     color: white;
-    top: -40%;
+    top: -50%;
     left: -5%;
   }
 </style>

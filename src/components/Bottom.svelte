@@ -676,8 +676,7 @@
     }
 
     .brands img {
-      width: auto;
-      height: 10vw;
+      width: 10vw;
       margin: 0px 3vw;
     }
 

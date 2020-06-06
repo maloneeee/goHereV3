@@ -80,7 +80,7 @@ export const who = {
     ],
 
     cta: {
-        head: 'This is the WHO CTA',
+        head: "Let's Create Together",
         button: 'Ya Heard?',
     },
 };
@@ -102,7 +102,7 @@ export const what = {
         },
     ],
     cta: {
-        head: 'This is the WHAT CTA',
+        head: 'Get The Most Out Of Our Business',
         button: 'Get It?',
     },
 };

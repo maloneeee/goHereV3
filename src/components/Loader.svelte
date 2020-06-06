@@ -27,7 +27,7 @@
     bottom: 0;
     z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
     background: white;
-    background-image: url("/img/gif/loading2.gif");
+    background-image: url("https://gohere2-f295.kxcdn.com/img/gif/loading2.gif");
     background-size: cover;
     background-position: center;
     animation: color_rotate 20ms infinite;

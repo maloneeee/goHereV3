@@ -58,7 +58,7 @@ export default class Index {
         ];
         let promiseArray = [],
             texturePromiseArray = [],
-            path = '/img/Planets/',
+            path = 'https://gohere2-f295.kxcdn.com/img/Planets/',
             texturesArray = [];
         const fragmentShader = `
             #include <common>

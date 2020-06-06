@@ -63,7 +63,7 @@
         aria-current={segment === 'what' ? 'page' : undefined}
         href="what"
         on:click={closeMenu}>
-        services
+        what we do
       </a>
     </li>
     <li class:act={displayMenu}>

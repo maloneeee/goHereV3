@@ -172,13 +172,13 @@
   </a>
   <ul class:nav-active={displayMenu}>
     <li class:act={displayMenu}>
-      <a on:click={removeEl} href="who">who</a>
+      <a on:click={removeEl} href="who">about us</a>
     </li>
     <li class:act={displayMenu}>
-      <a on:click={removeEl} href="what">what</a>
+      <a on:click={removeEl} href="what">what we do</a>
     </li>
     <li class:act={displayMenu}>
-      <a on:click={removeEl} href="work">work</a>
+      <a on:click={removeEl} href="work">our work</a>
     </li>
     <li class:act={displayMenu}>
       <a on:click={removeEl} href="contact">contact</a>

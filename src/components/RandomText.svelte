@@ -37,10 +37,10 @@
 
 <style>
   span {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
   }
   .small {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     line-height: 110%;
     text-transform: lowercase;
   }
