@@ -52,13 +52,13 @@ export default class Index {
             phase = 0,
             delta;
         let fileArray = [
-            { name: 'earth', url: 'planet3-full.png' },
-            { name: 'moon', url: 'planet1-full.png' },
-            { name: 'planet', url: 'planet2-full.png' },
+            { name: 'earth', url: 'planet3-full.jpg' },
+            { name: 'moon', url: 'planet1-full.jpg' },
+            { name: 'planet', url: 'planet2-full.jpg' },
         ];
         let promiseArray = [],
             texturePromiseArray = [],
-            path = 'https://gohere2-f295.kxcdn.com/img/Planets/',
+            path = '/img/Planets/',
             texturesArray = [];
         const fragmentShader = `
             #include <common>

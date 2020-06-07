@@ -45,7 +45,7 @@
     <div class="logo">
       go
       <span>Here</span>
-      <img src="logo-192.png" alt="goHere" />
+      <img src="logo-40.png" alt="goHere" />
     </div>
     <RandomText />
   </a>
