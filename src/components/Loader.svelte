@@ -11,7 +11,7 @@
 
   $: if ($loaded == true) {
     // alert("loaded");
-    // show = false;
+    show = false;
   } else {
     show = true;
     // alert('its clsoed');
@@ -65,7 +65,7 @@
   }
   .circle1,
   .circle::before {
-    background: linear-gradient(90deg, mediumorchid, mediumturquoise);
+    background: linear-gradient(90deg, #0ea7ad, #5d0731);
   }
   .circle2,
   .circle2::before {
@@ -73,7 +73,7 @@
   }
 
   .circle1 {
-    animation: animate1 3s linear infinite;
+    animation: animate1 5s linear infinite;
   }
 
   @keyframes animate1 {
@@ -92,7 +92,7 @@
     }
   }
   .circle2 {
-    animation: animate2 3s linear infinite;
+    animation: animate2 5s linear infinite;
   }
 
   @keyframes animate2 {
@@ -118,7 +118,7 @@
 </style>
 
 {#if show}
-  <div out:blur={{ delay: 0, duration: 500, amount: 20 }} class="load">
+  <div out:fade={{ delay: 1000, duration: 300 }} class="load">
     <div class="container22">
       <div class="circle circle1" />
       <div class="circle circle2" />
