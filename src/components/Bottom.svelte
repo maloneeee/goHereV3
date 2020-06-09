@@ -354,10 +354,13 @@
     font-size: 50px;
   }
   .hero .text h1 {
-    font-size: 160px;
+    font-size: 6vw;
     line-height: 150px;
     margin-top: 50px;
     text-align: right;
+  }
+  .hero .text h1 span {
+    font-size: 7vw;
   }
   .hero_scroll {
     display: flex;
@@ -454,7 +457,7 @@
     font-size: 1000px;
   }
   .quote p {
-    font-size: 6vw;
+    font-size: 5.5vw;
     margin-bottom: 0px;
     text-indent: 200px;
     position: relative;
@@ -749,9 +752,11 @@
     <div class="text">
       <h3>Creative Vision</h3>
       <h1>
-        Creating is what
+        Fueled by creativity.
         <br />
-        <span class="colorDynamic" data-glow="Love to Do!">Love to Do!</span>
+        <span class="colorDynamic" data-glow="Driven by excellence.">
+          Driven by excellence.
+        </span>
       </h1>
       <div class="hero_scroll">
         <h3>Scroll Down</h3>
@@ -771,7 +776,7 @@
       <b class="colorDynamic" data-glow="authentic">authentic,</b>
       and
       <b class="colorDynamic" data-glow="memorable">memorable</b>
-      experiences.
+      digital experiences that bring growth and prosperity.
     </p>
 
     <!-- <p>
@@ -799,7 +804,8 @@
   <section class="quote">
     <div class="mark">"</div>
     <p>
-      Many people have visions of prosperity; few have prosperity of vision.
+      When your goal is to better serve those around you, community grows,
+      people flourish, and creativity thrives.
     </p>
     <div class="author">
       <h4>- Christopher Reid</h4>
@@ -855,7 +861,7 @@
               bind:value={form.phone}
               type="text"
               placeholder="Phone Number" />
-            <p>or email me at</p>
+            <p>or email</p>
             <input
               class="colorDynamic"
               type="text"
@@ -866,7 +872,7 @@
           <div class="form__section form__close">
             <h3 class="colorDynamic" style="margin:0;">{form.name}</h3>
 
-            <button class="button bb">Let's Make a Deal</button>
+            <button class="button bb">Let's Talk</button>
           </div>
         </form>
       </div>

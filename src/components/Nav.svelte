@@ -77,19 +77,19 @@
 
     <li class:act={displayMenu}>
       <a
+        aria-current={segment === 'contact' ? 'page' : undefined}
+        href="contact"
+        on:click={closeMenu}>
+        contact
+      </a>
+    </li>
+    <li class:act={displayMenu}>
+      <a
         rel="prefetch"
         aria-current={segment === 'insights' ? 'page' : undefined}
         href="insights"
         on:click={closeMenu}>
         insights
-      </a>
-    </li>
-    <li class:act={displayMenu}>
-      <a
-        aria-current={segment === 'contact' ? 'page' : undefined}
-        href="contact"
-        on:click={closeMenu}>
-        contact
       </a>
     </li>
   </ul>

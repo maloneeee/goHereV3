@@ -32,7 +32,7 @@ export const services = [
     },
     {
         name: 'Grow',
-        subhead: 'Powerful impressions. <br>Drive conversions.',
+        subhead: 'Engaging experiences. <br>Drive conversions.',
         p:
             'Memorable stories and engaging experiences captivate attention. A compelling digital presence builds your reputation, drives brand loyalty, and optimizes growth. Let us create a digital reputation worthy of your brand.',
         li: [
@@ -41,19 +41,19 @@ export const services = [
                 ico: 'fas fa-sitemap',
             },
             {
-                name: 'Creative Direction',
+                name: 'Lead Generation',
                 ico: 'fas fa-laptop-code',
             },
             {
-                name: 'Content Strategy',
+                name: 'Creative Direction',
                 ico: 'fas fa-user-plus',
             },
-            { name: 'Digital Marketing', ico: 'fas fa-hdd' },
+            { name: 'Content Strategy', ico: 'fas fa-hdd' },
             {
-                name: 'Search Engine Optimization',
+                name: 'Digital Marketing',
                 ico: 'fab fa-google',
             },
-            { name: 'Digital Communications', ico: 'fas fa-brush' },
+            { name: 'Search Engine Optimization', ico: 'fas fa-brush' },
         ],
         icon: 'img/svg/Statistic.svg',
 
@@ -61,8 +61,8 @@ export const services = [
         color2: '#6E2EBF',
     },
     {
-        name: 'Manage',
-        subhead: 'Data-driven objectives. <br>Powerful outcomes.',
+        name: 'Optimize',
+        subhead: 'Data-driven objectives create solutions',
         p:
             'Setting the right goals for your business produces the roadmap for success. We work to identify pain points, evaluate strengths, and explore opportunities for clear-cut vision. Get the most out of your business with data-driven objectives.',
         li: [

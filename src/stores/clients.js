@@ -3,16 +3,22 @@ const clients = [
         slug: 'hofp',
         name: 'House of Providence',
         desc:
-            '<p>This amazing organization is revolutionizing foster care in Michigan. Foster youth with low prospects for adoption are allowed to stabilize and heal on their own timeline in a comforting, safe, and familial environment.</p><p>goHere consults for House of Providence to help them grow most effectively--maximizing their reach and impact for the children they serve.</p>',
+            '<p>This amazing organization is revolutionizing foster care in Michigan. Foster youth with low prospects for adoption are allowed to stabilize and heal on their own timeline in a comforting, safe, and familial environment.</p><p>We offer our full range of services to House of Providence, working to maximize their reach and impact for the children they serve by helping them grow and engage with their donor base most effectively.</p>',
         shortD:
             'The House of Providence is a permanent home for the foster youth of Michigan. Their goal is to instill hope in minors who have only known the intense instability of the foster care system by allowing them to stabilize and heal in a therapeutic and familial environment.',
         services: [
-            'Infrastructure & Process Development',
-            'Creative Direction',
+            'Web, Desktop, and Mobile Application',
             'UI/UX',
+            'Conversion Rate Optimization',
+            'Creative Direction',
+            'Content Strategy',
+            'Digital Marketing',
             'SEO',
-            'Branding',
-            'Marketing',
+            'Asset Creation',
+            'Digital Communications',
+            'Public Relations',
+            'Brand Identity',
+            'Reputation Management',
         ],
         year: '2019',
         url: 'https://thehofp.org',
@@ -23,17 +29,17 @@ const clients = [
         slug: 'barnes',
         name: 'Barnes Homebuilders',
         desc:
-            '<p>Founded in 1964, Barnes Homebuilders has been serving central Texas with integrity and loyalty for over half a century.</p><p>goHere brought this established company into the 21st century with a professional web presence, matching their commitment to quality.</p>',
+            '<p>Founded in 1964, Barnes Homebuilders has been serving central Texas with <b>integrity and loyalty</b> for over half a century.</p><p>goHere brought this established company into the 21st century with a professional web presence, matching their <b>commitment to quality.</b></p>',
         shortD:
             'A new vision for 2019. With over 35 years of experience, PLM is one of the largest concrete and asphalt maintenance companies in Wisconsin.',
         services: [
+            'Web, Desktop, and Mobile Application',
             'UI/UX',
-            'SEO',
-            'Branding',
+            'Brand Identity',
             'Creative Direction',
-            'Marketing',
+            'Digital Marketing',
         ],
-        year: '2017',
+        year: '2011',
         url: 'https://barneshb.com',
         img: '/img/clients/plm.png',
         gif: '/gif/barnes.gif',
@@ -103,7 +109,7 @@ const clients = [
         year: '2019',
         url: 'https://alexandersofdoorcounty.com',
         img: '/img/clients/alex.png',
-        gif:'/gif/alexanders.gif'
+        gif: '/gif/alexanders.gif',
     },
     {
         slug: 'bosman-chiro',
@@ -116,7 +122,7 @@ const clients = [
         year: '2018',
         url: 'https://www.bosmanchiropractic.com/',
         img: '/img/clients/bosman.png',
-        gif:'/gif/bosman.gif'
+        gif: '/gif/bosman.gif',
     },
 
     {
@@ -129,7 +135,7 @@ const clients = [
         year: '2018',
         url: 'https://michiganintegrativemedicine.com/',
         img: '/img/clients/mim.png',
-        gif:'/gif/mim.gif'
+        gif: '/gif/mim.gif',
     },
 ];
 

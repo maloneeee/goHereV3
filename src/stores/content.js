@@ -14,7 +14,7 @@ export const home = {
             title:
                 '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for Success.',
             p:
-                '<b>Fueled by creativity. Driven by excellence.</b><br/>We love creating unique, authentic, and memorable digital experiences that bring growth and prosperity.',
+                'Companies who proactively embrace the power of technology for business in the digital age will disrupt those who wait too long.',
             sub: 'inciting inspiration',
 
             button: '',
@@ -69,7 +69,7 @@ export const who = {
             title:
                 '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for Service.',
             p:
-                '<b>Powerful experiences. By design.</b> <br> We’re a team of innovative consultants and creators with a passion for excellence, an eye for opportunity, and a love of service. Sharing our talents with others to make a positive impact drives us. ',
+                '<b>Powerful Experiences. By Design.</b> <br> We’re a team of innovative consultants and creators with a passion for excellence, an eye for opportunity, and a love of service. Sharing our talents with others to make a positive impact is what drives us.',
             sub: 'nerd alert',
             button: 'Envision With Us!',
             buttonHref: 'cta',
@@ -81,7 +81,7 @@ export const who = {
 
     cta: {
         head: "Let's Create Together",
-        button: 'Ya Heard?',
+        button: "Let's Go!",
     },
 };
 export const what = {
@@ -94,7 +94,7 @@ export const what = {
             title:
                 '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for Results',
             p:
-                '<b>Build. Grow. Optimize. Impress.</b><br> Solutions to drive business. We design and build custom technology solutions that bring structure, growth, and peace of mind.',
+                '<b>Technology that has you covered.</b><br> Build. Grow. Optimize. Impress. Solutions to drive business. We design and build custom technology solutions that bring structure, growth, and peace of mind.',
             sub: 'masterminds',
             button: '',
             buttonHref: '',
@@ -103,7 +103,7 @@ export const what = {
     ],
     cta: {
         head: 'Get The Most Out Of Our Business',
-        button: 'Get It?',
+        button: 'Get Started',
     },
 };
 export const work = {
@@ -116,18 +116,18 @@ export const work = {
             title:
                 '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for Partnership',
             p:
-                'Whether you’re a startup, nonprofit, or a household brand, <span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> has solutions for you. We select clients we resonate with, bringing passion and inspiration to any project.',
+                'Whether you’re a startup, nonprofit, or a household brand, goHere has solutions for you. We select clients we <b>resonate</b> with, bringing <b>passion and inspiration</b> to any project.',
             sub: 'powerful',
             button: 'Become a Partner',
-            buttonHref: '/get-started',
+            buttonHref: 'cta',
             invert: true,
             color1: 'red',
             color2: 'purple',
         },
     ],
     cta: {
-        head: 'You Dont Tell Me WHat to Do!!!',
-        button: 'You arent my DADDY!?',
+        head: 'Our Clients Love Us. <br>So Will You!',
+        button: "Let's Go!",
     },
 };
 export const contact = {
@@ -154,20 +154,20 @@ export const insights = {
     h1Sub: 'Insights',
     section: [
         {
-            title: 'The Lastest Tech Updates',
-            p:
-                'We tackle projects of all types and work with organizations across all industries. Discover the power of creative tech solutions for any project you might have.',
+            title:
+                '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for the Latest',
+            p: 'Reach out today and find out what goHere can do for you.',
             sub: 'Learn Something',
-            button: 'What We Do',
-            buttonHref: '/what',
+            button: "Let's Go",
+            buttonHref: 'cta',
             invert: true,
             color1: 'red',
             color2: 'purple',
         },
     ],
     cta: {
-        head: 'Lets Get Physical',
-        button: 'Ya Heard?',
+        head: 'The best for the brightest.',
+        button: 'REACH OUT',
     },
 };
 
@@ -183,11 +183,11 @@ export const cta = {
 };
 
 export const tags = [
-    'Problem Solving',
-    'Web Development',
-    'UI/UX',
-    'Platinum Level Hosting',
-    'White Labeling',
+    'problem solving',
+    'web development',
+    'ui/ux',
+    'platinum level hosting',
+    'white Labeling',
     'Conversion Rate Optimization',
     'Lead Generation',
     'Creative Direction',
@@ -213,5 +213,6 @@ export const tags = [
     'App Development',
     'Business Consulting',
     'Full-Stack Development',
-    'Crisis Management',
+    'crisis management',
+    'projection mapping',
 ];
