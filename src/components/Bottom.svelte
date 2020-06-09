@@ -776,7 +776,7 @@
       <b class="colorDynamic" data-glow="authentic">authentic,</b>
       and
       <b class="colorDynamic" data-glow="memorable">memorable</b>
-      digital experiences that bring growth and prosperity.
+      experiences.
     </p>
 
     <!-- <p>
