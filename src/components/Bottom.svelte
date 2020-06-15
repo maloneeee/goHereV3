@@ -469,6 +469,7 @@
   .quote .author h4 {
     font-size: 83px;
     margin-top: 100px;
+    text-align: right;
   }
   .quote .author h6 {
     font-size: 58px;

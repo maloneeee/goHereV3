@@ -183,7 +183,7 @@
     top: 40px;
     left: -50px;
     font-size: 170px;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(200, 200, 200, 0.9);
     font-weight: 800;
     font-family: "Roboto", sans-serif;
     line-height: 100%;
