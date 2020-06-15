@@ -11,7 +11,7 @@
 
   $: if ($loaded == true) {
     // alert("loaded");
-    show = false;
+    // show = false;
   } else {
     show = true;
     // alert('its clsoed');
@@ -81,14 +81,14 @@
       transform: translateX(0) rotate(0deg);
     }
     30% {
-      transform: translateX(250px) rotate(120deg);
+      transform: translateX(250px) rotate(240deg);
     }
     60% {
-      transform: translateX(250px) rotate(240deg);
+      transform: translateX(250px) rotate(480deg);
     }
 
     100% {
-      transform: translateX(0) rotate(360deg);
+      transform: translateX(0) rotate(720deg);
     }
   }
   .circle2 {
