@@ -138,7 +138,7 @@
   .mainBox {
     padding: 50px 75px;
     margin-left: 100px;
-    width: 550px;
+    /* width: 550px; */
     position: relative;
   }
   .blackBox {
@@ -161,9 +161,10 @@
 
   h2 {
     font-size: 140px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     font-weight: 700;
     line-height: 110%;
+    margin-bottom: 20px;
   }
 
   .subhead {
@@ -183,7 +184,7 @@
     top: 40px;
     left: -50px;
     font-size: 170px;
-    color: rgba(53, 53, 53, 0.9);
+    color: rgb(0, 0, 0);
     font-weight: 800;
     font-family: "Roboto", sans-serif;
     line-height: 100%;
@@ -216,7 +217,9 @@
               style="text-shadow: 2px 2px 4px {service.color2};">
               {i + 1}
             </h4>
-            <h2>{service.name}</h2>
+            <h2 class="colorDynamic" data-glow={service.name}>
+              {service.name}
+            </h2>
             <ul>
               {#each service.li as li}
                 <li

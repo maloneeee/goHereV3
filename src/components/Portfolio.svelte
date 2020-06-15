@@ -54,9 +54,7 @@
   </div>
   <div class="client_holder">
 
-    <h2 class="colorDynamic" data-glow={name} style="text-align:left;">
-      {name}
-    </h2>
+    <h2 class="colorDynamic" data-glow={name}>{name}</h2>
     <h3>Creating Together Since {year}</h3>
     <div class="desc">
       {@html desc}
