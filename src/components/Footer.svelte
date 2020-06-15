@@ -99,9 +99,11 @@
       <h3>Insights</h3>
       <ul>
         {#each posts as post, i}
-          <li>
-            <a href="/insights/{post.slug}">{post.title}</a>
-          </li>
+          {#if i < 5}
+            <li>
+              <a href="/insights/{post.slug}">{post.title}</a>
+            </li>
+          {/if}
         {/each}
       </ul>
     </div>

@@ -475,7 +475,7 @@
   }
 
   .cta h3 {
-    margin: 200px 0px;
+    margin: 100px 0px;
     font-size: 132px;
     text-align: right;
     color: #353535;
@@ -495,18 +495,25 @@
     flex-direction: column;
   }
   .form .form__section {
-    margin-bottom: 100px;
     padding-right: 0vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0vw 10vw;
   }
   .form__section.form__close {
     align-self: flex-end;
-    text-align: right;
+    text-align: center;
+  }
+
+  .form__section.form__close button {
+    margin-top: 80px;
+    text-align: center;
   }
   .cta .form p {
     display: inline;
   }
   .cta .form input {
-    display: inline;
     border: none;
     border-bottom: #6d6d6d solid 2px;
     padding: 10px 10px;
@@ -517,6 +524,7 @@
     text-align: center;
     transition: 200ms;
     line-height: 100%;
+    margin-bottom: 40px;
   }
   .cta .form input:focus {
     outline: none;
@@ -759,7 +767,7 @@
         </span>
       </h1>
       <div class="hero_scroll">
-        <h3>Scroll Down</h3>
+        <h3>Keep Scrolling</h3>
         <div class="circle">
           <div class="arrow" />
         </div>
@@ -810,7 +818,13 @@
     <div class="author">
       <h4>- Christopher Reid</h4>
       <div style="display:flex;">
-        <h6>Founder and Lead Envisioneer of goHere</h6>
+        <h6>
+          Founder and Lead Envisioneer of
+          <span style="font-family:Arial;">
+            go
+            <b style="font-family:Arial; margin-left:-10px">Here</b>
+          </span>
+        </h6>
         <span style="font-size: 6px;margin-bottom:32px;">®</span>
       </div>
     </div>
@@ -827,27 +841,19 @@
       <div class="form">
         <form on:submit|preventDefault={sendContactMessage}>
           <div class="form__section">
-            <p>Hi, my name is</p>
+
             <input
               class="colorDynamic"
               bind:value={form.name}
               type="text"
               placeholder="Full Name"
               data-glow={form.name} />
-            <p>
-              , and I want
-              <span style="font-family:Arial;">
-                go
-                <b style="font-family:Arial;">Here's</b>
-              </span>
-              input on my next
-            </p>
+
             <input
               bind:value={form.project}
               type="text"
               class="colorDynamic"
               placeholder="Type of Project" />
-            <p>project for</p>
             <input
               type="text"
               class="colorDynamic"
@@ -855,19 +861,16 @@
               placeholder="Company" />
           </div>
           <div class="form__section">
-            <p>Please call me at</p>
             <input
               class="colorDynamic"
               bind:value={form.phone}
               type="text"
               placeholder="Phone Number" />
-            <p>or email</p>
             <input
               class="colorDynamic"
               type="text"
               bind:value={form.email}
               placeholder="Email Address" />
-            <p>.</p>
           </div>
           <div class="form__section form__close">
             <h3 class="colorDynamic" style="margin:0;">{form.name}</h3>

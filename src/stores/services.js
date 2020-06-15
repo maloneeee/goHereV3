@@ -28,7 +28,7 @@ export const services = [
         icon: 'img/svg/Management.svg',
 
         color1: '#36C9F7',
-        color2: '#0EAA72',
+        color2: 'rgb(40, 236, 206)',
     },
     {
         name: 'Grow',
@@ -58,7 +58,8 @@ export const services = [
         icon: 'img/svg/Statistic.svg',
 
         color1: '#D053FC',
-        color2: '#6E2EBF',
+
+        color2: 'rgb(123, 190, 204)',
     },
     {
         name: 'Optimize',
@@ -91,7 +92,7 @@ export const services = [
         icon: 'img/svg/Strategy.svg',
 
         color1: '#D24477',
-        color2: '#C8522D',
+        color2: 'rgb(63, 94, 171)',
     },
     {
         name: 'Impress',
@@ -120,7 +121,8 @@ export const services = [
         icon: 'img/svg/DataAnalysis.svg',
 
         color1: '#F2C72B',
-        color2: '#F59B7F',
+
+        color2: 'rgb(244, 126, 185)',
     },
 ];
 

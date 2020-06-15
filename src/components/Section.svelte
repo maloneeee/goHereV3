@@ -67,6 +67,10 @@
       ),
       linear-gradient(106.98deg, #2bd9ff, #bf37a9);
   }
+
+  .ctah {
+    text-transform: capitalize;
+  }
 </style>
 
 <section
@@ -82,7 +86,7 @@
           <span>{sub}</span>
         </h5>
       {/if}
-      <h2 class:colorDynamic={invert}>
+      <h2 class:colorDynamic={invert} class:ctah={xtra != null}>
         {#if xtra != null}
           {@html xtra.head}
         {:else}

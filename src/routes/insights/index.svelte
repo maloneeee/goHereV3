@@ -26,6 +26,7 @@
   .post_holder {
     display: flex;
     flex-wrap: wrap;
+    margin: 3vw 2vw;
   }
 
   @media (max-width: 1068px) {

@@ -60,6 +60,7 @@
     background: white;
     padding: 0 5vw;
     padding-bottom: 4vw;
+    margin-top: -12px;
   }
   .inner {
     margin: 0 auto;
