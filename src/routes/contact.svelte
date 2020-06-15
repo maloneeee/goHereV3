@@ -11,13 +11,22 @@
   });
 </script>
 
+<style>
+  .coont {
+    margin-top: -75px;
+  }
+</style>
+
 <svelte:head>
   <title>{contact.title}</title>
 </svelte:head>
 <TransitionWrapper>
-  <!-- <Hero heading='{contact.h1}' headingSub={contact.h1Sub}/> -->
-  {#each contact.section as section}
-    <Section {...section} />
-  {/each}
-  <New />
+
+  <div class="coont">
+    <!-- <Hero heading='{contact.h1}' headingSub={contact.h1Sub}/> -->
+    {#each contact.section as section}
+      <Section {...section} />
+    {/each}
+    <New />
+  </div>
 </TransitionWrapper>
