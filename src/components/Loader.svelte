@@ -65,11 +65,11 @@
   }
   .circle1,
   .circle::before {
-    background: linear-gradient(90deg, #0ea7ad, #5d0731);
+    background: linear-gradient(90deg, rgb(207, 111, 175), rgb(192, 19, 42));
   }
   .circle2,
   .circle2::before {
-    background: linear-gradient(90deg, rgb(207, 111, 175), rgb(192, 19, 42));
+    background: linear-gradient(90deg, #0ea7ad, #5d0731);
   }
 
   .circle1 {
