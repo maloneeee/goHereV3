@@ -11,6 +11,7 @@
   };
   import { onMount } from "svelte";
   import { showingCTA } from "./../stores/var.js";
+  import { global } from "./../stores/content.js";
   import New from "./../components/forms/New.svelte";
   let hash = window.location.hash;
   onMount(() => {
@@ -632,6 +633,15 @@
     font-size: 3vw;
     margin-bottom: 2vw;
   }
+  .call a {
+    font-size: 253px;
+    color: black;
+    text-align: right;
+    margin-top: -230px;
+    font-weight: 500;
+    position: relative;
+    z-index: 10;
+  }
 
   .bb {
     padding: 20px 40px;
@@ -747,7 +757,7 @@
     .call h2:first-child {
       font-size: 25vw;
     }
-    .call h2:last-child {
+    .call a {
       font-size: 15vw;
       margin-top: -16vw;
     }
@@ -894,6 +904,6 @@
   </section> -->
   <section class="call whiteBG">
     <h2 class="color muted">Call Now</h2>
-    <h2>305.999.5595</h2>
+    <a href="tel:{global.phone}">{global.phone}</a>
   </section>
 </div>
