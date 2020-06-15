@@ -11,7 +11,7 @@
 
   $: if ($loaded == true) {
     // alert("loaded");
-    // show = false;
+    show = false;
   } else {
     show = true;
     // alert('its clsoed');
