@@ -46,7 +46,7 @@ export default class Index {
         let uniforms;
 
         //Page Length Percent
-        var ratio = 32.8;
+        var ratio = 43.8;
 
         let clock = new THREE.Clock(),
             phase = 0,

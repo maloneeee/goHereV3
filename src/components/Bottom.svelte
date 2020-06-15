@@ -11,6 +11,7 @@
   };
   import { onMount } from "svelte";
   import { showingCTA } from "./../stores/var.js";
+  import New from "./../components/forms/New.svelte";
   let hash = window.location.hash;
   onMount(() => {
     (function($) {
@@ -810,7 +811,10 @@
       {/each}
     </div>
   </section>
-  <section class="quote">
+  <div class="gg" style="margin-top:20px;">
+    <New />
+  </div>
+  <!-- <section class="quote">
     <div class="mark">"</div>
     <p>
       When your goal is to better serve those around you, community grows,
@@ -887,7 +891,7 @@
       </h3>
       <h5>We look forward to speaking with you soon.</h5>
     {/if}
-  </section>
+  </section> -->
   <section class="call whiteBG">
     <h2 class="color muted">Call Now</h2>
     <h2>305.999.5595</h2>
