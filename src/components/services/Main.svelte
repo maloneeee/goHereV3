@@ -237,7 +237,8 @@
             <img
               src={service.icon}
               alt="goHere for Greatnessness"
-              style="width:222px;" />
+              style="width:222px;"
+              class="colorRotate" />
             <h2 class="subhead">
               {@html service.subhead}
             </h2>
