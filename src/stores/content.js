@@ -14,7 +14,7 @@ export const home = {
             title:
                 '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for Success.',
             p:
-                'Companies who proactively embrace the power of technology for business in the digital age will disrupt those who wait too long.',
+                '<b>Fueled by creativity. Driven by excellence.</b><br> We love creating unique, authentic, and memorable digital experiences that bring growth and prosperity.',
             sub: 'inciting inspiration',
 
             button: '',
@@ -27,7 +27,7 @@ export const home = {
         {
             title: '',
             p:
-                '<b>Technology designed for you.</b> <br>Our solutions are built to drive your business into the future. ',
+                '<b>Technology designed for you.</b>  Our solutions are built to drive your business into the future. ',
             button: '',
             sub: '',
             buttonHref: '',

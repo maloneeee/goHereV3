@@ -26,7 +26,11 @@
     right: 0;
     bottom: 0;
     z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
-    background: white;
+    background: linear-gradient(
+      172deg,
+      rgba(223, 255, 248, 1) 0%,
+      rgba(218, 184, 249, 1) 100%
+    );
     /* background-image: url("https://gohere2-f295.kxcdn.com/img/gif/loading2.gif"); */
     background-size: cover;
     background-position: center;
@@ -118,8 +122,8 @@
 </style>
 
 {#if show}
-  <div out:fade={{ delay: 1000, duration: 300 }} class="load">
-    <div class="container22">
+  <div out:fade={{ delay: 2000, duration: 300 }} class="load colorRotate">
+    <!-- <div class="container22">
       <div class="circle circle1" />
       <div class="circle circle2" />
     </div>
@@ -128,7 +132,7 @@
         <feGaussianBlur in="SourceGraphic" stfDeviation="10" />
         <feColorMatrix values=" 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10 " />
       </filter>
-    </svg>
+    </svg> -->
   </div>
 {/if}
 <div in:fade={{ delay: 300, duration: 500 }}>

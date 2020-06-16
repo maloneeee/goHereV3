@@ -772,10 +772,10 @@
     <div class="text">
       <h3>Creative Vision</h3>
       <h1>
-        Fueled by creativity.
+        The power of technology.
         <br />
-        <span class="colorDynamic" data-glow="Driven by excellence.">
-          Driven by excellence.
+        <span class="colorDynamic" data-glow="Taken further.">
+          Taken further.
         </span>
       </h1>
       <div class="hero_scroll">
