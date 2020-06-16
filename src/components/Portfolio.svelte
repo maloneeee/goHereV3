@@ -34,6 +34,10 @@
     padding: 20px 40px;
     font-size: 2.2rem;
   }
+
+  .client_holder h2 {
+    text-align: left;
+  }
 </style>
 
 <div class="client_container">
