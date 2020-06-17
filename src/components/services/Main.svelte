@@ -115,11 +115,11 @@
     bottom: 0;
     right: 0;
     left: 0;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 36px;
-    opacity: 100%;
+    opacity: 0%;
     transition: opacity 300ms;
     /* background: rgba(0, 0, 0, 0.95); */
     /* border-top: 10px white solid;
@@ -128,7 +128,7 @@
   }
 
   .showing {
-    display: flex;
+    opacity: 100%;
   }
   .view {
     position: sticky;
@@ -199,6 +199,17 @@
   i {
     margin-right: 5px;
     width: 35px;
+  }
+
+  @media (max-width: 1068px) {
+    .showing {
+      display: flex !important;
+      opacity: 100%;
+    }
+    .window {
+      display: none;
+      opacity: 100%;
+    }
   }
 </style>
 
