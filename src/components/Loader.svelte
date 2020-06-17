@@ -5,8 +5,11 @@
   import { loaded } from "./../stores/var.js";
 
   let show = true;
+  let b;
+  let newP = 5;
   onMount(() => {
-    // show = false;
+    b = document.getElementById("perc");
+    requestAnimationFrame(aniamteLoad);
   });
 
   $: if ($loaded == true) {
@@ -15,6 +18,14 @@
   } else {
     show = true;
     // alert('its clsoed');
+  }
+
+  function aniamteLoad() {
+    if (newP < 90) {
+      newP += 0.7;
+    }
+    b.style.width = newP + "%";
+    requestAnimationFrame(aniamteLoad);
   }
 </script>
 
@@ -115,9 +126,16 @@
     }
   }
 
-  svg {
-    width: 0;
-    height: 0;
+  .bar {
+    width: 400px;
+    max-width: 90vw;
+    height: 20px;
+    background: white;
+  }
+  #perc {
+    width: 5%;
+    height: 100%;
+    background: green;
   }
 </style>
 
@@ -133,6 +151,10 @@
         <feColorMatrix values=" 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10 " />
       </filter>
     </svg> -->
+
+    <div class="bar">
+      <div id="perc" class="colorRotate" />
+    </div>
   </div>
 {/if}
 <div in:fade={{ delay: 300, duration: 500 }}>

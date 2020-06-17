@@ -29,10 +29,23 @@
     margin-top: 150px;
     position: relative;
   }
+
+  .bg-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-image: url("/img/space/space1x.png");
+    background-size: cover;
+    z-index: -1;
+  }
 </style>
 
 <Loader>
   <Nav {segment} />
+  <div class="bg-scroll" />
   <main>
     <slot />
   </main>

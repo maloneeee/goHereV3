@@ -104,7 +104,7 @@
 <style>
   #rail {
     width: 100vw;
-    height: 450vh;
+    height: 400vh;
     position: relative;
     padding: 100px 0px;
     margin-top: -120px;
@@ -115,11 +115,11 @@
     bottom: 0;
     right: 0;
     left: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     padding: 36px;
-    opacity: 0%;
+    opacity: 100%;
     transition: opacity 300ms;
     /* background: rgba(0, 0, 0, 0.95); */
     /* border-top: 10px white solid;
@@ -128,7 +128,7 @@
   }
 
   .showing {
-    opacity: 100%;
+    display: flex;
   }
   .view {
     position: sticky;
