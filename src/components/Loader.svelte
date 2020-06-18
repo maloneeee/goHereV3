@@ -129,13 +129,16 @@
   .bar {
     width: 400px;
     max-width: 90vw;
-    height: 20px;
-    background: white;
+    height: 5px;
+    background: transparent;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.07);
+    border-radius: 2px;
   }
   #perc {
     width: 5%;
     height: 100%;
-    background: green;
+    background: white;
+    border-radius: 2px;
   }
 </style>
 
