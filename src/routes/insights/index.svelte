@@ -38,6 +38,7 @@
 
 <svelte:head>
   <title>{insights.title}</title>
+  <meta name="description" content={insights.meta} />
 </svelte:head>
 <TransitionWrapper>
   <Hero heading={insights.h1} headingSub={insights.h1Sub} />

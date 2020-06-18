@@ -179,7 +179,7 @@
       {#each values as value, i}
         <div
           class="windowr colorScrollAlt"
-          style=" left:{i * 20}px; background:{value.color};">
+          style=" left:{i * 20 - 25}px; background:{value.color};">
           <div class="mainBox">
             <h4
               class="number"

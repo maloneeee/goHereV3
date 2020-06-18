@@ -213,9 +213,9 @@ export default class Index {
                             },
 
                             function (xhr) {
-                                console.log(
-                                    (xhr.loaded / xhr.total) * 100 + '% loaded'
-                                );
+                                // console.log(
+                                //     (xhr.loaded / xhr.total) * 100 + '% loaded'
+                                // );
                             },
 
                             function (xhr) {
@@ -368,7 +368,7 @@ export default class Index {
             var y =
                 ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100; //0 to 100
 
-            console.log('camera change:' + (y - ratio) / 1000);
+            // console.log('camera change:' + (y - ratio) / 1000);
 
             if (y < ratio / 2) {
                 let v = y * 0.02 * (100 / ratio);

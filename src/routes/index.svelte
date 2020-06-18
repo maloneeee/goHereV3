@@ -38,7 +38,6 @@
     };
   });
 
-  $: console.log($scrollPer);
   function fadeScroll() {
     //Get percent scrolled
     var h = document.documentElement,
