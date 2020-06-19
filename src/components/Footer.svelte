@@ -55,11 +55,11 @@
         <img src="logo-192.png" alt="goHere" />
       </div>
     </a>
+    <h5>{global.phone}</h5>
+    <h5>{global.email}</h5>
     <h5 class="address">
       {@html global.address}
     </h5>
-    <h5>{global.phone}</h5>
-    <h5>{global.email}</h5>
   </div>
   <div class="col_holder">
 
@@ -67,16 +67,16 @@
       <h3>Essential Info</h3>
       <ul>
         <li>
-          <a href="#">Who We Are</a>
+          <a href="/who">Who We Are</a>
         </li>
         <li>
-          <a href="#">What We Do</a>
+          <a href="/what">What We Do</a>
         </li>
         <li>
-          <a href="#">Where</a>
+          <a href="/where">Where</a>
         </li>
         <li>
-          <a href="#">Work</a>
+          <a href="/work">Work</a>
         </li>
       </ul>
     </div>
@@ -84,13 +84,18 @@
       <h3>Tools</h3>
       <ul>
         <li>
-          <a href="#">Wordpress</a>
+          <a href="https://svelte.dev/">Svelte</a>
         </li>
         <li>
-          <a href="#">Webflow</a>
+          <a href="https://webflow.com">Webflow</a>
         </li>
         <li>
-          <a href="#">P3D</a>
+          <a href="https://threejs.org/">three.js</a>
+        </li>
+        <li>
+          <a href="https://www.microsoft.com/en-us/hololens/hardware">
+            Microsoft Hololens 2
+          </a>
         </li>
       </ul>
     </div>

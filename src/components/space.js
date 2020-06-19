@@ -1,6 +1,6 @@
 import { init } from 'svelte/internal';
 import * as THREE from 'three';
-export let loaded = false;
+import { loaded } from './../stores/var.js';
 export default class Index {
     constructor() {
         let camera,
@@ -277,7 +277,7 @@ export default class Index {
             requestAnimationFrame(render);
             window.addEventListener('scroll', onScroll);
             window.addEventListener('resize', onWindowResize, false);
-            loaded = true;
+            loaded.set(true);
         }
         function genSun() {
             let sunMat = new THREE.MeshStandardMaterial({

@@ -1,5 +1,6 @@
 <script>
   import RandomText from "./RandomText.svelte";
+  import { loaded } from "./../stores/var.js";
   export let segment;
   let displayMenu = false;
   function toggleMenu() {
@@ -7,6 +8,10 @@
   }
   function closeMenu() {
     displayMenu = false;
+  }
+  function goHome() {
+    displayMenu = false;
+    loaded.set(false);
   }
 </script>
 
@@ -41,7 +46,7 @@
 </style>
 
 <nav>
-  <a class="logo_link" href="." on:click={closeMenu}>
+  <a class="logo_link" href="." on:click={goHome}>
     <div class="logo">
       go
       <span>Here</span>

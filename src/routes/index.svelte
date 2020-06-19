@@ -29,7 +29,7 @@
       let create3d = new Index();
       resolve(create3d);
     });
-    createScene.then(loaded.set(true));
+    createScene;
     window.addEventListener("scroll", fadeScroll);
 
     return () => {

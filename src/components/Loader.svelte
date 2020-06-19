@@ -21,8 +21,11 @@
   }
 
   function aniamteLoad() {
-    if (newP < 90) {
-      newP += 0.7;
+    if (newP < 80) {
+      newP += 1.5;
+    }
+    if (newP > 80 && newP < 100) {
+      newP += 0.1;
     }
     b.style.width = newP + "%";
     requestAnimationFrame(aniamteLoad);
@@ -51,80 +54,6 @@
     justify-content: center;
     align-items: center;
   }
-  .container22 {
-    position: relative;
-    width: 800px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    filter: url(#gooey);
-  }
-  .circle {
-    position: relative;
-    min-width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: #fff;
-  }
-  .circle::before {
-    content: "";
-    position: absolute;
-    top: -50px;
-    right: -50px;
-    left: -50px;
-    bottom: -50px;
-    border-radius: 50%;
-    background: white;
-    z-index: -1;
-    filter: blur(50px);
-  }
-  .circle1,
-  .circle::before {
-    background: linear-gradient(90deg, rgb(207, 111, 175), rgb(192, 19, 42));
-  }
-  .circle2,
-  .circle2::before {
-    background: linear-gradient(90deg, #0ea7ad, #5d0731);
-  }
-
-  .circle1 {
-    animation: animate1 5s linear infinite;
-  }
-
-  @keyframes animate1 {
-    0% {
-      transform: translateX(0) rotate(0deg);
-    }
-    30% {
-      transform: translateX(250px) rotate(240deg);
-    }
-    60% {
-      transform: translateX(250px) rotate(480deg);
-    }
-
-    100% {
-      transform: translateX(0) rotate(720deg);
-    }
-  }
-  .circle2 {
-    animation: animate2 5s linear infinite;
-  }
-
-  @keyframes animate2 {
-    0% {
-      transform: translateX(0) rotate(0deg);
-    }
-    30% {
-      transform: translateX(-250px) rotate(-120deg);
-    }
-    60% {
-      transform: translateX(-250px) rotate(-240deg);
-    }
-
-    100% {
-      transform: translateX(0) rotate(-360deg);
-    }
-  }
 
   .bar {
     width: 400px;
@@ -143,7 +72,7 @@
 </style>
 
 {#if show}
-  <div out:fade={{ delay: 2000, duration: 300 }} class="load colorRotate">
+  <div out:fade={{ duration: 300 }} class="load colorRotate">
     <!-- <div class="container22">
       <div class="circle circle1" />
       <div class="circle circle2" />
