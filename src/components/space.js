@@ -23,7 +23,7 @@ export default class Index {
             thirdPivot: 1.7 * Math.PI,
         };
         let end = {
-            camera: new THREE.Vector3(277, 20.4, -521),
+            camera: new THREE.Vector3(276.5, 20.4, -521),
             mainPivot: 0,
             secPivot: -0.12 * Math.PI,
             thirdPivot: 3.1 * Math.PI,
