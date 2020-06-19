@@ -102,7 +102,7 @@ export const what = {
         },
     ],
     cta: {
-        head: 'Get The Most Out Of Our Business',
+        head: 'Get The Most Out Of Your Business',
         button: 'Get Started',
     },
 };

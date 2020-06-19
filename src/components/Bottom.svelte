@@ -903,7 +903,7 @@
     {/if}
   </section> -->
   <section class="call whiteBG">
-    <h2 class="color muted">Call Now</h2>
+    <h2 class="color muted" style="white-space:nowrap">Call Now</h2>
     <a href="tel:{global.phone}">{global.phone}</a>
   </section>
 </div>

@@ -85,6 +85,11 @@
       <h3>Tools</h3>
       <ul>
         <li>
+          <a href="https://www.microsoft.com/en-us/hololens/hardware">
+            Microsoft Hololens 2
+          </a>
+        </li>
+        <li>
           <a href="https://svelte.dev/">Svelte</a>
         </li>
         <li>
@@ -93,11 +98,7 @@
         <li>
           <a href="https://threejs.org/">three.js</a>
         </li>
-        <li>
-          <a href="https://www.microsoft.com/en-us/hololens/hardware">
-            Microsoft Hololens 2
-          </a>
-        </li>
+
       </ul>
     </div>
 
