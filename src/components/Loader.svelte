@@ -24,8 +24,8 @@
     if (newP < 80) {
       newP += 1.5;
     }
-    if (newP > 80 && newP < 100) {
-      newP += 0.1;
+    if (newP >= 80 && newP < 100) {
+      newP += 0.5;
     }
     b.style.width = newP + "%";
     requestAnimationFrame(aniamteLoad);
