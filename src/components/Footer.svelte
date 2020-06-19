@@ -72,11 +72,12 @@
         <li>
           <a href="/what">What We Do</a>
         </li>
+
         <li>
-          <a href="/where">Where</a>
+          <a href="/work">Our Work</a>
         </li>
         <li>
-          <a href="/work">Work</a>
+          <a href="/contact">Contact Us</a>
         </li>
       </ul>
     </div>
