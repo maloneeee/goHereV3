@@ -6,6 +6,8 @@
   import CTAOverlay from "../components/CTAOverlay.svelte";
   import Footer from "../components/Footer.svelte";
   import { scrollPosition, scrollPer } from "./../stores/var.js";
+  import ScrollAnimation from "../components/ScrollAnimation.svelte";
+  import { fade } from "svelte/transition";
   import { onMount } from "svelte";
   export let segment;
 
@@ -54,3 +56,8 @@
 </Loader>
 <!-- <Audio /> -->
 <CTAOverlay />
+{#if $scrollPer == 0}
+  <div class="hide" transition:fade={{ duration: 300 }}>
+    <ScrollAnimation />
+  </div>
+{/if}

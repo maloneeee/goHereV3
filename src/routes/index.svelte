@@ -11,7 +11,6 @@
   import { onMount, onDestroy } from "svelte";
   import RandomText from "./../components/RandomText.svelte";
   import { showingCTA, scrollPer, loaded } from "./../stores/var.js";
-  import ScrollAnimation from "../components/ScrollAnimation.svelte";
   import Bottom from "./../components/Bottom.svelte";
 
   export let phase = 0;
@@ -337,8 +336,3 @@
     <Bottom />
   </div>
 </TransitionWrapper>
-{#if $scrollPer == 0}
-  <div class="hide" transition:fade={{ duration: 300 }}>
-    <ScrollAnimation />
-  </div>
-{/if}
