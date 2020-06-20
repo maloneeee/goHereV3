@@ -1,63 +1,64 @@
 <script>
-    export let postdata;
-    let postedOn =new Date(postdata.published_at);
-    let date = postedOn.getMonth()+"-"+postedOn.getDate()+"-"+postedOn.getFullYear();
-    console.log(date);
-    
+  export let postdata;
+  let postedOn = new Date(postdata.published_at);
+  let date =
+    postedOn.getMonth() +
+    "-" +
+    postedOn.getDate() +
+    "-" +
+    postedOn.getFullYear();
+  console.log(date);
 </script>
 
 <style>
-    .article{
-        background:white;
-        color:rgb(34, 34, 34);
-        display:flex;
-        flex-direction:column;
-        padding:10px;
-        margin:20px;
-        flex-shrink:1;
-        width:22.5%
-    }
+  .article {
+    background: white;
+    color: rgb(34, 34, 34);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 1vw;
+    flex-shrink: 1;
+    width: 22.5%;
+  }
 
-    h2{
-        font-size:2.5rem;
-        line-height:100%;
-        margin: 10px 0;
-    }
-    h3{
-        font-size:0.8rem;
-    }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 100%;
+    margin: 10px 0;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
 
-    .img{
-        width:100%;
-        height: 200px;
-        background: white;
-        background-position:center;
-        background-size:cover;
-    }
+  .img {
+    width: 100%;
+    height: 200px;
+    background: white;
+    background-position: center;
+    background-size: cover;
+  }
 
-    @media (max-width:1068px) {
-        .article{
-            width:100%;
-        }
+  @media (max-width: 1068px) {
+    .article {
+      width: 100%;
     }
+  }
 
-    .content{
-        margin-top:10px;
-        display:block;
-        margin-bottom:40px;
-    }
+  .content {
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 40px;
+  }
 </style>
 
-    <div class="article">    
-    <a href="/insights/{postdata.slug}">
-    <div class="img" style="background-image:url({postdata.feature_image})"></div>
+<div class="article">
+  <a href="/insights/{postdata.slug}">
+    <div class="img" style="background-image:url({postdata.feature_image})" />
     <h2>{postdata.title}</h2>
-    <h3>
-    {date} | {postdata.reading_time} MIN READ
-    </h3>
+    <h3>{date} | {postdata.reading_time} MIN READ</h3>
     <span class="content">
-    {@html postdata.excerpt}
+      {@html postdata.excerpt}
     </span>
-    </a>
-    </div>
-    
+  </a>
+</div>
