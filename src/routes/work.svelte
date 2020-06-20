@@ -31,7 +31,7 @@
   <section class="section">
     <div class="container">
       {#each clients as client, i}
-        <div class="client" on:click={clientClicked}>
+        <div class="client">
           <Portfolio {...client} />
         </div>
       {/each}
