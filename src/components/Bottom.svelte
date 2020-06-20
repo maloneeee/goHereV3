@@ -540,11 +540,11 @@
     padding: 20px 10vw 100px;
   }
   .call h2:first-child {
-    font-size: 386px;
+    font-size: 23vw;
     color: #e4e4e4;
   }
   .call h2:last-child {
-    font-size: 253px;
+    font-size: 13vw;
     color: black;
     text-align: right;
     margin-top: -230px;
@@ -634,7 +634,7 @@
     margin-bottom: 2vw;
   }
   .call a {
-    font-size: 253px;
+    font-size: 13vw;
     color: black;
     text-align: right;
     margin-top: -230px;
@@ -642,7 +642,8 @@
     position: relative;
     z-index: 10;
   }
-
+  .call h2 {
+  }
   .bb {
     padding: 20px 40px;
     line-height: 3.5rem;

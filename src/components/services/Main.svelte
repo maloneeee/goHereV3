@@ -223,9 +223,7 @@
           out:fade={{ delay: 0, duration: 150 }}>
 
           <div class="mainBox">
-            <h4
-              class="number"
-              style="text-shadow: 2px 2px 4px {service.color2};">
+            <h4 class="number" style="text-shadow: 2px 2px 4px white;">
               {i + 1}
             </h4>
             <h2 class="colorDynamic" data-glow={service.name}>
