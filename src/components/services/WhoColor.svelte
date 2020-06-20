@@ -57,7 +57,6 @@
     framePosition = getPosition(frameE) - window.innerHeight;
     frameL = frameE.offsetHeight;
     let framePerc = (-1 * (framePosition * 100)) / frameL;
-    console.log(`inside: ` + framePerc + "%");
 
     [].forEach.call(slides, function(slide, i) {
       let trans = -4 * framePerc + 100 * (i + 1);

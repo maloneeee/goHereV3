@@ -13,9 +13,6 @@
   onMount(() => {
     loaded.set(true);
   });
-  function clientClicked(event) {
-    console.log(event.target.parentElement);
-  }
 </script>
 
 <style>
