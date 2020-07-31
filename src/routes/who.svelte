@@ -17,6 +17,7 @@
 
 <svelte:head>
   <title>{who.title}</title>
+  <meta name="description" content={who.metaDesc} />
 </svelte:head>
 <TransitionWrapper>
   <Hero heading={who.h1} headingSub={who.h1Sub} />

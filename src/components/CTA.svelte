@@ -3,8 +3,8 @@
   import { cta } from "./../stores/content.js";
 
   export let extra = {
-    head: "Default",
-    button: "button text"
+    head: "Let's Create Together",
+    button: "Let's Go"
   };
 </script>
 

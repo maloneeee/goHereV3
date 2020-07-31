@@ -19,7 +19,7 @@
 
 <svelte:head>
   <title>{contact.title}</title>
-  <meta name="description" content={contact.meta} />
+  <meta name="description" content={contact.metaDesc} />
 </svelte:head>
 <TransitionWrapper>
 

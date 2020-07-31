@@ -1,3 +1,9 @@
+<script context="module">
+  export function preload({ params, query }) {
+    return this.fetch("sitemap.xml");
+  }
+</script>
+
 <script>
   import { home } from "./../stores/content.js";
   import { fade } from "svelte/transition";
@@ -157,6 +163,7 @@
 
 <svelte:head>
   <title>{home.title}</title>
+  <meta name="description" content={home.metaDesc} />
 </svelte:head>
 
 <nav style="position:fixed; top:0;">

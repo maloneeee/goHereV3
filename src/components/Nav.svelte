@@ -97,6 +97,7 @@
         insights
       </a>
     </li>
+
   </ul>
   <div class="burger" class:toggle={displayMenu} on:click={toggleMenu}>
     <div class="line1" />

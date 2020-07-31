@@ -21,6 +21,7 @@
 
 <svelte:head>
   <title>{work.title}</title>
+  <meta name="description" content={work.metaDesc} />
 </svelte:head>
 <TransitionWrapper>
   <Hero heading={work.h1} headingSub={work.h1Sub} />

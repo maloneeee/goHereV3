@@ -540,7 +540,7 @@
     padding: 20px 10vw 100px;
   }
   .call h2:first-child {
-    font-size: 23vw;
+    font-size: 21vw;
     color: #e4e4e4;
   }
   .call h2:last-child {
@@ -904,7 +904,7 @@
     {/if}
   </section> -->
   <section class="call whiteBG">
-    <h2 class="color muted" style="white-space:nowrap">Call Now</h2>
+    <h2 class="color muted" style="white-space:nowrap">Let's Talk</h2>
     <a href="tel:{global.phone}">{global.phone}</a>
   </section>
 </div>

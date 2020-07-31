@@ -4,6 +4,7 @@
   import { scrollPosition } from "./../../stores/var.js";
   import { fade } from "svelte/transition";
   import CTA from "./../../components/CTA.svelte";
+  import serv from "./../../routes/services/_services.js";
   let show = true;
   let number = 0;
 
@@ -68,7 +69,6 @@
   }
   function checkTrans() {
     let per = vars[0] * $scrollPosition + vars[1];
-    console.log(per);
     if (per < -5) {
       for (let i = 0; i < sections.length; i++) {
         sections[i].classList.remove("showing");
@@ -120,6 +120,7 @@
     align-items: center;
     padding: 36px;
     opacity: 0%;
+    display: none;
     transition: opacity 300ms;
     /* background: rgba(0, 0, 0, 0.95); */
     /* border-top: 10px white solid;
@@ -129,6 +130,7 @@
 
   .showing {
     opacity: 100%;
+    display: flex;
   }
   .view {
     position: sticky;
@@ -223,21 +225,21 @@
           out:fade={{ delay: 0, duration: 150 }}>
 
           <div class="mainBox">
-            <h4 class="number" style="text-shadow: 2px 2px 4px white;">
-              {i + 1}
-            </h4>
+
             <h2 class="colorDynamic" data-glow={service.name}>
               {service.name}
             </h2>
             <ul>
-              {#each service.li as li}
-                <li
-                  out:fade={{ delay: 0, duration: 150 }}
-                  in:fade={{ delay: 150, duration: 150 }}>
+              {#each serv as serv}
+                {#if serv.section == service.name}
+                  <li
+                    out:fade={{ delay: 0, duration: 150 }}
+                    in:fade={{ delay: 150, duration: 150 }}>
 
-                  <i class={li.ico} />
-                  {li.name}
-                </li>
+                    <i class={serv.ico} />
+                    <a href="/services/{serv.slug}">{serv.name}</a>
+                  </li>
+                {/if}
               {/each}
             </ul>
 

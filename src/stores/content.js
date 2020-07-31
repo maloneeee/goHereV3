@@ -5,8 +5,9 @@ export const global = {
     email: 'help@gohere.tech',
 };
 export const home = {
-    title: 'goHere - Creative Solutions',
-    metaDesc: 'This is the description',
+    title: 'goHere | Creative Agency | Miami Beach, FL',
+    metaDesc:
+        'Technology designed for you.  goHere has solutions that are built to drive your business into the future. Companies who proactively embrace the power of technology for business in the digital age will disrupt those who wait too long.',
     h1: 'Creating',
     h1Sub: 'Solutions',
     sections: [
@@ -60,8 +61,9 @@ export const home = {
     ],
 };
 export const who = {
-    title: 'goHere - Creative Solutions',
-    metaDesc: 'This is the description',
+    title: 'About goHere | Technology Solutions | Brand Identity',
+    metaDesc:
+        'Team of innovative consultants and creators focused on technology based solutions, brand identity through interactive advertising including AR integration, web development, content strategy, full-stack development, ui ux, digital marketing, and creative direction.',
     h1: 'Creative',
     h1Sub: 'Envisioneers',
     section: [
@@ -85,8 +87,9 @@ export const who = {
     },
 };
 export const what = {
-    title: 'goHere - Creative Solutions',
-    metaDesc: 'This is the description',
+    title: 'goHere | Powerful Systems | Brand Equity and Experiences',
+    metaDesc:
+        ' Lead your industry with cutting edge technology. Looking to launch your company into the world of virtual  and augmented reality? goHere. Have a completely out there idea you’re not even sure is possible? goHere. Let’s chart the new world together. ',
     h1: 'Powerful',
     h1Sub: 'Outcomes',
     section: [
@@ -107,8 +110,9 @@ export const what = {
     },
 };
 export const work = {
-    title: 'goHere - Creative Solutions',
-    metaDesc: 'This is the description',
+    title: 'goHere Partners and Work',
+    metaDesc:
+        'Whether you’re a startup, nonprofit, or a household brand, goHere has solutions for you. We select clients we resonate with, bringing passion and inspiration to any project.',
     h1: 'The',
     h1Sub: 'Vault',
     section: [
@@ -131,8 +135,9 @@ export const work = {
     },
 };
 export const contact = {
-    title: 'goHere - Creative Solutions',
-    metaDesc: 'This is the description',
+    title: 'goHere for Partnerships',
+    metaDesc:
+        'goHere and discover the power of creative solutions for your next project. +1 (305) 999 5595',
     h1: 'Call',
     h1Sub: 'Today',
     section: [
@@ -148,8 +153,9 @@ export const contact = {
     ],
 };
 export const insights = {
-    title: 'goHere - Creative Solutions',
-    metaDesc: 'This is the description',
+    title: 'goHere | Incredible Technology Insights',
+    metaDesc:
+        'goHere for the latest news in emerging technologies. Learn something new about blockchain, machine learning, brand identity, AR, VR, etc.',
     h1: 'Incredible',
     h1Sub: 'Insights',
     section: [

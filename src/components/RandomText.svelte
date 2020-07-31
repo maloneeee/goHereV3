@@ -4,7 +4,7 @@
   let i = 1;
   let randomHead;
   import { onMount } from "svelte";
-  let secondLength = 1.4;
+  let secondLength = 3.4;
 
   onMount(() => {
     randomHead = tags[0];

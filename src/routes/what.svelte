@@ -24,6 +24,7 @@
 
 <svelte:head>
   <title>{what.title}</title>
+  <meta name="description" content={what.metaDesc} />
 </svelte:head>
 <!-- <svelte:window bind:scrollY={y}/> -->
 <TransitionWrapper>

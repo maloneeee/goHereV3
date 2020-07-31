@@ -1,13 +1,25 @@
 <script>
   export let postdata;
+  import { onMount } from "svelte";
   let postedOn = new Date(postdata.published_at);
+  var readingTimeInMinutes;
+
+  onMount(() => {
+    articleTime();
+  });
   let date =
     postedOn.getMonth() +
     "-" +
     postedOn.getDate() +
     "-" +
     postedOn.getFullYear();
-  console.log(date);
+
+  function articleTime() {
+    var txt = postdata.html,
+      wordCount = txt.replace(/[^\w ]/g, "").split(/\s+/).length;
+
+    readingTimeInMinutes = Math.floor(wordCount / 228) + 1;
+  }
 </script>
 
 <style>
@@ -53,12 +65,12 @@
 </style>
 
 <div class="article">
-  <a href="/insights/{postdata.slug}">
+  <a rel="prefetch" href="/insights/{postdata.slug}">
     <div class="img" style="background-image:url({postdata.feature_image})" />
     <h2>{postdata.title}</h2>
-    <h3>{date} | {postdata.reading_time} MIN READ</h3>
-    <span class="content">
-      {@html postdata.excerpt}
+    <h3>{date} | {readingTimeInMinutes} MIN READ</h3>
+    <span class="content" id="content">
+      {@html postdata.custom_excerpt}
     </span>
   </a>
 </div>

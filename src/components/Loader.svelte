@@ -1,6 +1,5 @@
 <script>
   import { onMount } from "svelte";
-  import loader from "../routes/exp/loader.svelte";
   import { blur, fade } from "svelte/transition";
   import { loaded } from "./../stores/var.js";
 

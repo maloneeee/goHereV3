@@ -94,10 +94,11 @@
     margin: 0 auto;
     min-height: 230px;
     font-family: Georgia, serif;
-    font-size: 1.3rem;
-    line-height: 1.6em;
+    font-size: 1.5rem;
+    line-height: 2em;
     background: white;
   }
+
   .byline {
     display: flex;
     justify-content: space-between;
@@ -143,7 +144,8 @@
 </style>
 
 <svelte:head>
-  <title>{pagedata.title} | goHere Insights</title>
+  <title>{pagedata.meta_title} | goHere Insights</title>
+  <meta name="Description" content={pagedata.meta_description} />
 </svelte:head>
 <TransitionWrapper>
   <div class="wrapper">
