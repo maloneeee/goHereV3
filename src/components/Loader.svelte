@@ -9,6 +9,7 @@
   onMount(() => {
     b = document.getElementById("perc");
     requestAnimationFrame(aniamteLoad);
+    reload();
   });
 
   $: if ($loaded == true) {
@@ -28,6 +29,16 @@
     }
     b.style.width = newP + "%";
     requestAnimationFrame(aniamteLoad);
+  }
+
+  function reload() {
+    
+      setTimeout(function () {
+        if ($loaded != true){
+        location.reload();
+        }
+      }, 3000);
+    
   }
 </script>
 

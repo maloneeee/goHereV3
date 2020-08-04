@@ -20,6 +20,8 @@ $break-tablet: 1068px;
     @return map-get($colors, $color-name)
 }
 
+
+
 body::before {
     content: "";
     position: fixed;

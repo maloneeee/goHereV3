@@ -3,12 +3,15 @@
   export let headingSub;
   export let color = true;
 
+  let h = heading + " " + headingSub
+
   import { scrollPosition } from "./../stores/var.js";
 </script>
 
 <style>
   .hero {
     overflow: hidden;
+    padding-bottom:40px;
   }
   .colorful {
     content: "";
@@ -32,6 +35,5 @@
   {#if color}
     <div class="colorful" style="top:{parseInt($scrollPosition * 0.85)}px" />
   {/if}
-  <h1 class="colorDynamic" data-glow={heading}>{heading}</h1>
-  <h1 class="colorDynamic" data-glow={headingSub}>{headingSub}</h1>
+  <h1 class="colorDynamic" data-glow={h} >{h}</h1>
 </div>

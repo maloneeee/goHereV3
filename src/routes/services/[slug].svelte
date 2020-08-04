@@ -19,9 +19,57 @@
   import { onMount } from "svelte";
   import { loaded } from "./../../stores/var.js";
   import CTA from "./../../components/CTA.svelte";
+  import Hero from "./../../components/Hero.svelte";
+  import Section from "./../../components/Section.svelte";
   import ServiceList from "./_ServiceList.svelte";
+
+  let content = 
+        {
+            title:
+                '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> for .',
+            p:
+                "",
+
+            button: 'Make the connection',
+            buttonHref: '/what',
+            invert: true,
+            color1: 'red',
+            color2: 'purple',
+            sub: 'reach out',
+        };
+
+       $: content = 
+        {
+            title:
+                '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> to '+ serv.section+'.',
+            p:
+                serv.desc,
+
+            button: 'Make the connection',
+            buttonHref: '/what',
+            invert: true,
+            color1: 'red',
+            color2: 'purple',
+            sub: 'reach out',
+        };
+  
   onMount(() => {
     loaded.set(true);
+    console.log(serv);
+    content = 
+        {
+            title:
+                '<span style="font-family:Arial;">go<b style="font-family:Arial;">Here</b></span> to '+ serv.section+'.',
+            p:
+                serv.desc,
+
+            button: 'Make the connection',
+            buttonHref: '/what',
+            invert: true,
+            color1: 'red',
+            color2: 'purple',
+            sub: 'reach out',
+        };
   });
 </script>
 
@@ -46,7 +94,7 @@
 <svelte:head>
   <title>{serv.name}</title>
 </svelte:head>
-<div class="fullServ">
+<!-- <div class="fullServ">
   <div class="heroish">
     <h1>{serv.name}</h1>
   </div>
@@ -54,5 +102,11 @@
     {@html serv.desc}
   </div>
   <ServiceList />
-</div>
+</div>-->
+
+<Hero heading="" headingSub="{serv.name}" />
+<Section {...content}/>
+
+<ServiceList/>
+
 <CTA />
