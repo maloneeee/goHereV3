@@ -26,11 +26,7 @@ grid-template-rows: repeat(1, 1fr);
     height:173px;
   }
 
-  h5 {
-    font-size: 25px;
-    margin: 17px 45px;
-    text-align: center;
-  }
+  
 
   a {
     display: flex;
@@ -70,6 +66,26 @@ grid-template-rows: repeat(1, 1fr);
     margin-bottom:20px;
   }
 
+
+  @media (max-width: 1068px) {
+    .hld{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .col{
+      margin-bottom:50px;
+    }
+
+    a{
+    margin-bottom:7px;
+    font-size:15px;
+    text-align:center;
+  }
+
+  .co{
+    width:250px;
+  }
+  }
  
 </style>
 <div class="gg">

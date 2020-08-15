@@ -3,7 +3,8 @@
   export let headingSub;
   export let color = true;
 
-  let h = heading + " " + headingSub
+  let h = heading + " " + headingSub;
+  $:  h = heading + " " + headingSub;
 
   import { scrollPosition } from "./../stores/var.js";
 </script>

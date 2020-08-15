@@ -156,8 +156,14 @@ export const serv = [
         section: 'Impress',
         ico: 'fas fa-sitemap',
         slug: 'virtual-reality',
+        detailed: true,
+        topImage: 'img/services/topImage1.png',
+        midImage: 'img/services/midImage1.png',
+        bottomImage: 'img/services/bottomImage1.png',
         desc:
-            '<p>Virtual reality will revolutionize the way users consume media and entertainment in the decades to come. VR is an artificial environment that uses 3d visual interactive content to activate the human sensory environment. It’s a completely immersive visual experience typically perceived through a headset. </p><p>Unlike AR, VR disconnects you from your surroundings; like AR, VR affords incredible business and marketing opportunities. The world is changing in dramatic ways; the workforce is transitioning to working remotely and events are bound by the rules of social distancing. We’ve seen digital concerts and virtual events spark massive success. The applications of virtual reality will only grow with our evolving world.</p>',
+            '<p>Virtual reality will revolutionize the way users consume media and entertainment in the decades to come. VR is an artificial environment that uses 3d visual interactive content to activate the human sensory environment. It’s a completely immersive visual experience typically perceived through a headset. </p>',
+        desc2: '<p>Unlike AR, VR disconnects you from your surroundings; like AR, VR affords incredible business and marketing opportunities. The world is changing in dramatic ways; the workforce is transitioning to working remotely and events are bound by the rules of social distancing. We’ve seen digital concerts and virtual events spark massive success. The applications of virtual reality will only grow with our evolving world.</p>',
+
     },
     {
         name: 'Edge Computing',
@@ -189,8 +195,7 @@ export const serv = [
         ico: 'fas fa-laptop-code',
         slug: 'augmented-reality',
         desc:
-            '<p>Augmented reality is the ultimate immersive technology experience; it seamlessly blends the digital with the physical, and it will completely revolutionize the way we interact with our world.</p><p>The rapidly emerging technology is set for mass adaptation within the next decade--maybe even the next few years. Though the first iterations of wearable AR technology like Google Glass and the Hololens have been bulky, expensive, and unsuitable for everyday wear, early insight into Apple Glass reveals a sleeker, more affordable wearable that will make AR available to the masses.</p><p>Predicted to be released in late 2021 or early 2022, Apple Glass will transform the art of marketing and create endless unique business opportunities. Immersive brand, product, and digital experiences are the future of marketing and business.</p><p>goHere is an AR application developer with tremendous business development acumen. We outfit businesses and products of all types with Pure AR. Whether it be immersive advertising experiences or AR business solutions, those who proactively embrace AR will be leaders in their industry.</p>',
-    },
+            '<p>Augment your Reality™. </p>'},
 ];
 
 serv.forEach((service) => {
