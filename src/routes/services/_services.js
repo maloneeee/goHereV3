@@ -25,7 +25,7 @@ export const serv = [
         ico: 'fas fa-laptop-code',
         slug: 'responsive-user-interface',
         titleTag:'UI / UX - goHere™ for Responsive User Interfaces',
-        metaDesc:"Mobile first UI / UX strategies and web content that is responsive to users’ screens will ensure that your content is set up to convert desired actions. AR / VR projects open availability."
+        metaDesc:"Mobile first UI / UX strategies and web content that is responsive to users’ screens will ensure that your content is set up to convert desired actions. AR / VR projects open availability.",
         desc:
             '<p>Responsive user interface refers to building front end designs that “respond” to the size of the screen a user is viewing a website on. Mobile first design strategy ensures your mobile website converts--which is especially important as phone website views dramatically outpace desktop website views.</p>',
     },
