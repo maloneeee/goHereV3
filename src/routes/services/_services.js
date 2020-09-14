@@ -233,7 +233,7 @@ export const serv = [
         titleTag:'Augmented Reality Firm - goHere - Augment Your Reality™',
         metaDesc:"AR is the ultimate immersive technology experience that seamlessly blends the digital world with the physical. Augmented reality solutions will propel companies forward throughout this decade.",
         desc:
-            '<p>Augment your Reality™. </p>'},
+            '<p>AR is the ultimate immersive technology experience that seamlessly blends the digital world with the physical. Augmented reality solutions will propel companies forward throughout this decade. </p>'},
 ];
 
 serv.forEach((service) => {
