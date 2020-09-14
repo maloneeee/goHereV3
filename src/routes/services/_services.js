@@ -14,7 +14,7 @@ export const serv = [
         section: 'Build',
         ico: 'fas fa-sitemap',
         slug: 'web-desktop-mobile-application',
-        titleTag:'Mobile, Web, AR & VR Application Development Company - goHere™',
+        titleTag:'Mobile, Web, AR & VR Application Development Company - goHere',
         metaDesc:"Engage your users or target audience with an application from goHere. Custom software and technology solutions engineered for ROI.",
         desc:
             '<p>Building your online presence validates your business and makes it easier for your customers to find and interact with you. Whether you need an online ordering app for your restaurant or a website for your business, we know how to design and build applications that convert.</p>',
